@@ -31,13 +31,13 @@ author:
   email            : "skbhat.in@pondiuni.ac.in" 
 
   # Academic websites
-  arxiv            : # skbhat07 URL - Update with the correct link to your profile
+  arxiv            : "skbhat07" #URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : #"https://orcid.org/0009-0000-6180-5783"
+  orcid            : "https://orcid.org/0009-0000-6180-5783"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : #"https://www.researchgate.net/profile/Shrikrishna-Bhat-K"
+  researchgate     : "https://www.researchgate.net/profile/Shrikrishna-Bhat-K"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
