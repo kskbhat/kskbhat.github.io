@@ -31,7 +31,7 @@ author:
   email            : "skbhat.in@pondiuni.ac.in" 
 
   # Academic websites
-  arxiv            : "skbhat07" #URL - Update with the correct link to your profile
+  arxiv            : #"skbhat07" #URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0000-6180-5783"
