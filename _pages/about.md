@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: "Bhat's Blog - Home"
+title: "# Welcome to My Academic Page 🎓"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-# Welcome to My Academic Page 🎓
-
 ## About Me
 
 Hello, and welcome to my academic webpage! My name is [Your Name], and I am a PhD research scholar in Statistics at Pondicherry University. My research focuses on [briefly describe your research focus or interests].
