@@ -257,16 +257,16 @@
 }
 
 [data-bs-theme="dark"] .timeline-left .tl-place {
-  color: #a89880;
+  color: #c4b49e;
 }
 
 [data-bs-theme="dark"] .timeline-right p,
 [data-bs-theme="dark"] .timeline-right em {
-  color: #d1c4b0;
+  color: #d9cebf;
 }
 
 [data-bs-theme="dark"] .timeline-right .tl-cert {
-  color: #a89880;
+  color: #c4b49e;
 }
 
 @media (max-width: 600px) {

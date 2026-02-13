@@ -23,6 +23,6 @@ Each post will combine **rigorous methodology** with **practical R code examples
 
 ### Stay Connected
 
-In the meantime, check out my [publications](/publications.html) and [software](/software.html) pages for my latest work. You can also subscribe to the **RSS feed** for this blog to get notified when new posts go live.
+In the meantime, check out my [publications](../../publications.qmd) and [software](../../software.qmd) pages for my latest work. You can also subscribe to the **RSS feed** for this blog to get notified when new posts go live.
 
 *— Shrikrishna*

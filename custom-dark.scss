@@ -1,7 +1,10 @@
 /*-- scss:defaults --*/
 
 // ---- Typography (match light theme) ----
-$headings-font-family: "IBM Plex Serif", "Georgia", "Times New Roman", serif !default;
+$font-family-sans-serif: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$headings-font-family:   "IBM Plex Serif", "Georgia", "Times New Roman", serif !default;
+$font-size-root:         1rem !default;
+$line-height-base:       1.65 !default;
 
 // ---- Dark mode palette (warm dark + teal accent) ----
 $body-bg:        #1C1710 !default;

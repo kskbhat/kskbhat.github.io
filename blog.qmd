@@ -16,8 +16,6 @@ title-block-banner: false
 
 ::: {.column-page}
 
-## 🚧 Coming Soon
-
-Fresh posts on **statistics**, **clustering**, **R programming**, and **research insights** are on the way! Subscribe via the RSS feed to stay updated.
+Posts on **statistics**, **clustering**, **R programming**, and **research insights**. Subscribe via the [RSS feed](blog.xml) to stay updated.
 
 :::
