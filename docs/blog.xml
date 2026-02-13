@@ -9,13 +9,14 @@
 <link>https://kskbhat.github.io/blog.html</link>
 <atom:link href="https://kskbhat.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Personal academic website of Shrikrishna Bhat K — PhD candidate in Statistics, researcher in cluster analysis, block clustering, and cluster diagnostics.</description>
-<generator>quarto-1.6.43</generator>
-<lastBuildDate>Wed, 11 Feb 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Tue, 10 Feb 2026 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Welcome to My Blog — Coming Soon!</title>
   <dc:creator>Shrikrishna Bhat Kapu</dc:creator>
   <link>https://kskbhat.github.io/posts/coming-soon/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -36,7 +37,7 @@
 </section>
 <section id="stay-connected" class="level3">
 <h3 class="anchored" data-anchor-id="stay-connected">Stay Connected</h3>
-<p>In the meantime, check out my <a href="../../publications.html">publications</a> and <a href="../../software.html">software</a> pages for my latest work. You can also subscribe to the <strong>RSS feed</strong> for this blog to get notified when new posts go live.</p>
+<p>In the meantime, check out my <a href="../..\publications.html">publications</a> and <a href="../..\software.html">software</a> pages for my latest work. You can also subscribe to the <strong>RSS feed</strong> for this blog to get notified when new posts go live.</p>
 <p><em>— Shrikrishna</em></p>
 
 
@@ -46,7 +47,7 @@
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>Announcement</category>
   <guid>https://kskbhat.github.io/posts/coming-soon/</guid>
-  <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
+  <pubDate>Tue, 10 Feb 2026 18:30:00 GMT</pubDate>
   <media:content url="https://kskbhat.github.io/posts/coming-soon/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -54,6 +55,7 @@
   <dc:creator>Shrikrishna Bhat Kapu</dc:creator>
   <link>https://kskbhat.github.io/posts/silhouette-intro/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -75,7 +77,7 @@
 <section id="beyond-hard-clustering" class="level3">
 <h3 class="anchored" data-anchor-id="beyond-hard-clustering">Beyond Hard Clustering</h3>
 <p>What happens when clusters overlap? Traditional silhouette methods assume hard assignments, but many real-world problems require <strong>soft (fuzzy) clustering</strong>. That’s where density-based silhouette diagnostics come in.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Coming soon: example using the Silhouette R package</span></span>
 <span id="cb1-2"><span class="fu" style="color: #4758AB;
@@ -90,7 +92,7 @@ background-color: null;
 font-style: inherit;"># Compute density-based silhouette widths</span></span>
 <span id="cb1-6"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># Visualize results</span></span></code></pre></div>
+font-style: inherit;"># Visualize results</span></span></code></pre></div></div>
 </section>
 <section id="whats-next" class="level3">
 <h3 class="anchored" data-anchor-id="whats-next">What’s Next</h3>
@@ -118,7 +120,7 @@ font-style: inherit;"># Visualize results</span></span></code></pre></div>
   <category>R</category>
   <category>Statistics</category>
   <guid>https://kskbhat.github.io/posts/silhouette-intro/</guid>
-  <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 14 Jan 2026 18:30:00 GMT</pubDate>
   <media:content url="https://kskbhat.github.io/posts/silhouette-intro/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -126,6 +128,7 @@ font-style: inherit;"># Visualize results</span></span></code></pre></div>
   <dc:creator>Shrikrishna Bhat Kapu</dc:creator>
   <link>https://kskbhat.github.io/posts/block-clustering-primer/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -150,7 +153,7 @@ font-style: inherit;"># Visualize results</span></span></code></pre></div>
 <section id="evaluating-block-clustering" class="level3">
 <h3 class="anchored" data-anchor-id="evaluating-block-clustering">Evaluating Block Clustering</h3>
 <p>We modified the Extended Silhouette Index to assess block clustering quality alongside the Co-clustering Adjusted Rand Index.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Coming soon: blockclusterPDQ example</span></span>
 <span id="cb1-2"><span class="fu" style="color: #4758AB;
@@ -165,7 +168,7 @@ background-color: null;
 font-style: inherit;"># Evaluate using Extended Silhouette</span></span>
 <span id="cb1-6"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># Visualize co-cluster structure</span></span></code></pre></div>
+font-style: inherit;"># Visualize co-cluster structure</span></span></code></pre></div></div>
 </section>
 <section id="coming-soon" class="level3">
 <h3 class="anchored" data-anchor-id="coming-soon">Coming Soon</h3>
@@ -186,7 +189,7 @@ font-style: inherit;"># Visualize co-cluster structure</span></span></code></pre
   <category>Statistics</category>
   <category>Research</category>
   <guid>https://kskbhat.github.io/posts/block-clustering-primer/</guid>
-  <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 31 Dec 2025 18:30:00 GMT</pubDate>
   <media:content url="https://kskbhat.github.io/posts/block-clustering-primer/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -198,12 +201,13 @@ font-style: inherit;"># Visualize co-cluster structure</span></span></code></pre
 
 
 
+
 <section id="from-research-code-to-cran-package" class="level2">
 <h2 class="anchored" data-anchor-id="from-research-code-to-cran-package">From Research Code to CRAN Package</h2>
 <p>Turning a collection of research scripts into a polished, CRAN-ready R package is a journey. Here are some lessons I’ve learned while developing <code>Silhouette</code> and <code>blockclusterPDQ</code>.</p>
 <section id="start-with-usethis-and-devtools" class="level3">
 <h3 class="anchored" data-anchor-id="start-with-usethis-and-devtools">1. Start with <code>usethis</code> and <code>devtools</code></h3>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Scaffold your package</span></span>
 <span id="cb1-2">usethis<span class="sc" style="color: #5E5E5E;
@@ -224,7 +228,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">use_vignette</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"getting-started"</span>)</span></code></pre></div>
+font-style: inherit;">"getting-started"</span>)</span></code></pre></div></div>
 </section>
 <section id="write-tests-early" class="level3">
 <h3 class="anchored" data-anchor-id="write-tests-early">2. Write Tests Early</h3>
@@ -256,7 +260,7 @@ font-style: inherit;">"getting-started"</span>)</span></code></pre></div>
   <category>Software</category>
   <category>Tips</category>
   <guid>https://kskbhat.github.io/posts/r-package-dev-tips/</guid>
-  <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 14 Dec 2025 18:30:00 GMT</pubDate>
   <media:content url="https://kskbhat.github.io/posts/r-package-dev-tips/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
