@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+<<<<<<< HEAD
     <loc>https://kskbhat.github.io/software.html</loc>
     <lastmod>2026-02-13T07:11:04.971Z</lastmod>
   </url>
@@ -35,29 +36,69 @@
   <url>
     <loc>https://kskbhat.github.io/conferences.html</loc>
     <lastmod>2026-02-13T07:17:11.470Z</lastmod>
+=======
+    <loc>https://kskbhat.github.io/notes.html</loc>
+    <lastmod>2026-02-13T11:29:49.849Z</lastmod>
+>>>>>>> bca875ab063da1ec856373f62d63e0c4ab5f6975
   </url>
   <url>
     <loc>https://kskbhat.github.io/experience.html</loc>
-    <lastmod>2026-02-13T07:21:31.055Z</lastmod>
+    <lastmod>2026-02-13T11:29:49.849Z</lastmod>
   </url>
   <url>
-    <loc>https://kskbhat.github.io/notes.html</loc>
-    <lastmod>2026-02-11T13:51:43.702Z</lastmod>
+    <loc>https://kskbhat.github.io/conferences.html</loc>
+    <lastmod>2026-02-13T11:29:49.808Z</lastmod>
   </url>
   <url>
-    <loc>https://kskbhat.github.io/posts/coming-soon/index.html</loc>
-    <lastmod>2026-02-13T11:18:51.579Z</lastmod>
+    <loc>https://kskbhat.github.io/publications/bhat2024silhouette/index.html</loc>
+    <lastmod>2026-02-13T11:30:02.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/software.html</loc>
+    <lastmod>2026-02-13T11:29:49.858Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/posts/block-clustering-primer/index.html</loc>
+    <lastmod>2026-02-13T11:29:49.850Z</lastmod>
   </url>
   <url>
     <loc>https://kskbhat.github.io/posts/silhouette-intro/index.html</loc>
-    <lastmod>2026-02-13T07:17:11.470Z</lastmod>
+    <lastmod>2026-02-13T11:29:49.851Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/blog.html</loc>
+    <lastmod>2026-02-13T11:29:49.808Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/index.html</loc>
+    <lastmod>2026-02-13T11:29:49.849Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/posts/coming-soon/index.html</loc>
+    <lastmod>2026-02-13T11:29:49.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/posts/r-package-dev-tips/index.html</loc>
+    <lastmod>2026-02-13T11:29:49.850Z</lastmod>
   </url>
   <url>
     <loc>https://kskbhat.github.io/publications/bhat2025blockpdq_preprint/index.html</loc>
+<<<<<<< HEAD
     <lastmod>2026-02-13T16:36:24.556Z</lastmod>
+=======
+    <lastmod>2026-02-13T11:30:02.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/publications.html</loc>
+    <lastmod>2026-02-13T11:29:49.858Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kskbhat.github.io/cv.html</loc>
+    <lastmod>2026-02-13T11:29:49.808Z</lastmod>
+>>>>>>> bca875ab063da1ec856373f62d63e0c4ab5f6975
   </url>
   <url>
     <loc>https://kskbhat.github.io/research.html</loc>
-    <lastmod>2026-02-13T07:58:21.947Z</lastmod>
+    <lastmod>2026-02-13T11:29:49.858Z</lastmod>
   </url>
 </urlset>

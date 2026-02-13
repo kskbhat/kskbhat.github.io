@@ -1,115 +1,38 @@
 [
   {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software",
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
     "section": "",
-    "text": "GitHub\nOpen-source R packages for statistical computing and cluster analysis.\nAuthors: Shrikrishna Bhat Kapu and Kiruthika C\nDOI: 10.32614/CRAN.package.Silhouette"
+    "text": "Lecture notes, tutorials, and reference material — built with Bookdown and R Markdown.\n\n\nNotes on statistics, probability, and data science are being prepared. Check back soon!\n\n\n\n\n\n\n\n\n\n\nQuick Guide — Adding a Bookdown / R Markdown Book\n\n\n\n\n\nOption A — Link to an external hosted book:\nAdd a new card in the section below with the title, description, and URL.\nOption B — Host the book within this site:\n\nBuild your bookdown/R Markdown book locally (e.g., bookdown::render_book())\nCopy the rendered output (HTML files) into a subfolder like notes/my-book-name/\nAdd a card entry below pointing to notes/my-book-name/index.html\n\nOption C — Use a GitHub Pages link:\nIf your book is hosted on GitHub Pages (e.g., https://kskbhat.github.io/my-notes/), just link to it directly.\n\n\n\n\n\n\n\n\n\n\nComing Soon — Foundations of probability theory, distributions, and statistical inference.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — Comprehensive notes on clustering methods, evaluation metrics, and R implementations.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — From basics to advanced topics — tidyverse, package development, and Shiny apps.\nFormat: R Markdown Book\n\n\n\nComing Soon — PCA, factor analysis, discriminant analysis, and dimension reduction techniques.\nFormat: Bookdown (HTML)"
   },
   {
-    "objectID": "software.html#blockclusterpdq",
-    "href": "software.html#blockclusterpdq",
-    "title": "Software",
-    "section": "blockclusterPDQ",
-    "text": "blockclusterPDQ\nAn R Package for Block Probabilistic Distance Clustering\n\n\n🐙 GitHub\nSource code repository\n\n\nAuthors: Shrikrishna Bhat Kapu and Kiruthika C\n\nDescription\nThe blockclusterPDQ R package implements block (co-)clustering using probabilistic distance methods. It provides a unified framework for simultaneously clustering rows and columns of a data matrix, with support for various data types including continuous, binary, and ordinal data. The package includes functions for model fitting, cluster evaluation, and visualization of co-cluster structures.\n\n\nInstallation\n# Install from GitHub\n# install.packages(\"devtools\")\ndevtools::install_github(\"kskbhat/blockclusterPDQ\")"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "notes.html#coming-soon",
+    "href": "notes.html#coming-soon",
+    "title": "Notes",
     "section": "",
-    "text": "Google Scholar    ORCID"
+    "text": "Notes on statistics, probability, and data science are being prepared. Check back soon!"
   },
   {
-    "objectID": "publications.html#journal-articles",
-    "href": "publications.html#journal-articles",
-    "title": "Publications",
-    "section": "Journal Articles",
-    "text": "Journal Articles\n\nShrikrishna Bhat Kapu and Kiruthika C (2024). “Some density-based silhouette diagnostics for soft clustering algorithms.” Communications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238. DOI: 10.1080/23737484.2024.2408534."
-  },
-  {
-    "objectID": "publications.html#preprints",
-    "href": "publications.html#preprints",
-    "title": "Publications",
-    "section": "Preprints",
-    "text": "Preprints\n\nShrikrishna Bhat Kapu and Kiruthika C (2025). “Block Probabilistic Distance Clustering: A Unified Framework and Evaluation.” Preprint, Version 1. DOI: 10.21203/rs.3.rs-6973596/v1. ResearchSquare: rs-6973596/v1."
-  },
-  {
-    "objectID": "publications/bhat2024silhouette/index.html",
-    "href": "publications/bhat2024silhouette/index.html",
-    "title": "Some density-based silhouette diagnostics for soft clustering algorithms",
+    "objectID": "notes.html#how-to-add-your-notes",
+    "href": "notes.html#how-to-add-your-notes",
+    "title": "Notes",
     "section": "",
-    "text": "JOURNAL ARTICLES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat Kapu and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2024\n\n\n\n\nPUBLICATION DETAILS\n\n\nCommunications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238\n\n\n\n\nLINKS\n\n\nDOI PDF\n\n\n\nOne of the main objectives of cluster analysis is to determine the most effective clustering algorithm. With the wide variety of algorithms available, assessing which one performs better is important. The performance of different clustering methods is typically measured using the Adjusted Rand Index (ARI), which relies on knowledge of the original class labels. However, this study introduces flexible modified alternatives of density-based silhouette methods for evaluating cluster performance. These proposed Density-based silhouettes can be applied to any soft clustering algorithms and do not require the original class labels. Instead, they rely on posterior probabilities. In this study, eight different soft clustering algorithms were evaluated using real and simulated data sets. The goal is to compare their effectiveness and performance using existing and proposed measures based on silhouette and the ARI.\n\n\n\n Back to top"
+    "text": "Quick Guide — Adding a Bookdown / R Markdown Book\n\n\n\n\n\nOption A — Link to an external hosted book:\nAdd a new card in the section below with the title, description, and URL.\nOption B — Host the book within this site:\n\nBuild your bookdown/R Markdown book locally (e.g., bookdown::render_book())\nCopy the rendered output (HTML files) into a subfolder like notes/my-book-name/\nAdd a card entry below pointing to notes/my-book-name/index.html\n\nOption C — Use a GitHub Pages link:\nIf your book is hosted on GitHub Pages (e.g., https://kskbhat.github.io/my-notes/), just link to it directly."
   },
   {
-    "objectID": "posts/r-package-dev-tips/index.html",
-    "href": "posts/r-package-dev-tips/index.html",
-    "title": "Lessons Learned from Building R Packages",
+    "objectID": "notes.html#available-notes",
+    "href": "notes.html#available-notes",
+    "title": "Notes",
     "section": "",
-    "text": "Turning a collection of research scripts into a polished, CRAN-ready R package is a journey. Here are some lessons I’ve learned while developing Silhouette and blockclusterPDQ.\n\n\n# Scaffold your package\nusethis::create_package(\"myPackage\")\nusethis::use_testthat()\nusethis::use_vignette(\"getting-started\")\n\n\n\nDon’t wait until the package is “done” — write tests as you code each function.\n\n\n\nKeep documentation close to the code. Future-you will thank present-you.\n\n\n\n\nRun R CMD check --as-cran locally before submitting\nPay attention to NOTEs — CRAN reviewers will\nKeep examples fast (&lt; 5 seconds each)\n\n\n\n\nI’ll expand each of these into detailed posts with real examples from my package development experience.\nStay tuned!"
+    "text": "Coming Soon — Foundations of probability theory, distributions, and statistical inference.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — Comprehensive notes on clustering methods, evaluation metrics, and R implementations.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — From basics to advanced topics — tidyverse, package development, and Shiny apps.\nFormat: R Markdown Book\n\n\n\nComing Soon — PCA, factor analysis, discriminant analysis, and dimension reduction techniques.\nFormat: Bookdown (HTML)"
   },
   {
-    "objectID": "posts/r-package-dev-tips/index.html#from-research-code-to-cran-package",
-    "href": "posts/r-package-dev-tips/index.html#from-research-code-to-cran-package",
-    "title": "Lessons Learned from Building R Packages",
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Experience",
     "section": "",
-    "text": "Turning a collection of research scripts into a polished, CRAN-ready R package is a journey. Here are some lessons I’ve learned while developing Silhouette and blockclusterPDQ.\n\n\n# Scaffold your package\nusethis::create_package(\"myPackage\")\nusethis::use_testthat()\nusethis::use_vignette(\"getting-started\")\n\n\n\nDon’t wait until the package is “done” — write tests as you code each function.\n\n\n\nKeep documentation close to the code. Future-you will thank present-you.\n\n\n\n\nRun R CMD check --as-cran locally before submitting\nPay attention to NOTEs — CRAN reviewers will\nKeep examples fast (&lt; 5 seconds each)\n\n\n\n\nI’ll expand each of these into detailed posts with real examples from my package development experience.\nStay tuned!"
-  },
-  {
-    "objectID": "posts/block-clustering-primer/index.html",
-    "href": "posts/block-clustering-primer/index.html",
-    "title": "A Primer on Block Clustering with Probabilistic Distances",
-    "section": "",
-    "text": "Unlike traditional clustering that groups only rows (observations), block clustering (also called co-clustering or biclustering) simultaneously groups both rows and columns of a data matrix. This reveals hidden block structures in the data.\n\n\nConsider a gene expression dataset: you want to find groups of genes (rows) that behave similarly across groups of experimental conditions (columns). Block clustering finds these meaningful row–column combinations automatically.\n\n\n\nOur framework combines:\n\nProbabilistic distances — measuring how “far” each observation is from each cluster center in probability space\nBlock structure — jointly partitioning rows and columns\nFlexible distributions — supporting Gaussian, \\(t\\)-distributions, and non-parametric distances\n\n\\[d_{PD}(x_i, \\mu_k) = -2 \\log f(x_i \\mid \\theta_k)\\]\n\n\n\nWe modified the Extended Silhouette Index to assess block clustering quality alongside the Co-clustering Adjusted Rand Index.\n# Coming soon: blockclusterPDQ example\nlibrary(blockclusterPDQ)\n\n# Fit block clustering model\n# Evaluate using Extended Silhouette\n# Visualize co-cluster structure\n\n\n\nDetailed tutorials with code examples and real-data applications will be published here. Watch this space!\n\n\n\n\nBhat, S. K. & Kiruthika, C. (2025). Block Probabilistic Distance Clustering: A Unified Framework and Evaluation."
-  },
-  {
-    "objectID": "posts/block-clustering-primer/index.html#what-is-block-clustering",
-    "href": "posts/block-clustering-primer/index.html#what-is-block-clustering",
-    "title": "A Primer on Block Clustering with Probabilistic Distances",
-    "section": "",
-    "text": "Unlike traditional clustering that groups only rows (observations), block clustering (also called co-clustering or biclustering) simultaneously groups both rows and columns of a data matrix. This reveals hidden block structures in the data.\n\n\nConsider a gene expression dataset: you want to find groups of genes (rows) that behave similarly across groups of experimental conditions (columns). Block clustering finds these meaningful row–column combinations automatically.\n\n\n\nOur framework combines:\n\nProbabilistic distances — measuring how “far” each observation is from each cluster center in probability space\nBlock structure — jointly partitioning rows and columns\nFlexible distributions — supporting Gaussian, \\(t\\)-distributions, and non-parametric distances\n\n\\[d_{PD}(x_i, \\mu_k) = -2 \\log f(x_i \\mid \\theta_k)\\]\n\n\n\nWe modified the Extended Silhouette Index to assess block clustering quality alongside the Co-clustering Adjusted Rand Index.\n# Coming soon: blockclusterPDQ example\nlibrary(blockclusterPDQ)\n\n# Fit block clustering model\n# Evaluate using Extended Silhouette\n# Visualize co-cluster structure\n\n\n\nDetailed tutorials with code examples and real-data applications will be published here. Watch this space!\n\n\n\n\nBhat, S. K. & Kiruthika, C. (2025). Block Probabilistic Distance Clustering: A Unified Framework and Evaluation."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Shrikrishna Bhat K",
-    "section": "",
-    "text": "Developing robust clustering methodologies for complex data.\n\nPhD Candidate in Statistics specializing in Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics.\nI work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability.\nOver 6 years of experience in large-scale socio-economic surveys, urban analytics, and policy-oriented data research.\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "View Resume"
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "Curriculum Vitae",
-    "section": "Education",
-    "text": "Education\n\n\n\nFeb 2021 – Dec 2025\nPondicherry University\n\n\n\n\n\nPhD in Statistics\n\nResearch Area: Cluster Analysis, Block Clustering, and Cluster Diagnostics\nSupervisor: Dr. Kiruthika\nThesis Title: Contributions to Block Clustering and its Diagnostic Measures\nThesis Submitted: 22 December 2025\n\n\n\n\n\nJul 2016 – Apr 2018\nPondicherry University\n\n\n\n\n\nMaster of Science in Statistics\nCGPA: 7.75/10\n\n\n\n\nJul 2013 – Apr 2016\nAndhra Loyola College\n\n\n\n\n\nBachelor of Science in Mathematics, Statistics, and Physics\nPercentage: 80.31%"
-  },
-  {
-    "objectID": "cv.html#skills-languages",
-    "href": "cv.html#skills-languages",
-    "title": "Curriculum Vitae",
-    "section": "Skills & Languages",
-    "text": "Skills & Languages\n\n\n\nCategory\nDetails\n\n\n\n\nProgramming Languages\nR · Python\n\n\nStatistical Tools\nSTATA · SPSS · Minitab\n\n\nData Tools\nMS Excel · SQL · Power BI · Tableau\n\n\nVersion Control\nGitHub\n\n\nOther Tools\nLaTeX · SurveyCTO · MS Office\n\n\n\n\nLanguages Known\n\n\n\nLanguage\nProficiency\n\n\n\n\nEnglish\nFluent\n\n\nKannada\nNative\n\n\nTelugu\nNative\n\n\nHindi\nFluent\n\n\nTulu\nNative\n\n\nTamil\nBasic"
-  },
-  {
-    "objectID": "cv.html#summary-of-qualifications",
-    "href": "cv.html#summary-of-qualifications",
-    "title": "Curriculum Vitae",
-    "section": "Summary of Qualifications",
-    "text": "Summary of Qualifications\n\n6+ years of experience in advanced statistical modeling and survey analytics\nPublished author with peer-reviewed articles in international journals\nDeveloper of CRAN R packages for cluster analysis diagnostics\nExperience leading large-scale survey projects (240,000+ households)\nConsultancy experience for urban housing demand assessments\nPresentations at international conferences (IISA, ISPS, ICSTA)\n\n\n\n💼 Full Experience\nDetailed work history\n\n\n📖 Publications\nAll publications and preprints"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Posts on statistics, clustering, R programming, and research insights. Subscribe via the RSS feed to stay updated.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to My Blog — Coming Soon!\n\n\n\nAnnouncement\n\n\n\nExciting content on statistics, clustering, R programming, and academic research is on its way. Stay tuned!\n\n\n\n\n\nFeb 11, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Silhouette Diagnostics for Clustering\n\n\n\nClustering\n\nR\n\nStatistics\n\n\n\nA gentle introduction to silhouette-based methods for evaluating cluster quality — from classical approaches to density-based extensions.\n\n\n\n\n\nJan 15, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nA Primer on Block Clustering with Probabilistic Distances\n\n\n\nClustering\n\nStatistics\n\nResearch\n\n\n\nAn accessible overview of block (co-)clustering — simultaneously grouping rows and columns of a data matrix using probabilistic distance methods.\n\n\n\n\n\nJan 1, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nLessons Learned from Building R Packages\n\n\n\nR\n\nSoftware\n\nTips\n\n\n\nPractical tips and hard-won lessons from developing the Silhouette and blockclusterPDQ R packages — from CRAN submission to documentation.\n\n\n\n\n\nDec 15, 2025\n\n1 min\n\n\n\n\nNo matching items\n Back to top"
+    "text": "May 2025 – Jun 2025\nChennai\n\n\n\n\n\nSenior Statistician\nCushman and Wakefield\n\nProvided consultancy for Housing Demand–Supply Report for Chennai Metropolitan Area (2046 Master Plan).\nPerformed statistical analyses, including regression modeling.\nIdentified key determinants of housing demand using household survey data.\nAssessed housing needs by location and income category.\nProjected effective demand for home purchase and social housing rental for 2031, 2036, and 2046.\nDelivered analyses and reports on time, ensuring high quality and adherence to industry best practices.\n\n\n\n\n\nSep 2024 – Dec 2024\nChennai\n\n\n\n\n\nData Analyst — Socio Economic Survey of Scheduled Tribes in Tamil Nadu\nCentre for Social Justice and Equity, Madras School of Social Work\n\nConverted raw survey data into STATA (.dta) format and prepared data in wide/long structures.\nMonitored real-time data, flagged outliers, and corrected enumerator errors.\nGenerated summary tables and assisted in post-coding and data cleaning.\nSupported preparation of rural and urban progress reports at multiple administrative levels.\n\n\n\n\n\nAug 2022 – Aug 2024\nChennai\n\n\n\n\n\nConsultant — Tamil Nadu Household Panel Survey\nMadras Institute of Development Studies\n\nServed as a half-time consultant and data analysis supervisor for the Tamil Nadu Household Panel Survey (TNHPS).\nManaged data monitoring, cleaning, and analysis in STATA for a large-scale survey involving 20,000+ households.\nEnsured data integrity and reliability to facilitate accurate and consistent subsequent analyses.\nSupervised a team to maintain high standards of data quality throughout the project.\n\n\n\n\n\nFeb 2019 – Mar 2021\nChennai\n\n\n\n\n\nStatistical Data Analyst — Tamil Nadu Household Panel Survey\nMadras Institute of Development Studies\n\nAnalyzed data of a Pre-Baseline phase of TNHPS, a longitudinal socio-economic survey covering over 240,000+ households.\nKey responsibilities included data monitoring, cleaning, and analysis using STATA.\nMajor contributor to the Tamil Nadu Covid Pulse Survey (TNCPS), a cross-sectional study.\nCleaned and analyzed TNCPS data of over 12,000+ households across three waves using STATA.\nEnhanced insights into the socio-economic impacts of the Covid-19 pandemic through data analysis of TNCPS.\nPartner Institutions: Department of Economics and Statistics, Government of Tamil Nadu, and Survey Research Center, University of Michigan.\n\n\n\n\n\nJun 2018 – Feb 2019\nHyderabad\n\n\n\n\n\nAssociate Consultant\nCore CarbonX Solutions Pvt. Ltd.\n\nDeveloped a model to prioritize Industrial Parks in Telangana State for TSIIC Ltd.\nUtilized software such as R and Dart for machine learning and Multiple Criteria Decision Making techniques.\nCoordinated 2 Swachh Bharat Mission Solid Waste Management Exposure Workshops in Tirupati.\nWorkshops funded by the National Institute of Urban Affairs (NIUA).\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "conferences.html",
@@ -140,53 +63,39 @@
     "text": "Workshops & Conferences Attended\n\n\n\n5 February 2024\nUniversity of Allahabad, India\n\n\n\n\n\nPre-Annual Convention Workshop on Advanced Data Science Techniques\nIn conjunction with the 43rd Annual Convention of ISPS\n📄 Certificate\n\n\n\n\n23–27 February 2022\nHyderabad, India\n\n\n\n\n\n24th Annual Conference of SSCA (RASTA-2022)\nOnline event on Recent Advances in Statistical Theory and Applications, ICAR-NAARM, Hyderabad\n📄 Certificate\n\n\n\n\n24–25 January 2022\nChennai, India\n\n\n\n\n\nInternational Conference on Advances in Statistical Methods and Applications (ICASMA-2022)\nOrganised by the Department of Statistics, University of Madras\n📄 Certificate\n\n\n\n\n13–15 December 2021\nManipal, India\n\n\n\n\n\n28th International Workshop on Matrices and Statistics (IWMS 2021)\nHosted by Centre for Advanced Research in Applied Mathematics and Statistics, MAHE, Manipal\n📄 Certificate\n\n\n\n\n18–20 September 2021\nGandhinagar, India\n\n\n\n\n\nInternational Workshop on Data Science (DATUM 2021)\nIn association with the International Indian Statistical Association, DA-IICT, Gandhinagar\n📄 Certificate"
   },
   {
-    "objectID": "experience.html",
-    "href": "experience.html",
-    "title": "Experience",
+    "objectID": "publications/bhat2024silhouette/index.html",
+    "href": "publications/bhat2024silhouette/index.html",
+    "title": "Some density-based silhouette diagnostics for soft clustering algorithms",
     "section": "",
-    "text": "May 2025 – Jun 2025\nChennai\n\n\n\n\n\nSenior Statistician\nCushman and Wakefield\n\nProvided consultancy for Housing Demand–Supply Report for Chennai Metropolitan Area (2046 Master Plan).\nPerformed statistical analyses, including regression modeling.\nIdentified key determinants of housing demand using household survey data.\nAssessed housing needs by location and income category.\nProjected effective demand for home purchase and social housing rental for 2031, 2036, and 2046.\nDelivered analyses and reports on time, ensuring high quality and adherence to industry best practices.\n\n\n\n\n\nSep 2024 – Dec 2024\nChennai\n\n\n\n\n\nData Analyst — Socio Economic Survey of Scheduled Tribes in Tamil Nadu\nCentre for Social Justice and Equity, Madras School of Social Work\n\nConverted raw survey data into STATA (.dta) format and prepared data in wide/long structures.\nMonitored real-time data, flagged outliers, and corrected enumerator errors.\nGenerated summary tables and assisted in post-coding and data cleaning.\nSupported preparation of rural and urban progress reports at multiple administrative levels.\n\n\n\n\n\nAug 2022 – Aug 2024\nChennai\n\n\n\n\n\nConsultant — Tamil Nadu Household Panel Survey\nMadras Institute of Development Studies\n\nServed as a half-time consultant and data analysis supervisor for the Tamil Nadu Household Panel Survey (TNHPS).\nManaged data monitoring, cleaning, and analysis in STATA for a large-scale survey involving 20,000+ households.\nEnsured data integrity and reliability to facilitate accurate and consistent subsequent analyses.\nSupervised a team to maintain high standards of data quality throughout the project.\n\n\n\n\n\nFeb 2019 – Mar 2021\nChennai\n\n\n\n\n\nStatistical Data Analyst — Tamil Nadu Household Panel Survey\nMadras Institute of Development Studies\n\nAnalyzed data of a Pre-Baseline phase of TNHPS, a longitudinal socio-economic survey covering over 240,000+ households.\nKey responsibilities included data monitoring, cleaning, and analysis using STATA.\nMajor contributor to the Tamil Nadu Covid Pulse Survey (TNCPS), a cross-sectional study.\nCleaned and analyzed TNCPS data of over 12,000+ households across three waves using STATA.\nEnhanced insights into the socio-economic impacts of the Covid-19 pandemic through data analysis of TNCPS.\nPartner Institutions: Department of Economics and Statistics, Government of Tamil Nadu, and Survey Research Center, University of Michigan.\n\n\n\n\n\nJun 2018 – Feb 2019\nHyderabad\n\n\n\n\n\nAssociate Consultant\nCore CarbonX Solutions Pvt. Ltd.\n\nDeveloped a model to prioritize Industrial Parks in Telangana State for TSIIC Ltd.\nUtilized software such as R and Dart for machine learning and Multiple Criteria Decision Making techniques.\nCoordinated 2 Swachh Bharat Mission Solid Waste Management Exposure Workshops in Tirupati.\nWorkshops funded by the National Institute of Urban Affairs (NIUA).\n\n\n\n\n\n\n\n Back to top"
+    "text": "JOURNAL ARTICLES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat Kapu and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2024\n\n\n\n\nPUBLICATION DETAILS\n\n\nCommunications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238\n\n\n\n\nLINKS\n\n\nDOI PDF\n\n\n\nOne of the main objectives of cluster analysis is to determine the most effective clustering algorithm. With the wide variety of algorithms available, assessing which one performs better is important. The performance of different clustering methods is typically measured using the Adjusted Rand Index (ARI), which relies on knowledge of the original class labels. However, this study introduces flexible modified alternatives of density-based silhouette methods for evaluating cluster performance. These proposed Density-based silhouettes can be applied to any soft clustering algorithms and do not require the original class labels. Instead, they rely on posterior probabilities. In this study, eight different soft clustering algorithms were evaluated using real and simulated data sets. The goal is to compare their effectiveness and performance using existing and proposed measures based on silhouette and the ARI.\n\n\n\n Back to top"
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Notes",
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
     "section": "",
-    "text": "Lecture notes, tutorials, and reference material — built with Bookdown and R Markdown.\n\n\nNotes on statistics, probability, and data science are being prepared. Check back soon!\n\n\n\n\n\n\n\n\n\n\nTipQuick Guide — Adding a Bookdown / R Markdown Book\n\n\n\n\n\nOption A — Link to an external hosted book:\nAdd a new card in the section below with the title, description, and URL.\nOption B — Host the book within this site:\n\nBuild your bookdown/R Markdown book locally (e.g., bookdown::render_book())\nCopy the rendered output (HTML files) into a subfolder like notes/my-book-name/\nAdd a card entry below pointing to notes/my-book-name/index.html\n\nOption C — Use a GitHub Pages link:\nIf your book is hosted on GitHub Pages (e.g., https://kskbhat.github.io/my-notes/), just link to it directly.\n\n\n\n\n\n\n\n\n\n\nComing Soon — Foundations of probability theory, distributions, and statistical inference.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — Comprehensive notes on clustering methods, evaluation metrics, and R implementations.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — From basics to advanced topics — tidyverse, package development, and Shiny apps.\nFormat: R Markdown Book\n\n\n\nComing Soon — PCA, factor analysis, discriminant analysis, and dimension reduction techniques.\nFormat: Bookdown (HTML)"
+    "text": "GitHub\nOpen-source R packages for statistical computing and cluster analysis.\nAuthors: Shrikrishna Bhat Kapu and Kiruthika C\nDOI: 10.32614/CRAN.package.Silhouette"
   },
   {
-    "objectID": "notes.html#coming-soon",
-    "href": "notes.html#coming-soon",
-    "title": "Notes",
-    "section": "",
-    "text": "Notes on statistics, probability, and data science are being prepared. Check back soon!"
+    "objectID": "software.html#blockclusterpdq",
+    "href": "software.html#blockclusterpdq",
+    "title": "Software",
+    "section": "blockclusterPDQ",
+    "text": "blockclusterPDQ\nAn R Package for Block Probabilistic Distance Clustering\n\n\n🐙 GitHub\nSource code repository\n\n\nAuthors: Shrikrishna Bhat Kapu and Kiruthika C\n\nDescription\nThe blockclusterPDQ R package implements block (co-)clustering using probabilistic distance methods. It provides a unified framework for simultaneously clustering rows and columns of a data matrix, with support for various data types including continuous, binary, and ordinal data. The package includes functions for model fitting, cluster evaluation, and visualization of co-cluster structures.\n\n\nInstallation\n# Install from GitHub\n# install.packages(\"devtools\")\ndevtools::install_github(\"kskbhat/blockclusterPDQ\")"
   },
   {
-    "objectID": "notes.html#how-to-add-your-notes",
-    "href": "notes.html#how-to-add-your-notes",
-    "title": "Notes",
+    "objectID": "posts/block-clustering-primer/index.html",
+    "href": "posts/block-clustering-primer/index.html",
+    "title": "A Primer on Block Clustering with Probabilistic Distances",
     "section": "",
-    "text": "TipQuick Guide — Adding a Bookdown / R Markdown Book\n\n\n\n\n\nOption A — Link to an external hosted book:\nAdd a new card in the section below with the title, description, and URL.\nOption B — Host the book within this site:\n\nBuild your bookdown/R Markdown book locally (e.g., bookdown::render_book())\nCopy the rendered output (HTML files) into a subfolder like notes/my-book-name/\nAdd a card entry below pointing to notes/my-book-name/index.html\n\nOption C — Use a GitHub Pages link:\nIf your book is hosted on GitHub Pages (e.g., https://kskbhat.github.io/my-notes/), just link to it directly."
+    "text": "Unlike traditional clustering that groups only rows (observations), block clustering (also called co-clustering or biclustering) simultaneously groups both rows and columns of a data matrix. This reveals hidden block structures in the data.\n\n\nConsider a gene expression dataset: you want to find groups of genes (rows) that behave similarly across groups of experimental conditions (columns). Block clustering finds these meaningful row–column combinations automatically.\n\n\n\nOur framework combines:\n\nProbabilistic distances — measuring how “far” each observation is from each cluster center in probability space\nBlock structure — jointly partitioning rows and columns\nFlexible distributions — supporting Gaussian, \\(t\\)-distributions, and non-parametric distances\n\n\\[d_{PD}(x_i, \\mu_k) = -2 \\log f(x_i \\mid \\theta_k)\\]\n\n\n\nWe modified the Extended Silhouette Index to assess block clustering quality alongside the Co-clustering Adjusted Rand Index.\n# Coming soon: blockclusterPDQ example\nlibrary(blockclusterPDQ)\n\n# Fit block clustering model\n# Evaluate using Extended Silhouette\n# Visualize co-cluster structure\n\n\n\nDetailed tutorials with code examples and real-data applications will be published here. Watch this space!\n\n\n\n\nBhat, S. K. & Kiruthika, C. (2025). Block Probabilistic Distance Clustering: A Unified Framework and Evaluation."
   },
   {
-    "objectID": "notes.html#available-notes",
-    "href": "notes.html#available-notes",
-    "title": "Notes",
+    "objectID": "posts/block-clustering-primer/index.html#what-is-block-clustering",
+    "href": "posts/block-clustering-primer/index.html#what-is-block-clustering",
+    "title": "A Primer on Block Clustering with Probabilistic Distances",
     "section": "",
-    "text": "Coming Soon — Foundations of probability theory, distributions, and statistical inference.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — Comprehensive notes on clustering methods, evaluation metrics, and R implementations.\nFormat: Bookdown (HTML)\n\n\n\nComing Soon — From basics to advanced topics — tidyverse, package development, and Shiny apps.\nFormat: R Markdown Book\n\n\n\nComing Soon — PCA, factor analysis, discriminant analysis, and dimension reduction techniques.\nFormat: Bookdown (HTML)"
-  },
-  {
-    "objectID": "posts/coming-soon/index.html",
-    "href": "posts/coming-soon/index.html",
-    "title": "Welcome to My Blog — Coming Soon!",
-    "section": "",
-    "text": "I’m excited to announce that this blog is under construction! I’ll be sharing insights from my research and experience in:\n\nCluster Analysis — New methods, diagnostics, and practical applications\nR Programming — Tips, tricks, and package development stories\n\nStatistical Theory — Making complex ideas accessible\nAcademic Life — Conference experiences, publishing tips, and more\n\n\n\nEach post will combine rigorous methodology with practical R code examples so you can apply techniques directly to your own data.\n\n\n\nIn the meantime, check out my publications and software pages for my latest work. You can also subscribe to the RSS feed for this blog to get notified when new posts go live.\n— Shrikrishna"
-  },
-  {
-    "objectID": "posts/coming-soon/index.html#blog-launching-soon",
-    "href": "posts/coming-soon/index.html#blog-launching-soon",
-    "title": "Welcome to My Blog — Coming Soon!",
-    "section": "",
-    "text": "I’m excited to announce that this blog is under construction! I’ll be sharing insights from my research and experience in:\n\nCluster Analysis — New methods, diagnostics, and practical applications\nR Programming — Tips, tricks, and package development stories\n\nStatistical Theory — Making complex ideas accessible\nAcademic Life — Conference experiences, publishing tips, and more\n\n\n\nEach post will combine rigorous methodology with practical R code examples so you can apply techniques directly to your own data.\n\n\n\nIn the meantime, check out my publications and software pages for my latest work. You can also subscribe to the RSS feed for this blog to get notified when new posts go live.\n— Shrikrishna"
+    "text": "Unlike traditional clustering that groups only rows (observations), block clustering (also called co-clustering or biclustering) simultaneously groups both rows and columns of a data matrix. This reveals hidden block structures in the data.\n\n\nConsider a gene expression dataset: you want to find groups of genes (rows) that behave similarly across groups of experimental conditions (columns). Block clustering finds these meaningful row–column combinations automatically.\n\n\n\nOur framework combines:\n\nProbabilistic distances — measuring how “far” each observation is from each cluster center in probability space\nBlock structure — jointly partitioning rows and columns\nFlexible distributions — supporting Gaussian, \\(t\\)-distributions, and non-parametric distances\n\n\\[d_{PD}(x_i, \\mu_k) = -2 \\log f(x_i \\mid \\theta_k)\\]\n\n\n\nWe modified the Extended Silhouette Index to assess block clustering quality alongside the Co-clustering Adjusted Rand Index.\n# Coming soon: blockclusterPDQ example\nlibrary(blockclusterPDQ)\n\n# Fit block clustering model\n# Evaluate using Extended Silhouette\n# Visualize co-cluster structure\n\n\n\nDetailed tutorials with code examples and real-data applications will be published here. Watch this space!\n\n\n\n\nBhat, S. K. & Kiruthika, C. (2025). Block Probabilistic Distance Clustering: A Unified Framework and Evaluation."
   },
   {
     "objectID": "posts/silhouette-intro/index.html",
@@ -203,11 +112,102 @@
     "text": "Silhouette analysis is one of the most widely used tools for evaluating the quality of a clustering solution. Introduced by Rousseeuw (1987), the silhouette width quantifies how well each observation fits within its assigned cluster compared to neighboring clusters.\n\n\nFor each observation \\(i\\) in cluster \\(C_k\\), we compute:\n\\[s(i) = \\frac{b(i) - a(i)}{\\max\\{a(i), b(i)\\}}\\]\nwhere:\n\n\\(a(i)\\) = average distance to all other points in the same cluster\n\\(b(i)\\) = minimum average distance to points in any other cluster\n\nValues range from \\(-1\\) (poor fit) to \\(+1\\) (excellent fit).\n\n\n\nWhat happens when clusters overlap? Traditional silhouette methods assume hard assignments, but many real-world problems require soft (fuzzy) clustering. That’s where density-based silhouette diagnostics come in.\n# Coming soon: example using the Silhouette R package\nlibrary(Silhouette)\n\n# Fit a soft clustering model\n# Compute density-based silhouette widths\n# Visualize results\n\n\n\nIn upcoming posts, I’ll walk through:\n\nDensity-based silhouette methods for soft clustering\nExtended silhouette for block clustering\nPractical examples with the Silhouette R package\n\nStay tuned!\n\n\n\n\nRousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis.\nBhat, S. K. & Kiruthika, C. (2024). Some density-based silhouette diagnostics for soft clustering algorithms."
   },
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Posts on statistics, clustering, R programming, and research insights. Subscribe via the RSS feed to stay updated.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to My Blog — Coming Soon!\n\n\n\n\n\n\nAnnouncement\n\n\n\nExciting content on statistics, clustering, R programming, and academic research is on its way. Stay tuned!\n\n\n\n\n\nFeb 11, 2026\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Silhouette Diagnostics for Clustering\n\n\n\n\n\n\nClustering\n\n\nR\n\n\nStatistics\n\n\n\nA gentle introduction to silhouette-based methods for evaluating cluster quality — from classical approaches to density-based extensions.\n\n\n\n\n\nJan 15, 2026\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nA Primer on Block Clustering with Probabilistic Distances\n\n\n\n\n\n\nClustering\n\n\nStatistics\n\n\nResearch\n\n\n\nAn accessible overview of block (co-)clustering — simultaneously grouping rows and columns of a data matrix using probabilistic distance methods.\n\n\n\n\n\nJan 1, 2026\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nLessons Learned from Building R Packages\n\n\n\n\n\n\nR\n\n\nSoftware\n\n\nTips\n\n\n\nPractical tips and hard-won lessons from developing the Silhouette and blockclusterPDQ R packages — from CRAN submission to documentation.\n\n\n\n\n\nDec 15, 2025\n\n\n1 min\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shrikrishna Bhat K",
+    "section": "",
+    "text": "Developing robust clustering methodologies for complex data.\n\nPhD Candidate in Statistics specializing in Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics.\nI work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability.\nOver 6 years of experience in large-scale socio-economic surveys, urban analytics, and policy-oriented data research.\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/coming-soon/index.html",
+    "href": "posts/coming-soon/index.html",
+    "title": "Welcome to My Blog — Coming Soon!",
+    "section": "",
+    "text": "I’m excited to announce that this blog is under construction! I’ll be sharing insights from my research and experience in:\n\nCluster Analysis — New methods, diagnostics, and practical applications\nR Programming — Tips, tricks, and package development stories\n\nStatistical Theory — Making complex ideas accessible\nAcademic Life — Conference experiences, publishing tips, and more\n\n\n\nEach post will combine rigorous methodology with practical R code examples so you can apply techniques directly to your own data.\n\n\n\nIn the meantime, check out my publications and software pages for my latest work. You can also subscribe to the RSS feed for this blog to get notified when new posts go live.\n— Shrikrishna"
+  },
+  {
+    "objectID": "posts/coming-soon/index.html#blog-launching-soon",
+    "href": "posts/coming-soon/index.html#blog-launching-soon",
+    "title": "Welcome to My Blog — Coming Soon!",
+    "section": "",
+    "text": "I’m excited to announce that this blog is under construction! I’ll be sharing insights from my research and experience in:\n\nCluster Analysis — New methods, diagnostics, and practical applications\nR Programming — Tips, tricks, and package development stories\n\nStatistical Theory — Making complex ideas accessible\nAcademic Life — Conference experiences, publishing tips, and more\n\n\n\nEach post will combine rigorous methodology with practical R code examples so you can apply techniques directly to your own data.\n\n\n\nIn the meantime, check out my publications and software pages for my latest work. You can also subscribe to the RSS feed for this blog to get notified when new posts go live.\n— Shrikrishna"
+  },
+  {
+    "objectID": "posts/r-package-dev-tips/index.html",
+    "href": "posts/r-package-dev-tips/index.html",
+    "title": "Lessons Learned from Building R Packages",
+    "section": "",
+    "text": "Turning a collection of research scripts into a polished, CRAN-ready R package is a journey. Here are some lessons I’ve learned while developing Silhouette and blockclusterPDQ.\n\n\n# Scaffold your package\nusethis::create_package(\"myPackage\")\nusethis::use_testthat()\nusethis::use_vignette(\"getting-started\")\n\n\n\nDon’t wait until the package is “done” — write tests as you code each function.\n\n\n\nKeep documentation close to the code. Future-you will thank present-you.\n\n\n\n\nRun R CMD check --as-cran locally before submitting\nPay attention to NOTEs — CRAN reviewers will\nKeep examples fast (&lt; 5 seconds each)\n\n\n\n\nI’ll expand each of these into detailed posts with real examples from my package development experience.\nStay tuned!"
+  },
+  {
+    "objectID": "posts/r-package-dev-tips/index.html#from-research-code-to-cran-package",
+    "href": "posts/r-package-dev-tips/index.html#from-research-code-to-cran-package",
+    "title": "Lessons Learned from Building R Packages",
+    "section": "",
+    "text": "Turning a collection of research scripts into a polished, CRAN-ready R package is a journey. Here are some lessons I’ve learned while developing Silhouette and blockclusterPDQ.\n\n\n# Scaffold your package\nusethis::create_package(\"myPackage\")\nusethis::use_testthat()\nusethis::use_vignette(\"getting-started\")\n\n\n\nDon’t wait until the package is “done” — write tests as you code each function.\n\n\n\nKeep documentation close to the code. Future-you will thank present-you.\n\n\n\n\nRun R CMD check --as-cran locally before submitting\nPay attention to NOTEs — CRAN reviewers will\nKeep examples fast (&lt; 5 seconds each)\n\n\n\n\nI’ll expand each of these into detailed posts with real examples from my package development experience.\nStay tuned!"
+  },
+  {
     "objectID": "publications/bhat2025blockpdq_preprint/index.html",
     "href": "publications/bhat2025blockpdq_preprint/index.html",
     "title": "Block Probabilistic Distance Clustering: A Unified Framework and Evaluation",
     "section": "",
     "text": "PREPRINTS\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat Kapu and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n25 June 2025\n\n\n\n\nPUBLICATION DETAILS\n\n\nPreprint, Version 1\n\n\n\n\nLINKS\n\n\nDOI ResearchSquare\n\n\n\nProbabilistic Distance (PD) clustering is a flexible and widely studied method in cluster analysis, owing to its probabilistic framework that combines distance measures with cluster membership probabilities. Building on this approach, we propose a novel block clustering framework and algorithm. The proposed algorithm is validated using both non-parametric distances, such as Squared Euclidean and Squared Mahalanobis distances, and parametric probabilistic distances derived from Gaussian and location Scale t-distributions for continuous data. To evaluate the clustering performance of the proposed algorithms, we modified the existing Extended Silhouette Index and used it alongside the established Co-clustering Adjusted Rand Index for comparison. This comprehensive evaluation highlights the effectiveness of our framework in advancing block clustering methodologies.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Google Scholar    ORCID"
+  },
+  {
+    "objectID": "publications.html#journal-articles",
+    "href": "publications.html#journal-articles",
+    "title": "Publications",
+    "section": "Journal Articles",
+    "text": "Journal Articles\n\nShrikrishna Bhat Kapu and Kiruthika C (2024). “Some density-based silhouette diagnostics for soft clustering algorithms.” Communications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238. DOI: 10.1080/23737484.2024.2408534."
+  },
+  {
+    "objectID": "publications.html#preprints",
+    "href": "publications.html#preprints",
+    "title": "Publications",
+    "section": "Preprints",
+    "text": "Preprints\n\nShrikrishna Bhat Kapu and Kiruthika C (2025). “Block Probabilistic Distance Clustering: A Unified Framework and Evaluation.” Preprint, Version 1. DOI: 10.21203/rs.3.rs-6973596/v1. ResearchSquare: rs-6973596/v1."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "View Resume"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\n\n\n\nFeb 2021 – Dec 2025\nPondicherry University\n\n\n\n\n\nPhD in Statistics\n\nResearch Area: Cluster Analysis, Block Clustering, and Cluster Diagnostics\nSupervisor: Dr. Kiruthika\nThesis Title: Contributions to Block Clustering and its Diagnostic Measures\nThesis Submitted: 22 December 2025\n\n\n\n\n\nJul 2016 – Apr 2018\nPondicherry University\n\n\n\n\n\nMaster of Science in Statistics\nCGPA: 7.75/10\n\n\n\n\nJul 2013 – Apr 2016\nAndhra Loyola College\n\n\n\n\n\nBachelor of Science in Mathematics, Statistics, and Physics\nPercentage: 80.31%"
+  },
+  {
+    "objectID": "cv.html#skills-languages",
+    "href": "cv.html#skills-languages",
+    "title": "Curriculum Vitae",
+    "section": "Skills & Languages",
+    "text": "Skills & Languages\n\n\n\nCategory\nDetails\n\n\n\n\nProgramming Languages\nR · Python\n\n\nStatistical Tools\nSTATA · SPSS · Minitab\n\n\nData Tools\nMS Excel · SQL · Power BI · Tableau\n\n\nVersion Control\nGitHub\n\n\nOther Tools\nLaTeX · SurveyCTO · MS Office\n\n\n\n\nLanguages Known\n\n\n\nLanguage\nProficiency\n\n\n\n\nEnglish\nFluent\n\n\nKannada\nNative\n\n\nTelugu\nNative\n\n\nHindi\nFluent\n\n\nTulu\nNative\n\n\nTamil\nBasic"
+  },
+  {
+    "objectID": "cv.html#summary-of-qualifications",
+    "href": "cv.html#summary-of-qualifications",
+    "title": "Curriculum Vitae",
+    "section": "Summary of Qualifications",
+    "text": "Summary of Qualifications\n\n6+ years of experience in advanced statistical modeling and survey analytics\nPublished author with peer-reviewed articles in international journals\nDeveloper of CRAN R packages for cluster analysis diagnostics\nExperience leading large-scale survey projects (240,000+ households)\nConsultancy experience for urban housing demand assessments\nPresentations at international conferences (IISA, ISPS, ICSTA)\n\n\n\n💼 Full Experience\nDetailed work history\n\n\n📖 Publications\nAll publications and preprints"
   },
   {
     "objectID": "research.html",
