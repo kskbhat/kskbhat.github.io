@@ -1,0 +1,48 @@
+---
+title: "A Primer on Block Clustering with Probabilistic Distances"
+description: "An accessible overview of block (co-)clustering — simultaneously grouping rows and columns of a data matrix using probabilistic distance methods."
+author: "Shrikrishna Bhat Kapu"
+date: "2026-01-01"
+categories: [Clustering, Statistics, Research]
+image: "thumbnail.png"
+draft: false
+---
+
+## What Is Block Clustering?
+
+Unlike traditional clustering that groups only rows (observations), **block clustering** (also called **co-clustering** or **biclustering**) simultaneously groups both rows and columns of a data matrix. This reveals hidden block structures in the data.
+
+### Why Block Clustering?
+
+Consider a gene expression dataset: you want to find groups of genes (rows) that behave similarly across groups of experimental conditions (columns). Block clustering finds these meaningful row–column combinations automatically.
+
+### The Probabilistic Distance Approach
+
+Our framework combines:
+
+1. **Probabilistic distances** — measuring how "far" each observation is from each cluster center in probability space
+2. **Block structure** — jointly partitioning rows and columns
+3. **Flexible distributions** — supporting Gaussian, $t$-distributions, and non-parametric distances
+
+$$d_{PD}(x_i, \mu_k) = -2 \log f(x_i \mid \theta_k)$$
+
+### Evaluating Block Clustering
+
+We modified the Extended Silhouette Index to assess block clustering quality alongside the Co-clustering Adjusted Rand Index.
+
+```r
+# Coming soon: blockclusterPDQ example
+library(blockclusterPDQ)
+
+# Fit block clustering model
+# Evaluate using Extended Silhouette
+# Visualize co-cluster structure
+```
+
+### Coming Soon
+
+Detailed tutorials with code examples and real-data applications will be published here. Watch this space!
+
+### References
+
+- Bhat, S. K. & Kiruthika, C. (2025). Block Probabilistic Distance Clustering: A Unified Framework and Evaluation.

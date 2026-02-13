@@ -1,0 +1,78 @@
+---
+title: "Notes"
+page-layout: full
+title-block-banner: false
+toc: true
+---
+
+::: {.column-page}
+
+Lecture notes, tutorials, and reference material — built with [Bookdown](https://bookdown.org/) and [R Markdown](https://rmarkdown.rstudio.com/).
+
+## 🚧 Coming Soon
+
+Notes on statistics, probability, and data science are being prepared. Check back soon!
+
+---
+
+## How to Add Your Notes
+
+::: {.callout-tip collapse="true"}
+## Quick Guide — Adding a Bookdown / R Markdown Book
+
+**Option A — Link to an external hosted book:**
+
+Add a new card in the section below with the title, description, and URL.
+
+**Option B — Host the book within this site:**
+
+1. Build your bookdown/R Markdown book locally (e.g., `bookdown::render_book()`)
+2. Copy the rendered output (HTML files) into a subfolder like `notes/my-book-name/`
+3. Add a card entry below pointing to `notes/my-book-name/index.html`
+
+**Option C — Use a GitHub Pages link:**
+
+If your book is hosted on GitHub Pages (e.g., `https://kskbhat.github.io/my-notes/`), just link to it directly.
+:::
+
+---
+
+## Available Notes
+
+::: {.card-grid-2}
+
+::: {.card}
+### 📐 Probability & Statistics
+
+*Coming Soon* — Foundations of probability theory, distributions, and statistical inference.
+
+**Format:** Bookdown (HTML)
+:::
+
+::: {.card}
+### 📊 Cluster Analysis
+
+*Coming Soon* — Comprehensive notes on clustering methods, evaluation metrics, and R implementations.
+
+**Format:** Bookdown (HTML)
+:::
+
+::: {.card}
+### 💻 R Programming
+
+*Coming Soon* — From basics to advanced topics — tidyverse, package development, and Shiny apps.
+
+**Format:** R Markdown Book
+:::
+
+::: {.card}
+### 📈 Multivariate Statistics
+
+*Coming Soon* — PCA, factor analysis, discriminant analysis, and dimension reduction techniques.
+
+**Format:** Bookdown (HTML)
+:::
+
+:::
+
+:::

@@ -1,0 +1,88 @@
+project:
+  type: website
+  output-dir: docs
+  pre-render: python _scripts/generate_pages.py
+  resources:
+    - "CVShrikrishnaBhat/CVShrikrishnaBhat.pdf"
+    - "CVShrikrishnaBhat/Certificates/**"
+    - "CVShrikrishnaBhat/Articles/**"
+
+website:
+  title: "Shrikrishna Bhat K"
+  site-url: https://kskbhat.github.io
+  description: "Personal academic website of Shrikrishna Bhat K — PhD candidate in Statistics, researcher in cluster analysis, block clustering, and cluster diagnostics."
+  favicon: favicon.png
+
+  navbar:
+    background: "#FFF9F2"
+    foreground: "#2B1F14"
+    logo-alt: "Shrikrishna Bhat K"
+    left:
+      - text: "Research"
+        icon: flask
+        href: research.qmd
+      - text: "Publications"
+        icon: book
+        href: publications.qmd
+      - text: "Software"
+        icon: code-slash
+        href: software.qmd
+      - text: "Experience"
+        icon: briefcase
+        href: experience.qmd
+      - text: "Conferences"
+        icon: easel
+        href: conferences.qmd
+      - text: "CV"
+        icon: file-earmark-text
+        href: cv.qmd
+      - text: "Writing"
+        menu:
+          - text: "Notes"
+            href: notes.qmd
+          - text: "Blog"
+            href: blog.qmd
+    right:
+      - icon: github
+        href: https://github.com/kskbhat
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/kskbhat/
+        aria-label: LinkedIn
+      - text: "<i class='ai ai-orcid'></i>"
+        href: https://orcid.org/0009-0000-6180-5783
+        aria-label: ORCID
+      - text: "<i class='ai ai-google-scholar'></i>"
+        href: https://scholar.google.com/citations?user=Yj3yW6MAAAAJ
+        aria-label: Google Scholar
+      - icon: rss
+        href: blog.xml
+        aria-label: RSS Feed
+
+  page-footer:
+    left: "© 2026 Shrikrishna Bhat K"
+    right: "Built with [Quarto](https://quarto.org)"
+
+  page-navigation: true
+  back-to-top-navigation: true
+
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    theme:
+      light: [litera, custom.scss]
+      dark: [darkly, custom-dark.scss]
+
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    link-external-newwindow: true
+
+bibliography: reference.bib

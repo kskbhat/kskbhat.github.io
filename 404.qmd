@@ -1,0 +1,11 @@
+---
+title: "Page Not Found"
+toc: false
+page-layout: full
+---
+
+# 404 — Page Not Found
+
+Sorry, the page you are looking for does not exist.
+
+[← Back to Home](index.qmd)

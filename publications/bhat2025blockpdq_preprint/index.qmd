@@ -1,0 +1,28 @@
+---
+title: "Block Probabilistic Distance Clustering: A Unified Framework and Evaluation"
+toc: false
+---
+
+<span class="pub-type-badge">PREPRINTS</span>
+
+<div class="pub-meta-card">
+<div class="pub-meta-row">
+<div class="pub-meta-label">AUTHORS</div>
+<div class="pub-meta-value">Shrikrishna Bhat Kapu and Kiruthika C</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">PUBLISHED</div>
+<div class="pub-meta-value">25 June 2025</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">PUBLICATION DETAILS</div>
+<div class="pub-meta-value">Preprint, Version 1</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">LINKS</div>
+<div class="pub-meta-value"><a href="https://doi.org/10.21203/rs.3.rs-6973596/v1" class="pub-link-badge pub-link-doi" target="_blank" rel="noopener">DOI</a>
+<a href="https://www.researchsquare.com/article/rs-6973596/v1" class="pub-link-badge pub-link-preprint" target="_blank" rel="noopener">ResearchSquare</a></div>
+</div>
+</div>
+
+Probabilistic Distance (PD) clustering is a flexible and widely studied method in cluster analysis, owing to its probabilistic framework that combines distance measures with cluster membership probabilities. Building on this approach, we propose a novel block clustering framework and algorithm. The proposed algorithm is validated using both non-parametric distances, such as Squared Euclidean and Squared Mahalanobis distances, and parametric probabilistic distances derived from Gaussian and location Scale t-distributions for continuous data. To evaluate the clustering performance of the proposed algorithms, we modified the existing Extended Silhouette Index and used it alongside the established Co-clustering Adjusted Rand Index for comparison. This comprehensive evaluation highlights the effectiveness of our framework in advancing block clustering methodologies.

@@ -1,0 +1,28 @@
+---
+title: "Some density-based silhouette diagnostics for soft clustering algorithms"
+toc: false
+---
+
+<span class="pub-type-badge">JOURNAL ARTICLES</span>
+
+<div class="pub-meta-card">
+<div class="pub-meta-row">
+<div class="pub-meta-label">AUTHORS</div>
+<div class="pub-meta-value">Shrikrishna Bhat Kapu and Kiruthika C</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">PUBLISHED</div>
+<div class="pub-meta-value">2024</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">PUBLICATION DETAILS</div>
+<div class="pub-meta-value"><em>Communications in Statistics: Case Studies, Data Analysis and Applications</em>, <strong>10</strong>(3–4), 221–238</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">LINKS</div>
+<div class="pub-meta-value"><a href="https://doi.org/10.1080/23737484.2024.2408534" class="pub-link-badge pub-link-doi" target="_blank" rel="noopener">DOI</a>
+<a href="../../CVShrikrishnaBhat/Articles/10.108023737484.2024.2408534.pdf" class="pub-link-badge pub-link-pdf" target="_blank" rel="noopener">PDF</a></div>
+</div>
+</div>
+
+One of the main objectives of cluster analysis is to determine the most effective clustering algorithm. With the wide variety of algorithms available, assessing which one performs better is important. The performance of different clustering methods is typically measured using the Adjusted Rand Index (ARI), which relies on knowledge of the original class labels. However, this study introduces flexible modified alternatives of density-based silhouette methods for evaluating cluster performance. These proposed Density-based silhouettes can be applied to any soft clustering algorithms and do not require the original class labels. Instead, they rely on posterior probabilities. In this study, eight different soft clustering algorithms were evaluated using real and simulated data sets. The goal is to compare their effectiveness and performance using existing and proposed measures based on silhouette and the ARI.

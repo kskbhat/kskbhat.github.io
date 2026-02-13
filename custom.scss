@@ -1,0 +1,86 @@
+/*-- scss:defaults --*/
+
+// ---- Primary palette (refined amber + muted teal accent) ----
+$primary:       #9C6B1F !default;   // Refined amber
+$secondary:     #2F6F73 !default;   // Muted teal (secondary accent)
+$success:       #5a8a3c !default;   // Muted olive green
+$info:          #2F6F73 !default;   // Teal for info callouts
+$warning:       #C08A1A !default;   // Clean golden highlight
+$danger:        #B44D3E !default;   // Terracotta red
+
+// ---- Typography ----
+$font-family-sans-serif: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$headings-font-family:   "IBM Plex Serif", "Georgia", "Times New Roman", serif !default;
+$headings-font-weight:   600 !default;
+$font-size-root:         1rem !default;
+$line-height-base:       1.65 !default;
+
+// ---- Links ----
+$link-color:      #2F6F73 !default;  // Muted teal links
+$link-decoration: none !default;
+
+// ---- Navbar ----
+$navbar-bg:       #FFF9F2 !default;  // Warm off-white
+$navbar-fg:       #2B1F14 !default;
+$navbar-hl:       $primary !default;
+
+// ---- Footer ----
+$footer-bg:       #FFF9F2 !default;
+$footer-fg:       #7a6a5a !default;
+
+// ---- Cards ----
+$card-bg:           #ffffff !default;
+$card-border-color: #E6DDD0 !default;
+
+// ---- Code blocks ----
+$code-block-bg:   #faf7f2 !default;
+
+/*-- scss:rules --*/
+
+// Clean navbar bottom border
+.navbar {
+  border-bottom: 1px solid #E6DDD0;
+  box-shadow: 0 1px 3px rgba(100, 70, 30, 0.06);
+}
+
+// Refined navbar title
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #2B1F14 !important;
+  letter-spacing: -0.01em;
+}
+
+// Nav links styling
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 0.92rem;
+  color: #5a4a3a !important;
+  transition: color 0.2s;
+  padding: 0.5rem 0.85rem !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: $primary !important;
+}
+
+// Subtle footer
+.nav-footer {
+  border-top: 1px solid #E6DDD0;
+  font-size: 0.88rem;
+}
+
+// Better heading colors
+h1, h2, h3, h4, h5, h6 {
+  color: #2B1F14;
+}
+h2 {
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #E6DDD0;
+  margin-bottom: 1rem;
+}
+
+// TOC refinement
+.sidebar nav[role="doc-toc"] {
+  font-size: 0.88rem;
+}

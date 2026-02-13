@@ -1,0 +1,28 @@
+---
+title: "Welcome to My Blog — Coming Soon!"
+description: "Exciting content on statistics, clustering, R programming, and academic research is on its way. Stay tuned!"
+author: "Shrikrishna Bhat Kapu"
+date: "2026-02-11"
+categories: [Announcement]
+image: "thumbnail.png"
+draft: false
+---
+
+## 🚧 Blog Launching Soon
+
+I'm excited to announce that this blog is under construction! I'll be sharing insights from my research and experience in:
+
+- **Cluster Analysis** — New methods, diagnostics, and practical applications
+- **R Programming** — Tips, tricks, and package development stories  
+- **Statistical Theory** — Making complex ideas accessible
+- **Academic Life** — Conference experiences, publishing tips, and more
+
+### What to Expect
+
+Each post will combine **rigorous methodology** with **practical R code examples** so you can apply techniques directly to your own data.
+
+### Stay Connected
+
+In the meantime, check out my [publications](/publications.html) and [software](/software.html) pages for my latest work. You can also subscribe to the **RSS feed** for this blog to get notified when new posts go live.
+
+*— Shrikrishna*

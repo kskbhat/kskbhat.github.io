@@ -1,0 +1,65 @@
+---
+title: "Research"
+subtitle: "Research interests and focus areas"
+---
+
+My doctoral research focuses on **Block Probabilistic Distance Clustering (BPDQ)** and its diagnostic measures — work that has resulted in peer-reviewed publications, R packages on CRAN, and invited conference presentations.
+
+---
+
+## Research Interests
+
+- **Cluster Analysis** — Theory and methods for partitioning data into meaningful groups
+- **Block Clustering (Co-clustering)** — Simultaneous clustering of rows and columns of data matrices
+- **Probabilistic Distance Clustering** — Distance-based approaches with probabilistic foundations
+- **Cluster Diagnostics** — Silhouette-based and density-based measures for evaluating clustering quality
+- **Statistical Computing** — Development of R packages for reproducible research
+- **Survey Analytics** — Design and analysis of large-scale socio-economic surveys
+- **Applied Statistics** — Regression modeling, multivariate analysis, and data-driven inference
+
+---
+
+## PhD Research
+
+**Contributions to Block Clustering and its Diagnostic Measures**
+
+::: {.phd-details}
+
+| | |
+|---|---|
+| **Institution** | [Pondicherry University](https://www.pondiuni.edu.in/) |
+| **Supervisor** | [Dr. Kiruthika](https://www.pondiuni.edu.in/faculy_profiles/dr-kiruthika/) |
+| **Period** | February 2021 – December 2025 |
+| **Thesis Submitted** | 22 December 2025 |
+
+:::
+
+### Key Contributions
+
+1. **Density-Based Silhouette Diagnostics** — Proposed novel silhouette diagnostics for evaluating soft clustering algorithms, extending the classical silhouette framework to accommodate fuzzy and probabilistic cluster memberships.
+
+2. **Block Probabilistic Distance Clustering** — Developed a unified framework for block (co-)clustering using probabilistic distance methods, with theoretical foundations and extensive empirical validation.
+
+3. **R Packages** — Built and published open-source software:
+   - [Silhouette](https://kskbhat.github.io/Silhouette) — CRAN package for proximity measure based diagnostics
+   - [blockclusterPDQ](https://github.com/kskbhat/blockclusterPDQ) — R package for block probabilistic distance clustering
+
+---
+
+## Research Output
+
+::: {.research-output}
+
+<!-- Auto-generated counts from reference.bib -->
+{{< include _includes/research_counts.md >}}
+
+:::
+
+::: {.card-grid-2}
+
+::: {.card}
+### [📖 See all publications →](publications.qmd)
+View complete list of publications, preprints, and conference papers.
+:::
+
+:::

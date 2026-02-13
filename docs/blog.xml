@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Shrikrishna Bhat K</title>
+<link>https://kskbhat.github.io/blog.html</link>
+<atom:link href="https://kskbhat.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Personal academic website of Shrikrishna Bhat K — PhD candidate in Statistics, researcher in cluster analysis, block clustering, and cluster diagnostics.</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Tue, 10 Feb 2026 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome to My Blog — Coming Soon!</title>
+  <dc:creator>Shrikrishna Bhat Kapu</dc:creator>
+  <link>https://kskbhat.github.io/posts/coming-soon/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="blog-launching-soon" class="level2">
+<h2 class="anchored" data-anchor-id="blog-launching-soon">🚧 Blog Launching Soon</h2>
+<p>I’m excited to announce that this blog is under construction! I’ll be sharing insights from my research and experience in:</p>
+<ul>
+<li><strong>Cluster Analysis</strong> — New methods, diagnostics, and practical applications</li>
+<li><strong>R Programming</strong> — Tips, tricks, and package development stories<br>
+</li>
+<li><strong>Statistical Theory</strong> — Making complex ideas accessible</li>
+<li><strong>Academic Life</strong> — Conference experiences, publishing tips, and more</li>
+</ul>
+<section id="what-to-expect" class="level3">
+<h3 class="anchored" data-anchor-id="what-to-expect">What to Expect</h3>
+<p>Each post will combine <strong>rigorous methodology</strong> with <strong>practical R code examples</strong> so you can apply techniques directly to your own data.</p>
+</section>
+<section id="stay-connected" class="level3">
+<h3 class="anchored" data-anchor-id="stay-connected">Stay Connected</h3>
+<p>In the meantime, check out my <a href="../..\publications.html">publications</a> and <a href="../..\software.html">software</a> pages for my latest work. You can also subscribe to the <strong>RSS feed</strong> for this blog to get notified when new posts go live.</p>
+<p><em>— Shrikrishna</em></p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Announcement</category>
+  <guid>https://kskbhat.github.io/posts/coming-soon/</guid>
+  <pubDate>Tue, 10 Feb 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://kskbhat.github.io/posts/coming-soon/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Understanding Silhouette Diagnostics for Clustering</title>
+  <dc:creator>Shrikrishna Bhat Kapu</dc:creator>
+  <link>https://kskbhat.github.io/posts/silhouette-intro/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="what-are-silhouette-diagnostics" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-silhouette-diagnostics">What Are Silhouette Diagnostics?</h2>
+<p>Silhouette analysis is one of the most widely used tools for evaluating the quality of a clustering solution. Introduced by Rousseeuw (1987), the silhouette width quantifies how well each observation fits within its assigned cluster compared to neighboring clusters.</p>
+<section id="the-classical-silhouette" class="level3">
+<h3 class="anchored" data-anchor-id="the-classical-silhouette">The Classical Silhouette</h3>
+<p>For each observation <img src="https://latex.codecogs.com/png.latex?i"> in cluster <img src="https://latex.codecogs.com/png.latex?C_k">, we compute:</p>
+<p><img src="https://latex.codecogs.com/png.latex?s(i)%20=%20%5Cfrac%7Bb(i)%20-%20a(i)%7D%7B%5Cmax%5C%7Ba(i),%20b(i)%5C%7D%7D"></p>
+<p>where:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?a(i)"> = average distance to all other points in the same cluster</li>
+<li><img src="https://latex.codecogs.com/png.latex?b(i)"> = minimum average distance to points in any other cluster</li>
+</ul>
+<p>Values range from <img src="https://latex.codecogs.com/png.latex?-1"> (poor fit) to <img src="https://latex.codecogs.com/png.latex?+1"> (excellent fit).</p>
+</section>
+<section id="beyond-hard-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="beyond-hard-clustering">Beyond Hard Clustering</h3>
+<p>What happens when clusters overlap? Traditional silhouette methods assume hard assignments, but many real-world problems require <strong>soft (fuzzy) clustering</strong>. That’s where density-based silhouette diagnostics come in.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Coming soon: example using the Silhouette R package</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(Silhouette)</span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit a soft clustering model</span></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Compute density-based silhouette widths</span></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Visualize results</span></span></code></pre></div></div>
+</section>
+<section id="whats-next" class="level3">
+<h3 class="anchored" data-anchor-id="whats-next">What’s Next</h3>
+<p>In upcoming posts, I’ll walk through:</p>
+<ol type="1">
+<li>Density-based silhouette methods for soft clustering</li>
+<li>Extended silhouette for block clustering</li>
+<li>Practical examples with the <code>Silhouette</code> R package</li>
+</ol>
+<p><em>Stay tuned!</em></p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ul>
+<li>Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis.</li>
+<li>Bhat, S. K. &amp; Kiruthika, C. (2024). Some density-based silhouette diagnostics for soft clustering algorithms.</li>
+</ul>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Clustering</category>
+  <category>R</category>
+  <category>Statistics</category>
+  <guid>https://kskbhat.github.io/posts/silhouette-intro/</guid>
+  <pubDate>Wed, 14 Jan 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://kskbhat.github.io/posts/silhouette-intro/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>A Primer on Block Clustering with Probabilistic Distances</title>
+  <dc:creator>Shrikrishna Bhat Kapu</dc:creator>
+  <link>https://kskbhat.github.io/posts/block-clustering-primer/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="what-is-block-clustering" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-block-clustering">What Is Block Clustering?</h2>
+<p>Unlike traditional clustering that groups only rows (observations), <strong>block clustering</strong> (also called <strong>co-clustering</strong> or <strong>biclustering</strong>) simultaneously groups both rows and columns of a data matrix. This reveals hidden block structures in the data.</p>
+<section id="why-block-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="why-block-clustering">Why Block Clustering?</h3>
+<p>Consider a gene expression dataset: you want to find groups of genes (rows) that behave similarly across groups of experimental conditions (columns). Block clustering finds these meaningful row–column combinations automatically.</p>
+</section>
+<section id="the-probabilistic-distance-approach" class="level3">
+<h3 class="anchored" data-anchor-id="the-probabilistic-distance-approach">The Probabilistic Distance Approach</h3>
+<p>Our framework combines:</p>
+<ol type="1">
+<li><strong>Probabilistic distances</strong> — measuring how “far” each observation is from each cluster center in probability space</li>
+<li><strong>Block structure</strong> — jointly partitioning rows and columns</li>
+<li><strong>Flexible distributions</strong> — supporting Gaussian, <img src="https://latex.codecogs.com/png.latex?t">-distributions, and non-parametric distances</li>
+</ol>
+<p><img src="https://latex.codecogs.com/png.latex?d_%7BPD%7D(x_i,%20%5Cmu_k)%20=%20-2%20%5Clog%20f(x_i%20%5Cmid%20%5Ctheta_k)"></p>
+</section>
+<section id="evaluating-block-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="evaluating-block-clustering">Evaluating Block Clustering</h3>
+<p>We modified the Extended Silhouette Index to assess block clustering quality alongside the Co-clustering Adjusted Rand Index.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Coming soon: blockclusterPDQ example</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(blockclusterPDQ)</span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit block clustering model</span></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Evaluate using Extended Silhouette</span></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Visualize co-cluster structure</span></span></code></pre></div></div>
+</section>
+<section id="coming-soon" class="level3">
+<h3 class="anchored" data-anchor-id="coming-soon">Coming Soon</h3>
+<p>Detailed tutorials with code examples and real-data applications will be published here. Watch this space!</p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ul>
+<li>Bhat, S. K. &amp; Kiruthika, C. (2025). Block Probabilistic Distance Clustering: A Unified Framework and Evaluation.</li>
+</ul>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Clustering</category>
+  <category>Statistics</category>
+  <category>Research</category>
+  <guid>https://kskbhat.github.io/posts/block-clustering-primer/</guid>
+  <pubDate>Wed, 31 Dec 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://kskbhat.github.io/posts/block-clustering-primer/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Lessons Learned from Building R Packages</title>
+  <dc:creator>Shrikrishna Bhat Kapu</dc:creator>
+  <link>https://kskbhat.github.io/posts/r-package-dev-tips/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="from-research-code-to-cran-package" class="level2">
+<h2 class="anchored" data-anchor-id="from-research-code-to-cran-package">From Research Code to CRAN Package</h2>
+<p>Turning a collection of research scripts into a polished, CRAN-ready R package is a journey. Here are some lessons I’ve learned while developing <code>Silhouette</code> and <code>blockclusterPDQ</code>.</p>
+<section id="start-with-usethis-and-devtools" class="level3">
+<h3 class="anchored" data-anchor-id="start-with-usethis-and-devtools">1. Start with <code>usethis</code> and <code>devtools</code></h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Scaffold your package</span></span>
+<span id="cb1-2">usethis<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">create_package</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"myPackage"</span>)</span>
+<span id="cb1-3">usethis<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">use_testthat</span>()</span>
+<span id="cb1-4">usethis<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">use_vignette</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"getting-started"</span>)</span></code></pre></div></div>
+</section>
+<section id="write-tests-early" class="level3">
+<h3 class="anchored" data-anchor-id="write-tests-early">2. Write Tests Early</h3>
+<p>Don’t wait until the package is “done” — write tests as you code each function.</p>
+</section>
+<section id="document-with-roxygen2" class="level3">
+<h3 class="anchored" data-anchor-id="document-with-roxygen2">3. Document with <code>roxygen2</code></h3>
+<p>Keep documentation close to the code. Future-you will thank present-you.</p>
+</section>
+<section id="cran-submission-tips" class="level3">
+<h3 class="anchored" data-anchor-id="cran-submission-tips">4. CRAN Submission Tips</h3>
+<ul>
+<li>Run <code>R CMD check --as-cran</code> locally before submitting</li>
+<li>Pay attention to NOTEs — CRAN reviewers will</li>
+<li>Keep examples fast (&lt; 5 seconds each)</li>
+</ul>
+</section>
+<section id="more-details-coming-soon" class="level3">
+<h3 class="anchored" data-anchor-id="more-details-coming-soon">More Details Coming Soon</h3>
+<p>I’ll expand each of these into detailed posts with real examples from my package development experience.</p>
+<p><em>Stay tuned!</em></p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>R</category>
+  <category>Software</category>
+  <category>Tips</category>
+  <guid>https://kskbhat.github.io/posts/r-package-dev-tips/</guid>
+  <pubDate>Sun, 14 Dec 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://kskbhat.github.io/posts/r-package-dev-tips/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>

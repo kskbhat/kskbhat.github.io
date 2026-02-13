@@ -1,0 +1,19 @@
+---
+title: "Publications"
+subtitle: "Peer-reviewed publications and preprints"
+---
+
+<div class="title-with-links">
+<a href="https://scholar.google.com/citations?user=Yj3yW6MAAAAJ" class="profile-link-pill" target="_blank" rel="noopener">
+Google Scholar <i class="ai ai-google-scholar"></i>
+</a>
+<a href="https://orcid.org/0009-0000-6180-5783" class="profile-link-pill" target="_blank" rel="noopener">
+ORCID <i class="ai ai-orcid"></i>
+</a>
+</div>
+
+---
+
+<!-- Auto-generated from reference.bib by _scripts/generate_pages.py -->
+{{< include _includes/publications_content.md >}}
+

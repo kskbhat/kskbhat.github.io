@@ -1,0 +1,42 @@
+---
+title: "Lessons Learned from Building R Packages"
+description: "Practical tips and hard-won lessons from developing the Silhouette and blockclusterPDQ R packages — from CRAN submission to documentation."
+author: "Shrikrishna Bhat Kapu"
+date: "2025-12-15"
+categories: [R, Software, Tips]
+image: "thumbnail.png"
+draft: false
+---
+
+## From Research Code to CRAN Package
+
+Turning a collection of research scripts into a polished, CRAN-ready R package is a journey. Here are some lessons I've learned while developing `Silhouette` and `blockclusterPDQ`.
+
+### 1. Start with `usethis` and `devtools`
+
+```r
+# Scaffold your package
+usethis::create_package("myPackage")
+usethis::use_testthat()
+usethis::use_vignette("getting-started")
+```
+
+### 2. Write Tests Early
+
+Don't wait until the package is "done" — write tests as you code each function.
+
+### 3. Document with `roxygen2`
+
+Keep documentation close to the code. Future-you will thank present-you.
+
+### 4. CRAN Submission Tips
+
+- Run `R CMD check --as-cran` locally before submitting
+- Pay attention to NOTEs — CRAN reviewers will
+- Keep examples fast (< 5 seconds each)
+
+### More Details Coming Soon
+
+I'll expand each of these into detailed posts with real examples from my package development experience.
+
+*Stay tuned!*

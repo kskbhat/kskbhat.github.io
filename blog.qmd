@@ -1,0 +1,23 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed: true
+  page-size: 10
+  fields: [image, date, title, description, categories, reading-time]
+page-layout: full
+title-block-banner: false
+---
+
+::: {.column-page}
+
+## 🚧 Coming Soon
+
+Fresh posts on **statistics**, **clustering**, **R programming**, and **research insights** are on the way! Subscribe via the RSS feed to stay updated.
+
+:::

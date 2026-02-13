@@ -1,0 +1,102 @@
+---
+title: "Experience"
+subtitle: "Professional experience and work history"
+---
+
+::: {.timeline}
+
+::: {.timeline-item}
+::: {.timeline-left}
+[May 2025 – Jun 2025]{.tl-date}\
+[Chennai]{.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### Senior Statistician
+[**Cushman and Wakefield**](https://www.cushmanwakefield.com/en/india){.tl-org}
+
+- Provided consultancy for Housing Demand–Supply Report for Chennai Metropolitan Area (2046 Master Plan).
+- Performed statistical analyses, including regression modeling.
+- Identified key determinants of housing demand using household survey data.
+- Assessed housing needs by location and income category.
+- Projected effective demand for home purchase and social housing rental for 2031, 2036, and 2046.
+- Delivered analyses and reports on time, ensuring high quality and adherence to industry best practices.
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-left}
+[Sep 2024 – Dec 2024]{.tl-date}\
+[Chennai]{.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### Data Analyst — Socio Economic Survey of Scheduled Tribes in Tamil Nadu
+[**Centre for Social Justice and Equity, Madras School of Social Work**](http://csje.mssw.in/){.tl-org}
+
+- Converted raw survey data into STATA (.dta) format and prepared data in wide/long structures.
+- Monitored real-time data, flagged outliers, and corrected enumerator errors.
+- Generated summary tables and assisted in post-coding and data cleaning.
+- Supported preparation of rural and urban progress reports at multiple administrative levels.
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-left}
+[Aug 2022 – Aug 2024]{.tl-date}\
+[Chennai]{.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### Consultant — Tamil Nadu Household Panel Survey
+[**Madras Institute of Development Studies**](https://www.tnhps.in/){.tl-org}
+
+- Served as a half-time consultant and data analysis supervisor for the Tamil Nadu Household Panel Survey (TNHPS).
+- Managed data monitoring, cleaning, and analysis in STATA for a large-scale survey involving 20,000+ households.
+- Ensured data integrity and reliability to facilitate accurate and consistent subsequent analyses.
+- Supervised a team to maintain high standards of data quality throughout the project.
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-left}
+[Feb 2019 – Mar 2021]{.tl-date}\
+[Chennai]{.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### Statistical Data Analyst — Tamil Nadu Household Panel Survey
+[**Madras Institute of Development Studies**](https://www.tnhps.in/){.tl-org}
+
+- Analyzed data of a Pre-Baseline phase of TNHPS, a longitudinal socio-economic survey covering over 240,000+ households.
+- Key responsibilities included data monitoring, cleaning, and analysis using STATA.
+- Major contributor to the Tamil Nadu Covid Pulse Survey (TNCPS), a cross-sectional study.
+- Cleaned and analyzed TNCPS data of over 12,000+ households across three waves using STATA.
+- Enhanced insights into the socio-economic impacts of the Covid-19 pandemic through data analysis of TNCPS.
+- **Partner Institutions**: Department of Economics and Statistics, Government of Tamil Nadu, and Survey Research Center, University of Michigan.
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-left}
+[Jun 2018 – Feb 2019]{.tl-date}\
+[Hyderabad]{.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### Associate Consultant
+[**Core CarbonX Solutions Pvt. Ltd.**](https://corecarbonx.com/){.tl-org}
+
+- Developed a model to prioritize Industrial Parks in Telangana State for TSIIC Ltd.
+- Utilized software such as R and Dart for machine learning and Multiple Criteria Decision Making techniques.
+- Coordinated 2 Swachh Bharat Mission Solid Waste Management Exposure Workshops in Tirupati.
+- Workshops funded by the National Institute of Urban Affairs (NIUA).
+:::
+:::
+
+:::

@@ -1,0 +1,54 @@
+---
+title: "Understanding Silhouette Diagnostics for Clustering"
+description: "A gentle introduction to silhouette-based methods for evaluating cluster quality — from classical approaches to density-based extensions."
+author: "Shrikrishna Bhat Kapu"
+date: "2026-01-15"
+categories: [Clustering, R, Statistics]
+image: "thumbnail.png"
+draft: false
+---
+
+## What Are Silhouette Diagnostics?
+
+Silhouette analysis is one of the most widely used tools for evaluating the quality of a clustering solution. Introduced by Rousseeuw (1987), the silhouette width quantifies how well each observation fits within its assigned cluster compared to neighboring clusters.
+
+### The Classical Silhouette
+
+For each observation $i$ in cluster $C_k$, we compute:
+
+$$s(i) = \frac{b(i) - a(i)}{\max\{a(i), b(i)\}}$$
+
+where:
+
+- $a(i)$ = average distance to all other points in the same cluster
+- $b(i)$ = minimum average distance to points in any other cluster
+
+Values range from $-1$ (poor fit) to $+1$ (excellent fit).
+
+### Beyond Hard Clustering
+
+What happens when clusters overlap? Traditional silhouette methods assume hard assignments, but many real-world problems require **soft (fuzzy) clustering**. That's where density-based silhouette diagnostics come in.
+
+```r
+# Coming soon: example using the Silhouette R package
+library(Silhouette)
+
+# Fit a soft clustering model
+# Compute density-based silhouette widths
+# Visualize results
+```
+
+### What's Next
+
+In upcoming posts, I'll walk through:
+
+1. Density-based silhouette methods for soft clustering
+2. Extended silhouette for block clustering
+3. Practical examples with the `Silhouette` R package
+
+*Stay tuned!*
+
+### References
+
+- Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis.
+- Bhat, S. K. & Kiruthika, C. (2024). Some density-based silhouette diagnostics for soft clustering algorithms.

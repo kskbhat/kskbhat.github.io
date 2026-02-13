@@ -1,0 +1,85 @@
+---
+title: "Shrikrishna Bhat K"
+subtitle: "PhD Candidate in Statistics · Researcher · Data Analyst"
+page-layout: full
+toc: false
+---
+
+::: {.home-hero}
+
+::: {.home-content}
+
+> Developing robust clustering methodologies for complex data.
+
+PhD Candidate in Statistics specializing in **Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics**.
+
+I work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability.
+
+Over 6 years of experience in large-scale socio-economic surveys, urban analytics, and policy-oriented data research.
+
+:::
+
+::: {.home-photo}
+![](pp.png){.profile-img}
+:::
+
+:::
+
+<!-- ---
+
+## Academic Profile
+
+::: {.card-grid}
+
+::: {.card}
+### [🔬 Research](research.qmd)
+Cluster analysis, block clustering, probabilistic distance methods, and cluster diagnostics.
+:::
+
+::: {.card}
+### [📖 Publications](publications.qmd)
+Peer-reviewed journal articles and preprints on clustering and density-based diagnostics.
+:::
+
+::: {.card}
+### [🎤 Conferences](conferences.qmd)
+Papers and posters presented at international statistics conferences.
+:::
+
+:::
+
+---
+
+## Professional Work
+
+::: {.card-grid}
+
+::: {.card}
+### [💻 Software](software.qmd)
+Author of R packages on CRAN — **Silhouette** and **blockclusterPDQ**.
+:::
+
+::: {.card}
+### [📊 Experience](experience.qmd)
+6+ years of experience in large-scale survey analytics and statistical consultancy.
+:::
+
+:::
+
+---
+
+## Featured Software
+
+::: {.card-grid-2}
+
+::: {.card}
+### [📊 Silhouette R Package](https://kskbhat.github.io/Silhouette)
+Proximity measure based diagnostics for standard, soft, and multi-way clustering.
+:::
+
+::: {.card}
+### [🧊 blockclusterPDQ](https://github.com/kskbhat/blockclusterPDQ)
+An R package for block probabilistic distance clustering.
+:::
+
+::: -->

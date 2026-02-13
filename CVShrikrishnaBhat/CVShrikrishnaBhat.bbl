@@ -1,0 +1,403 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{ydnt/global//global/global/global}
+  \entry{bhat2025blockpdq_preprint}{online}{}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={{Bhat K}},
+         familyi={B\bibinitperiod},
+         given={Shrikrishna},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={C},
+         familyi={C},
+         given={Kiruthika},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{pub}
+    \strng{namehash}{BSCK1}
+    \strng{fullhash}{BSCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \verb{doi}
+    \verb 10.21203/rs.3.rs-6973596/v1
+    \endverb
+    \verb{eprint}
+    \verb rs-6973596/v1
+    \endverb
+    \field{note}{Preprint, Version 1}
+    \field{title}{Block Probabilistic Distance Clustering: A Unified Framework
+  and Evaluation}
+    \field{eprinttype}{researchsquare}
+    \field{day}{25}
+    \field{month}{06}
+    \field{year}{2025}
+  \endentry
+
+  \entry{blockclusterpdq_github}{online}{}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={{Bhat K}},
+         familyi={B\bibinitperiod},
+         given={Shrikrishna},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={C},
+         familyi={C},
+         given={Kiruthika},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{software}
+    \strng{namehash}{BSCK1}
+    \strng{fullhash}{BSCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \verb{eprint}
+    \verb kskbhat/blockclusterPDQ
+    \endverb
+    \field{title}{blockclusterPDQ: An R Package for Block Probabilistic
+  Distance Clustering}
+    \field{eprinttype}{github}
+    \field{year}{2025}
+  \endentry
+
+  \entry{silhouette2025}{online}{}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={{Bhat K}},
+         familyi={B\bibinitperiod},
+         given={Shrikrishna},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={C},
+         familyi={C},
+         given={Kiruthika},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{software}
+    \strng{namehash}{BSCK1}
+    \strng{fullhash}{BSCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{extradate}{3}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \verb{doi}
+    \verb 10.32614/CRAN.package.Silhouette
+    \endverb
+    \verb{eprint}
+    \verb Silhouette
+    \endverb
+    \field{note}{R package version 0.9.6}
+    \field{title}{Silhouette: Proximity Measure Based Diagnostics for Standard,
+  Soft, and Multi-Way Clustering}
+    \verb{url}
+    \verb https://kskbhat.github.io/Silhouette
+    \endverb
+    \field{eprinttype}{cran}
+    \field{year}{2025}
+  \endentry
+
+  \entry{bhat2024silhouette}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={{Bhat K}},
+         familyi={B\bibinitperiod},
+         given={Shrikrishna},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={C},
+         familyi={C},
+         given={Kiruthika},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{pub}
+    \strng{namehash}{BSCK1}
+    \strng{fullhash}{BSCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \verb{doi}
+    \verb 10.1080/23737484.2024.2408534
+    \endverb
+    \field{number}{3--4}
+    \field{pages}{221\bibrangedash 238}
+    \field{title}{Some density-based silhouette diagnostics for soft clustering
+  algorithms}
+    \field{volume}{10}
+    \verb{file}
+    \verb Articles/10.108023737484.2024.2408534.pdf
+    \endverb
+    \field{journaltitle}{Communications in Statistics: Case Studies, Data
+  Analysis and Applications}
+    \field{year}{2024}
+  \endentry
+
+  \entry{IISA2024Poster}{inproceedings}{}{}
+    \keyw{poster}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{booktitle}{Annual Conference of International Indian Statistical
+  Association (IISA 2024)}
+    \field{note}{Student Poster Competition}
+    \field{title}{Exploring Block Clustering with Probabilistic Distance:
+  Theory and Validation}
+    \list{location}{1}{%
+      {CUSAT, Cochin, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Poster/Shrikrishna Bhat K Poster
+    \verb  Competition.pdf
+    \endverb
+    \field{day}{27}
+    \field{month}{12}
+    \field{year}{2024}
+    \field{endday}{31}
+    \field{endmonth}{12}
+    \field{endyear}{2024}
+  \endentry
+
+  \entry{ISPS2024Workshop}{misc}{}{}
+    \keyw{part}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{howpublished}{In conjunction with the 43\textsuperscript{rd} Annual
+  Convention of ISPS}
+    \field{note}{Participation}
+    \field{title}{Pre-Annual Convention Workshop on Advanced Data Science
+  Techniques}
+    \list{location}{1}{%
+      {University of Allahabad, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Participation/ISPS Workshop 2024
+    \verb .pdf
+    \endverb
+    \field{day}{05}
+    \field{month}{02}
+    \field{year}{2024}
+  \endentry
+
+  \entry{RAPSIR2024}{inproceedings}{}{}
+    \keyw{present}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{booktitle}{International Conference on Recent Advances of
+  Probability and Statistics in Interdisciplinary Research (RAPSIR–2024) in
+  conjunction with the 43\textsuperscript{rd} Annual Convention of ISPS}
+    \field{note}{Paper presented}
+    \field{title}{Probabilistic Distance Coclustering for Ordinal Data}
+    \list{location}{1}{%
+      {University of Allahabad, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Presentation/ISPS-2024.pdf
+    \endverb
+    \field{day}{06}
+    \field{month}{02}
+    \field{year}{2024}
+    \field{endday}{08}
+    \field{endmonth}{02}
+    \field{endyear}{2024}
+  \endentry
+
+  \entry{ICSTA2023}{inproceedings}{}{}
+    \keyw{present}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{booktitle}{International Conference on Statistical Theory and its
+  Applications (ICSTA-2023)}
+    \field{note}{Virtual paper presentation}
+    \field{title}{Density-Based Silhouettes to Evaluate the Performance of Soft
+  Clustering Algorithms}
+    \list{location}{1}{%
+      {Bharathiar University, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Presentation/ICSTA-2023.pdf
+    \endverb
+    \field{day}{01}
+    \field{month}{09}
+    \field{year}{2023}
+    \field{endday}{02}
+    \field{endmonth}{09}
+    \field{endyear}{2023}
+  \endentry
+
+  \entry{RASTA2022}{misc}{}{}
+    \keyw{part}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{howpublished}{Online event on Recent Advances in Statistical Theory
+  and Applications, ICAR-NAARM, Hyderabad}
+    \field{note}{Participation}
+    \field{title}{24\textsuperscript{th} Annual Conference of SSCA
+  (RASTA-2022)}
+    \list{location}{1}{%
+      {Hyderabad, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Participation/SSCA 2022.pdf
+    \endverb
+    \field{day}{23}
+    \field{month}{02}
+    \field{year}{2022}
+    \field{endday}{27}
+    \field{endmonth}{02}
+    \field{endyear}{2022}
+  \endentry
+
+  \entry{ICASMA2022}{misc}{}{}
+    \keyw{part}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{howpublished}{Organised by the Department of Statistics, University
+  of Madras}
+    \field{note}{Participation}
+    \field{title}{International Conference on Advances in Statistical Methods
+  and Applications (ICASMA-2022)}
+    \list{location}{1}{%
+      {Chennai, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Participation/ICASMA 2022.pdf
+    \endverb
+    \field{day}{24}
+    \field{month}{01}
+    \field{year}{2022}
+    \field{endday}{25}
+    \field{endmonth}{01}
+    \field{endyear}{2022}
+  \endentry
+
+  \entry{IISA2022}{inproceedings}{}{}
+    \keyw{present}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{booktitle}{Annual Conference of International Indian Statistical
+  Association (IISA 2022)}
+    \field{note}{Paper presented}
+    \field{title}{Probability Density-Based Clustering}
+    \list{location}{1}{%
+      {IISc, Bengaluru, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Presentation/IISA-2022.pdf
+    \endverb
+    \field{day}{30}
+    \field{month}{12}
+    \field{year}{2022}
+  \endentry
+
+  \entry{IWMS2021}{misc}{}{}
+    \keyw{part}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{howpublished}{Hosted by Centre for Advanced Research in Applied
+  Mathematics and Statistics, MAHE, Manipal}
+    \field{note}{Participation}
+    \field{title}{28\textsuperscript{th} International Workshop on Matrices and
+  Statistics (IWMS 2021)}
+    \list{location}{1}{%
+      {Manipal, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Participation/MAHE 2021.pdf
+    \endverb
+    \field{day}{13}
+    \field{month}{12}
+    \field{year}{2021}
+    \field{endday}{15}
+    \field{endmonth}{12}
+    \field{endyear}{2021}
+  \endentry
+
+  \entry{DATUM2021}{misc}{}{}
+    \keyw{part}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{howpublished}{In association with the International Indian
+  Statistical Association, DA-IICT, Gandhinagar}
+    \field{note}{Participation}
+    \field{title}{International Workshop on Data Science (DATUM 2021)}
+    \list{location}{1}{%
+      {Gandhinagar, India}%
+    }
+    \verb{file}
+    \verb Certificates/Conference Certificates/Participation/DATUM 2021.pdf
+    \endverb
+    \field{day}{18}
+    \field{month}{09}
+    \field{year}{2021}
+    \field{endday}{20}
+    \field{endmonth}{09}
+    \field{endyear}{2021}
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,11 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/coming-soon/index.html",
+      "/posts/silhouette-intro/index.html",
+      "/posts/block-clustering-primer/index.html",
+      "/posts/r-package-dev-tips/index.html"
+    ]
+  }
+]

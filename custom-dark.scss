@@ -1,0 +1,82 @@
+/*-- scss:defaults --*/
+
+// ---- Typography (match light theme) ----
+$headings-font-family: "IBM Plex Serif", "Georgia", "Times New Roman", serif !default;
+
+// ---- Dark mode palette (warm dark + teal accent) ----
+$body-bg:        #1C1710 !default;
+$body-color:     #F1E7DA !default;
+$primary:        #D4A54A !default;   // Bright amber/gold
+$link-color:     #6DB7BD !default;   // Soft teal glow
+
+// ---- Navbar ----
+$navbar-bg:      #1C1710 !default;
+$navbar-fg:      #F1E7DA !default;
+
+// ---- Footer ----
+$footer-bg:      #151009 !default;
+$footer-fg:      #a89880 !default;
+
+// ---- Cards ----
+$card-bg:           #262015 !default;
+$card-border-color: #3B2F22 !default;
+$card-cap-bg:       #302618 !default;
+
+// ---- Code ----
+$code-block-bg:  #262015 !default;
+$code-bg:        #262015 !default;
+
+/*-- scss:rules --*/
+
+// Dark navbar
+.navbar {
+  border-bottom: 1px solid #3B2F22;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #F1E7DA !important;
+}
+
+.navbar-nav .nav-link {
+  color: #a89880 !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #D4A54A !important;
+}
+
+// Dark headings
+h1, h2, h3, h4, h5, h6 {
+  color: #F1E7DA;
+}
+h2 {
+  border-bottom-color: #3B2F22;
+}
+
+// Timeline dark overrides
+.timeline-right h3 {
+  color: #FFFFFF !important;
+}
+.timeline-left .tl-date {
+  color: #F0C75E !important;
+}
+.timeline-left .tl-place {
+  color: #c4b49e !important;
+}
+.timeline-right p,
+.timeline-right em {
+  color: #d9cebf;
+}
+.timeline-right .tl-cert {
+  color: #c4b49e;
+}
+.timeline-right ul li {
+  color: #d9cebf;
+}
+
+// Dark footer
+.nav-footer {
+  border-top: 1px solid #3B2F22;
+}

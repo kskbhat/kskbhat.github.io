@@ -1,0 +1,7 @@
+---
+title: "Workshops & Conferences"
+subtitle: "Conference presentations, posters, and workshop participation"
+---
+
+<!-- Auto-generated from reference.bib by _scripts/generate_pages.py -->
+{{< include _includes/conferences_content.md >}}

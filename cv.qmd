@@ -1,0 +1,140 @@
+---
+title: "Curriculum Vitae"
+subtitle: "Education, skills, and academic profile"
+---
+
+<div class="title-with-links">
+<button class="profile-link-pill" id="cv-toggle-btn" onclick="toggleResume()">
+<i class="bi bi-eye"></i> View Resume
+</button>
+</div>
+
+<div class="cv-pdf-wrapper" id="cv-pdf-wrapper" style="display:none;">
+  <iframe id="cv-pdf-viewer" class="cv-pdf-viewer"></iframe>
+</div>
+
+<script>
+function toggleResume() {
+  const wrapper = document.getElementById('cv-pdf-wrapper');
+  const btn = document.getElementById('cv-toggle-btn');
+  const iframe = document.getElementById('cv-pdf-viewer');
+  const isHidden = wrapper.style.display === 'none';
+  if (isHidden) {
+    if (!iframe.src || iframe.src === 'about:blank') {
+      iframe.src = 'CVShrikrishnaBhat/CVShrikrishnaBhat.pdf#toolbar=0&navpanes=0';
+    }
+    wrapper.style.display = 'block';
+    btn.innerHTML = '<i class="bi bi-eye-slash"></i> Hide Resume';
+    btn.classList.add('cv-btn-active');
+    wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    wrapper.style.display = 'none';
+    btn.innerHTML = '<i class="bi bi-eye"></i> View Resume';
+    btn.classList.remove('cv-btn-active');
+  }
+}
+</script>
+
+---
+
+## Education
+
+::: {.timeline}
+
+::: {.timeline-item}
+::: {.timeline-left}
+[Feb 2021 – Dec 2025]{.tl-date}\
+[Pondicherry University](https://www.pondiuni.edu.in/){.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### PhD in Statistics
+
+- **Research Area:** Cluster Analysis, Block Clustering, and Cluster Diagnostics
+- **Supervisor:** [Dr. Kiruthika](https://www.pondiuni.edu.in/faculy_profiles/dr-kiruthika/)
+- **Thesis Title:** *Contributions to Block Clustering and its Diagnostic Measures*
+- **Thesis Submitted:** 22 December 2025
+:::
+
+:::
+
+::: {.timeline-item}
+::: {.timeline-left}
+[Jul 2016 – Apr 2018]{.tl-date}\
+[Pondicherry University](https://www.pondiuni.edu.in/){.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### Master of Science in Statistics
+
+CGPA: 7.75/10
+:::
+
+:::
+
+::: {.timeline-item}
+::: {.timeline-left}
+[Jul 2013 – Apr 2016]{.tl-date}\
+[Andhra Loyola College](https://www.andhraloyolacollege.ac.in/){.tl-place}
+:::
+::: {.timeline-center}
+:::
+::: {.timeline-right}
+### Bachelor of Science in Mathematics, Statistics, and Physics
+
+Percentage: 80.31%
+:::
+
+:::
+
+:::
+
+---
+
+## Skills & Languages
+
+| Category | Details |
+|---|---|
+| **Programming Languages** | R · Python |
+| **Statistical Tools** | STATA · SPSS · Minitab |
+| **Data Tools** | MS Excel · SQL · Power BI · [Tableau](https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes) |
+| **Version Control** | GitHub |
+| **Other Tools** | LaTeX · SurveyCTO · MS Office |
+
+### Languages Known {.unnumbered}
+
+| Language | Proficiency |
+|---|---|
+| English | Fluent |
+| Kannada | Native |
+| Telugu | Native |
+| Hindi | Fluent |
+| Tulu | Native |
+| Tamil | Basic |
+
+---
+
+## Summary of Qualifications
+
+- 6+ years of experience in advanced statistical modeling and survey analytics
+- Published author with peer-reviewed articles in international journals
+- Developer of CRAN R packages for cluster analysis diagnostics
+- Experience leading large-scale survey projects (240,000+ households)
+- Consultancy experience for urban housing demand assessments
+- Presentations at international conferences (IISA, ISPS, ICSTA)
+
+::: {.card-grid-2}
+
+::: {.card}
+### [💼 Full Experience](experience.qmd)
+Detailed work history
+:::
+
+::: {.card}
+### [📖 Publications](publications.qmd)
+All publications and preprints
+:::
+
+:::

@@ -1,0 +1,963 @@
+/* ============================================
+   Custom styles for Shrikrishna Bhat K website
+   Litera / Darkly theme — Academic palette
+   ============================================ */
+
+/* --- Color variables (refined amber + muted teal accent) --- */
+:root {
+  --primary: #9C6B1F;
+  --primary-light: #FFF9F2;
+  --primary-dark: #6b470e;
+  --accent: #C08A1A;
+  --teal: #2F6F73;
+  --text-heading: #2B1F14;
+  --text-muted: #7a6a5a;
+  --border-color: #E6DDD0;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(100, 70, 30, 0.08);
+}
+
+/* --- Dark mode variable overrides --- */
+[data-bs-theme="dark"] {
+  --primary: #D4A54A;
+  --primary-light: #262015;
+  --primary-dark: #C08A1A;
+  --accent: #E0B75A;
+  --teal: #6DB7BD;
+  --text-heading: #F1E7DA;
+  --text-muted: #a89880;
+  --border-color: #3B2F22;
+  --card-bg: #262015;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* --- Academicons in navbar: match Bootstrap Icon size --- */
+.navbar .ai {
+  font-size: 1.125rem;
+  vertical-align: middle;
+}
+
+/* --- Compact spacing for navbar right social icons --- */
+.navbar .navbar-nav[role="list"] .nav-item {
+  margin: 0;
+}
+
+.navbar .navbar-nav[role="list"] .nav-link {
+  padding: 0.4rem 0.15rem;
+}
+
+/* --- Home hero: 3/4 content + 1/4 photo --- */
+.home-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+.home-content {
+  flex: 6;
+  min-width: 0;
+}
+.home-photo {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
+
+.home-photo .quarto-figure,
+.home-photo figure {
+  margin: 0;
+}
+.home-photo figcaption {
+  display: none;
+}
+
+/* --- Profile image styling --- */
+.profile-img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+  border: 3px solid var(--border-color);
+}
+
+[data-bs-theme="dark"] .profile-img {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Card grid --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.card-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+/* --- Card styling --- */
+.card {
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px var(--card-shadow);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: var(--teal);
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+/* --- Callout enhancements --- */
+.callout {
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+/* --- Timeline styling (date/place left, content right) --- */
+.timeline {
+  margin: 1.5rem 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+/* Left column: date & place */
+.timeline-left {
+  flex: 0 0 180px;
+  text-align: right;
+  padding: 1.2rem 1.2rem 1.2rem 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.timeline-left .tl-date {
+  font-weight: 600;
+  color: var(--text-heading);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.timeline-left .tl-place {
+  font-size: 0.76rem;
+  margin-top: 0.2rem;
+}
+
+/* Center line & dot */
+.timeline-center {
+  flex: 0 0 3px;
+  background: var(--primary);
+  position: relative;
+}
+
+.timeline-center::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 1.5rem;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+  border: 2px solid var(--card-bg);
+  z-index: 1;
+}
+
+/* Right column: content */
+.timeline-right {
+  flex: 1;
+  padding: 1.2rem 0 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.timeline-item:last-child .timeline-right {
+  border-bottom: none;
+}
+
+.timeline-right h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  color: var(--text-heading);
+}
+
+.timeline-right .tl-org {
+  font-size: 0.92rem;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-right .tl-org a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.timeline-right .tl-org a:hover {
+  text-decoration: underline;
+}
+
+.timeline-right ul {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.93rem;
+}
+
+.timeline-right ul li {
+  margin-bottom: 0.25rem;
+}
+
+.timeline-right .tl-cert {
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+}
+
+[data-bs-theme="dark"] .timeline-center::before {
+  border-color: #1C1710;
+}
+
+[data-bs-theme="dark"] .timeline-right h3 {
+  color: #FFFFFF !important;
+}
+
+[data-bs-theme="dark"] .timeline-left .tl-date {
+  color: #F0C75E !important;
+}
+
+[data-bs-theme="dark"] .timeline-left .tl-place {
+  color: #a89880;
+}
+
+[data-bs-theme="dark"] .timeline-right p,
+[data-bs-theme="dark"] .timeline-right em {
+  color: #d1c4b0;
+}
+
+[data-bs-theme="dark"] .timeline-right .tl-cert {
+  color: #a89880;
+}
+
+@media (max-width: 600px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+  .timeline-left {
+    flex: none;
+    text-align: left;
+    padding: 0.5rem 0 0 1.5rem;
+  }
+  .timeline-center {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+  }
+  .timeline-right {
+    padding: 0 0 1.2rem 1.5rem;
+  }
+}
+
+/* --- Contact table --- */
+.contact-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-table td:first-child {
+  font-weight: 600;
+  width: 140px;
+  color: var(--teal);
+}
+
+[data-bs-theme="dark"] .contact-table td {
+  border-bottom-color: #3B2F22;
+}
+
+/* --- Section dividers --- */
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+/* --- Accordion-like details styling --- */
+details {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #fafbfc;
+  transition: background 0.2s;
+}
+
+details[open] {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary);
+  padding: 0.25rem 0;
+}
+
+details summary:hover {
+  color: var(--accent);
+}
+
+[data-bs-theme="dark"] details {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] details[open] {
+  background: #302618;
+}
+
+[data-bs-theme="dark"] details summary {
+  color: var(--teal);
+}
+
+/* --- Badge styling --- */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.65em;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 4px;
+  background: var(--primary);
+  color: #fff;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .home-hero {
+    flex-direction: column-reverse;
+  }
+  .home-photo {
+    justify-content: center;
+  }
+  .profile-img {
+    max-width: 140px;
+  }
+}
+
+/* --- Smooth scrolling --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Research output table --- */
+.research-output table {
+  width: 100%;
+}
+
+.research-output td:last-child {
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+[data-bs-theme="dark"] .research-output td:last-child {
+  color: var(--accent);
+}
+
+/* --- PhD details table --- */
+.phd-details table {
+  width: auto;
+  border: none;
+  margin: 0.8rem 0;
+}
+.phd-details table thead {
+  display: none;
+}
+.phd-details table td {
+  border: none;
+  padding: 0.25rem 0.8rem 0.25rem 0;
+  font-size: 0.95rem;
+  vertical-align: top;
+  background: transparent !important;
+}
+.phd-details table td:first-child {
+  white-space: nowrap;
+  color: var(--text-muted);
+}
+.phd-details table td:last-child {
+  font-weight: normal;
+}
+.phd-details table tr {
+  background: transparent !important;
+}
+[data-bs-theme="dark"] .phd-details table td:first-child {
+  color: #c4b49e;
+}
+
+/* --- Auto-generated content note --- */
+.callout-note.collapse details summary {
+  font-size: 0.88rem;
+}
+
+/* --- Publication abstract callout --- */
+details .callout {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+}
+
+details .callout-note {
+  border-left-color: var(--primary);
+}
+
+/* --- Download / certificate button --- */
+.btn-outline-primary {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* --- Software section spacing --- */
+.card-grid-2 + p {
+  margin-top: 0.5rem;
+}
+
+/* --- Auto-generation info callout --- */
+.callout-note[collapse] {
+  font-size: 0.9rem;
+}
+
+
+/* ============================================
+   CV PDF Viewer — Toggle + Download buttons
+   ============================================ */
+
+/* Button row */
+.cv-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+/* Shared button base */
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.8rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+  border: 2px solid var(--primary);
+  line-height: 1.4;
+}
+.cv-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(156, 107, 31, 0.2);
+}
+.cv-btn-icon {
+  font-size: 1.1rem;
+}
+
+/* Primary (View Resume) */
+.cv-btn-primary {
+  background: var(--primary);
+  color: #fff !important;
+  border-color: var(--primary);
+}
+.cv-btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+.cv-btn-primary.cv-btn-active {
+  background: #B44D3E;
+  border-color: #B44D3E;
+}
+.cv-btn-primary.cv-btn-active:hover {
+  background: #943E32;
+  border-color: #943E32;
+}
+
+/* Outline (Download PDF) */
+.cv-btn-outline {
+  background: transparent;
+  color: var(--primary) !important;
+  border-color: var(--primary);
+}
+.cv-btn-outline:hover {
+  background: var(--primary);
+  color: #fff !important;
+}
+
+/* PDF viewer wrapper */
+.cv-pdf-wrapper {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* PDF iframe */
+.cv-pdf-viewer {
+  width: 100%;
+  height: 700px;
+  border: none;
+  display: block;
+  background: #f8f9fa;
+}
+
+/* Dark theme CV buttons */
+[data-bs-theme="dark"] .cv-btn {
+  border-color: var(--primary);
+}
+[data-bs-theme="dark"] .cv-btn-primary {
+  background: #9C6B1F;
+  border-color: #9C6B1F;
+}
+[data-bs-theme="dark"] .cv-btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+[data-bs-theme="dark"] .cv-btn-primary.cv-btn-active {
+  background: #B44D3E;
+  border-color: #B44D3E;
+}
+[data-bs-theme="dark"] .cv-btn-outline {
+  color: var(--teal) !important;
+  border-color: var(--teal);
+}
+[data-bs-theme="dark"] .cv-btn-outline:hover {
+  background: #2F6F73;
+  color: #fff !important;
+  border-color: #2F6F73;
+}
+[data-bs-theme="dark"] .cv-pdf-wrapper {
+  border-color: var(--border-color);
+}
+[data-bs-theme="dark"] .cv-pdf-viewer {
+  background: #151009;
+}
+
+/* Responsive CV */
+@media (max-width: 768px) {
+  .cv-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+  .cv-pdf-viewer {
+    height: 450px;
+  }
+}
+
+/* ============================================
+   Blog Listing Styles
+   ============================================ */
+
+/* Blog listing cards */
+.quarto-listing {
+  margin-top: 1rem;
+}
+
+#listing-listing .listing-item {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  background: var(--card-bg);
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+#listing-listing .listing-item:hover {
+  box-shadow: 0 6px 20px var(--card-shadow);
+  transform: translateY(-2px);
+}
+
+/* Blog post title */
+.listing-title {
+  color: var(--teal) !important;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.listing-title:hover {
+  color: var(--primary) !important;
+}
+
+/* Blog post description */
+.listing-description {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* Blog date */
+.listing-date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Blog categories */
+.listing-category .listing-btn-group .btn {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--border-color);
+  font-size: 0.78rem;
+  padding: 0.15em 0.6em;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.listing-category .listing-btn-group .btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Category sidebar */
+.quarto-listing-category .category-item {
+  color: var(--teal);
+  font-weight: 500;
+}
+
+.quarto-listing-category .category-item:hover {
+  color: var(--primary);
+}
+
+.quarto-listing-category .category-item .category-listing-count {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Blog image thumbnails */
+.listing-item .thumbnail img {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+/* No-posts message */
+.listing-no-matching {
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Dark theme blog overrides */
+[data-bs-theme="dark"] #listing-listing .listing-item {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .listing-title {
+  color: var(--teal) !important;
+}
+
+[data-bs-theme="dark"] .listing-title:hover {
+  color: var(--accent) !important;
+}
+
+[data-bs-theme="dark"] .listing-category .listing-btn-group .btn {
+  background: #302618;
+  color: var(--primary);
+  border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .listing-category .listing-btn-group .btn:hover {
+  background: var(--primary);
+  color: #1C1710;
+}
+
+/* ============================================
+   Notes Page Styles
+   ============================================ */
+
+/* Notes card hover — teal left border accent */
+.card-grid-2 .card {
+  border-left: 3px solid transparent;
+  transition: border-left-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.card-grid-2 .card:hover {
+  border-left-color: var(--teal);
+}
+
+[data-bs-theme="dark"] .card-grid-2 .card:hover {
+  border-left-color: var(--teal);
+}
+
+/* Notes format tag */
+.card-grid-2 .card p:last-child {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* ============================================
+   Publications — compact numbered list
+   ============================================ */
+
+/* Tighten spacing between numbered publication entries */
+#journal-articles + ol,
+#preprints + ol,
+.quarto-section-identifier + ol {
+  padding-left: 1.5em;
+}
+
+/* Publication list items: hanging indent style */
+#journal-articles ~ ol > li,
+#preprints ~ ol > li {
+  margin-bottom: 0.75rem;
+  line-height: 1.55;
+}
+
+/* Callout inside publication list — compact */
+#journal-articles ~ ol .callout,
+#preprints ~ ol .callout {
+  margin-top: 0.4rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.92em;
+}
+
+/* ============================================
+   Profile link pills (Publications page)
+   ============================================ */
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem;
+}
+/* Inline with page title */
+.title-with-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+.profile-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-heading) !important;
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 30px;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+}
+
+.profile-link-pill:hover {
+  border-color: var(--primary);
+  box-shadow: 0 3px 10px var(--card-shadow);
+  transform: translateY(-1px);
+}
+
+.profile-link-pill.cv-btn-active {
+  border-color: #B44D3E;
+  color: #B44D3E !important;
+}
+
+.profile-link-pill i {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+/* ============================================
+   Software Page — package header with logo
+   ============================================ */
+
+.pkg-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pkg-logo {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.pkg-header-text {
+  flex: 1;
+}
+
+.pkg-header-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.pkg-downloads {
+  margin: 0.8rem 0 1rem;
+}
+
+.pkg-downloads img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+@media (max-width: 500px) {
+  .pkg-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .pkg-logo {
+    width: 100px;
+  }
+}
+
+/* ============================================
+   Publication Detail Page — metadata card
+   ============================================ */
+
+/* Type badge (JOURNAL ARTICLES / PREPRINTS) */
+.pub-type-badge {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1.5px solid var(--text-muted);
+  border-radius: 20px;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+}
+
+/* Metadata card */
+.pub-meta-card {
+  background: #f0f0f0;
+  border-radius: 6px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.2rem 0 2rem;
+}
+
+[data-bs-theme="dark"] .pub-meta-card {
+  background: #2a2218;
+}
+
+.pub-meta-row {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.6rem 0;
+  align-items: baseline;
+}
+
+.pub-meta-row + .pub-meta-row {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-bs-theme="dark"] .pub-meta-row + .pub-meta-row {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+.pub-meta-label {
+  flex: 0 0 180px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pub-meta-value {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--text-heading);
+  line-height: 1.5;
+}
+
+/* Link badges inside the detail page */
+.pub-link-badge {
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #fff !important;
+  text-decoration: none !important;
+  margin-right: 0.4rem;
+  transition: opacity 0.2s;
+}
+
+.pub-link-badge:hover {
+  opacity: 0.85;
+}
+
+.pub-link-doi {
+  background: #3366aa;
+}
+
+.pub-link-pdf {
+  background: #cc4444;
+}
+
+.pub-link-preprint {
+  background: #5a9e6f;
+}
+
+/* Responsive metadata card */
+@media (max-width: 600px) {
+  .pub-meta-row {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .pub-meta-label {
+    flex: none;
+  }
+}

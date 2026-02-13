@@ -1,0 +1,64 @@
+name: Build and Deploy Quarto Site
+
+on:
+  # Trigger on push to main branch
+  push:
+    branches: [master]
+
+  # Trigger on pull request to main (build only, no deploy)
+  pull_request:
+    branches: [master]
+
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+
+# Prevent concurrent builds; cancel in-progress runs on new push
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: write      # needed to push docs/ back to main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout repository ──────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Set up Python (for _scripts/generate_pages.py) ──────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # ── 3. Install Quarto ──────────────────────────────────────
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.6.43"      # pin a stable release
+
+      # ── 4. Render the Quarto site (output → docs/) ─────────────
+      #    The pre-render hook in _quarto.yml automatically runs
+      #    python _scripts/generate_pages.py before the build.
+      - name: Render Quarto site
+        run: quarto render
+
+      # ── 5. Commit & push docs/ to main (only on push, not PR) ──
+      - name: Commit and push docs/
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add docs/
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "✅ No changes in docs/ — nothing to commit."
+          else
+            git commit -m "ci: rebuild site [skip ci]"
+            git push
+          fi

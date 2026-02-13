@@ -1,0 +1,533 @@
+% Medium Length Professional CV
+% LaTeX Template
+% Version 4.0 (September 18, 2025)
+%
+% Main file: Only edit this file to change your CV content (name, addresses, sections, etc).
+% Formatting, macros, and style are all managed in resume.cls.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATION
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+a4paper,
+11pt]{resume}
+
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% BIBLIOGRAPHY AND CITATION SETUP
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+
+\usepackage{csquotes}
+
+\usepackage[backend=bibtex,style=authoryear,
+doi=true,isbn=true,url=true,dashed=false,
+sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
+
+\defbibheading{empty}{}
+\nocite{*}
+
+% --- Format issue number in parentheses ---
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+\renewbibmacro*{volume+number+eid}{%
+	\printfield{volume}%
+	\printfield{number}%
+	\setunit{\addcolon\space}% separator before pages
+	\printfield{eid}}
+
+\DeclareDatamodelFields[type=field,datatype=verbatim]{eprint}
+\DeclareDatamodelEntryfields{eprint,eprinttype}
+
+% Bibliography environments (bullet and numbered)
+\newcommand{\definebibenvs}{
+	\defbibenvironment{bullet}
+	{\begin{itemize}[leftmargin=1.25em,label=\(\cdot\),itemsep=-0.5em]}
+		{\end{itemize}}
+	{\item}
+	
+	\defbibenvironment{numbered}
+	{\begin{enumerate}[leftmargin=1.25em,label=\arabic*.,itemsep=-0.5em]}
+		{\end{enumerate}}
+	{\item}
+}
+\definebibenvs
+
+\AtBeginBibliography{%
+	\DeclareNameAlias{author}{given-family}%
+}
+
+% Name bolding in bibliography
+\renewcommand*{\mkbibnamefamily}[1]{%
+	\ifthenelse{\equal{#1}{\familyname}}{\textbf{#1}}{#1}}
+\renewcommand*{\mkbibnamegiven}[1]{%
+	\ifthenelse{\equal{#1}{\givenname}}{\textbf{#1}}{#1}}
+
+% Bibliography custom eprint formats
+\DeclareFieldFormat{eprint:researchsquare}{%
+	ResearchSquare\addcolon\space
+	\href{https://www.researchsquare.com/article/#1}{\texttt{\nolinkurl{#1}}}%
+}
+\DeclareFieldFormat{eprint:cran}{%
+	CRAN\addcolon\space
+	\href{https://cran.r-project.org/package=#1}{\texttt{\nolinkurl{#1}}}%
+}
+\DeclareFieldFormat{eprint:github}{%
+	GitHub\addcolon\space
+	\href{https://github.com/#1}{\texttt{\nolinkurl{#1}}}%
+}
+
+% Finalize bibliography entry (attach files)
+\renewbibmacro*{finentry}{%
+	\finentry
+	\printfield{file}%
+}
+
+\addbibresource{reference.bib}
+
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% USER-DEFINED MACROS AND ENVIRONMENTS (for reference, defined in resume.cls)
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% The following commands/environments are available for your use:
+%
+% -- Personal Info and Header --
+% \name{<GivenName>}{<FamilyName>}    % Set your given and family name
+% \degree{<Your Degree>}              % Set your degree (optional)
+% \address{<line>}                    % Add an address/contact line (up to 3)
+% \photo[<width>]{<file>}             % Add a profile photo (optional)
+% \addressSep                         % Separator symbol for addresses
+% \setupheaderfooter{<name>}          % Setup header/footer (call after \name)
+%
+% -- Sectioning --
+% \begin{rSection}[<optional right link>]{<Section Title>}
+	%   ...content...
+	% \end{rSection}
+%
+% -- Subsections and Entries --
+% \begin{rSubsection}[<optional link>]{<Title>}{<Date>}{<Subtitle>}{<Location>}
+	%   ...content...
+	% \end{rSubsection}
+%
+% \begin{rSubsubsection}{<Subtitle>}{<Location>}
+	%   ...content...
+	% \end{rSubsubsection}
+%
+% \begin{rSubheading}[<optional link>]{<Title>}
+	%   ...content...
+	% \end{rSubheading}
+%
+% -- Lists --
+% \begin{rItemize}
+	%   \item ...
+	% \end{rItemize}
+%
+% \begin{rEnumerate}
+	%   \item ...
+	% \end{rEnumerate}
+%
+% -- Date Utilities --
+% \MonthYear{YYYY}{MM}                % e.g., \MonthYear{2025}{09}
+% \FullDate{YYYY}{MM}{DD}             % e.g., \FullDate{2025}{09}{27}
+% \TodayFull                          % Day of Today 
+%
+% -- Hyperlink/Attachment Controls --
+% \iref{<url>}{<text>}      % Conditionally creates a hyperlink if \ireftrue (default: true in academic CVs)
+% \extlink{<url>}           % Shows a small external link icon if \linktrue (default: true in academic CVs)
+% \hlink{<url>}{<text>}     % Conditionally hyperlinks <text> if \linktrue
+% \pdflink{<file>}          % Attaches a PDF file (shows paperclip) if \attachtrue
+% \filelink{<file>}         % Always attaches a file (paperclip icon), unconditional
+% \filelinkifkeyword{<kw>}{<file>} % Attaches file if bibliography entry has keyword <kw>
+%
+% -- Conditional Content Modes and Logic --
+% You can control visibility and interactivity globally by setting these toggles in the .cls:
+%   \ireftrue  / \ireffalse   % Enable/disable conditional hyperlinks (\iref)
+%   \linktrue  / \linkfalse   % Enable/disable external links and extlink icons (\extlink, \hlink)
+%   \attachtrue / \attachfalse % Enable/disable file/PDF attachments (\pdflink)
+%   \hidefalse / \hidetrue    % Show/hide content in \hide{...} or \revhide{...}
+% The default settings are for an academic CV (\ireftrue, \linktrue, \attachtrue, \hidetrue).
+%
+% -- How conditional commands behave with toggles --
+%   \iref{url}{text}      % Only clickable if \ireftrue, otherwise just prints "text"
+%   \extlink{url}         % Icon/link appears only if \linktrue
+%   \hlink{url}{text}     % Only clickable if \linktrue, otherwise nothing
+%   \pdflink{file}        % Attaches file only if \attachtrue, otherwise nothing
+%   \hide{stuff}          % Shows content if \hidefalse (long CV), hides if \hidetrue (short/minimal CV)
+%   \revhide{stuff}       % Opposite of \hide: shows only if \hidetrue
+%
+% -- Screen-only content --
+% \screenonly{...}        % Visible in PDF, hidden in print
+%
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% CV OUTPUT MODES, LINK/DATA VISIBILITY, AND PRESET CONFIGURATIONS
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% This section shows how to globally control hyperlinks, file attachments, and content visibility,
+% as well as how to select a preset for your CV output. Uncomment the desired lines to activate a mode.
+%
+% ---------- Disable All Hyperref Links Globally ---------- 
+% Alternative to manual toggles; disables all links, citations, bookmarks 
+% \hypersetup{draft}
+%
+% ---------- CV Type Presets ----------
+% Choose one by uncommenting
+%
+% --- Enable inclusion of cover letter if true ---
+%\coverlettertrue % <--- set to \coverlettertrue when you want to include
+\coverletterfalse % <--- set to \coverletterfalse when you dont want to include
+
+% === Long Academic CV ===
+%\ireftrue
+%\hidefalse            % Show hidden content
+%\linktrue             % Show external links
+%\attachtrue           % Attach PDFs
+%\DeclareFieldFormat{file}{%
+%						\filelinkifkeyword{pub}{#1}%      % publications
+%						\filelinkifkeyword{present}{#1}%  % presentations
+%						\filelinkifkeyword{poster}{#1}%   % posters
+%						\filelinkifkeyword{part}{#1}%     % certificates
+%}
+%
+% === Short Academic CV (default) ===
+\ireftrue
+\hidetrue            % Show hidden content
+\linktrue             % Show external links
+%\attachtrue           % Attach PDFs
+\DeclareFieldFormat{file}{%
+%		\filelinkifkeyword{pub}{#1}%      % publications
+%		\filelinkifkeyword{present}{#1}%  % presentations
+%		\filelinkifkeyword{poster}{#1}%   % posters
+%		\filelinkifkeyword{part}{#1}%     % certificates
+	}
+% === Short Industry CV ===
+%\ireftrue
+% \hidefalse
+% \linktrue
+% \attachfalse
+% \DeclareFieldFormat{file}{%
+	%   \filelinkifkeyword{pub}{#1}% publications only
+	% }
+%
+% === Anonymous Submission CV ===
+%\ireftrue
+% \hidetrue
+% \linkfalse
+% \attachfalse
+% \DeclareFieldFormat{file}{%
+	%	   % no attachments
+	% }
+%
+% === Minimal Professional CV ===
+%\ireftrue
+%\hidefalse
+%\linktrue
+%\attachfalse
+%\DeclareFieldFormat{file}{%
+	%		\filelinkifkeyword{pub}{#1}% publications only
+	%	}
+%
+% === Minimal Professional CV Short ===
+%\ireffalse
+%\hidetrue
+%\linktrue
+%\attachfalse
+%\DeclareFieldFormat{file}{%
+	%	\filelinkifkeyword{pub}{#1}% publications only
+	%}
+%
+% === Minimal Short Professional CV without attachments and extlinks ===
+%\ireffalse
+%\hidetrue
+%\linktrue
+%\attachfalse
+%\DeclareFieldFormat{file}{
+	%		\filelinkifkeyword{pub}{#1}% publications only
+	%	}
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+
+\name{Shrikrishna}{Bhat K} % Your name to appear at the top
+\degree{MSc, (PhD)} % Optional: Your Degree
+
+% Optional: right-side profile photo (place profile.jpg alongside this .tex or update the path)
+% Syntax: \photo[1in]{pp.png}
+\photo[0.8in]{pp.png}
+\addresswithphoto{\faMapLocation~ Puducherry, IN \addressSep
+	\faMobile~ \href{tel:+917097034480}{+91~$\cdot$~7097034480}\addressSep \faEnvelope~ \href{mailto:kskbhat.in@gmail.com}{kskbhat.in@gmail.com} \addressSep \faLinkedin~ \href{https://www.linkedin.com/in/kskbhat/}{kskbhat}}
+\addresswithphoto{\printonly{\faGithub~ kskbhat
+		\addressSep \faOrcid~ 0009-0000-6180-5783}}
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+\address{\faMapLocation~ Puducherry, IN \addressSep
+	\faMobile~ \href{tel:+917097034480}{+91~$\cdot$~7097034480}
+	\addressSep \faEnvelope~ \href{mailto:kskbhat.in@gmail.com}{kskbhat.in@gmail.com} \addressSep \faLinkedin~ \href{https://www.linkedin.com/in/kskbhat/}{kskbhat}}
+\address{\printonly{\faGithub~ kskbhat
+		\addressSep \faOrcid~ 0009-0000-6180-5783}}
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+% PDF METADATA SETUP
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+{}{}
+\AtBeginDocument{%
+	\hypersetup{
+		pdfauthor={\fullname},
+		pdftitle={Curriculum Vitae - \fullname},
+		pdfsubject={Curriculum Vitae},
+		pdfkeywords={Curriculum Vitae, Resume, Statistics, Data Science, Survey Analytics, \fullname}
+	}
+}
+
+
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONTENT
+% --- Section Divider Below ---
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}
+
+
+% --- Document starts below; cover letter conditional ---
+\begin{document}
+	% ===============================
+	% COVER LETTER PAGE
+	% ===============================
+	
+	
+	% --- Cover Letter block (shown only if \coverlettertrue is set) ---
+%	\coverletter{
+%		\setupheaderfooter[Cover letter]{cl}
+%		%\begin{titlepage}
+%		\resumetitle
+%		\begin{flushleft}
+%			% --- Left block: Recipient details ---
+%			\textsc{To,}\hfill \textit{\TodayFull}\\
+%			\textbf{The Vice-Chancellor}\\
+%			\textsc{St. Joseph’s University}\\
+%			\textsc{\#36, Lalbagh Road}\\
+%			\textsc{Bengaluru – 560027, India}\\[0.5cm]
+%			
+%			% --- Right-aligned Date ---
+%			
+%			\justifying
+%			\textbf{Subject: Application for Assistant Professor Position in the Department of Statistics}\\
+%			
+%			Dear Sir,\\
+%			
+%			I am writing to apply for the position of \textbf{Assistant Professor in the Department of Statistics} at \textbf{St. Joseph’s University, Bengaluru}, as advertised on 21 October 2025.  
+%			Currently, I am a \textbf{PhD candidate in Statistics at Pondicherry University}, expecting to submit my thesis by December 2025. My doctoral research focuses on \emph{Block Probabilistic Distance Clustering (BPDQ)} and its diagnostic measures—work that has resulted in peer-reviewed publications, an `Silhouette' R package on CRAN, and invited conference presentations.
+%			
+%			During my research and consultancy experience, I have developed a strong foundation in advanced statistical modeling, survey analytics, and data-driven inference. My work includes contributions to large-scale socio-economic projects such as the Tamil Nadu Household Panel Survey and the Chennai Metropolitan Housing Demand Study. These experiences have strengthened my ability to design and teach applied courses in statistical methods, data science, and quantitative research techniques. I am proficient in R, Stata, Python, and LaTeX, and I regularly use reproducible workflows and open-source tools in both teaching and research.
+%			
+%			My teaching philosophy emphasizes conceptual clarity, reproducibility, and applied learning. I enjoy creating structured lecture material that bridges theory with application—especially in multivariate analysis, clustering, Bayesian inference, and statistical computing. I am also eager to mentor students in statistical programming and guide minor research projects using real-world data. I have a brief teaching assistance during my PhD to my research supervisor with R programming, Design of Experiments and practicals. 
+%			
+%			Beyond teaching, I am committed to collaborative research and departmental development. I look forward to contributing to the University’s vision of excellence in higher education and interdisciplinary scholarship, particularly within the School of Physical Sciences. My academic background, software development contributions, and passion for statistics education align closely with your department’s requirements.
+%			
+%			Thank you for considering my application. I would be delighted to discuss how my experience and research interests can contribute to the academic community at St. Joseph’s University. I am available to join immediately as required.
+%			
+%			\vspace{1cm}
+%			Sincerely,\\[0.25cm]
+%			\textbf{Shrikrishna Bhat K}\\[2cm]
+%			\color{gray!70}\emph{Attached: Curriculum Vitae}
+%		\end{flushleft}
+%		\clearpage
+%		\label{cllastpage}
+%		%\end{titlepage}
+%	}
+	% ---- Begin CV ----
+	\nocoverletter{
+	\setupheaderfooter[\givenname]{cv}}
+	% --- CV main body starts below ---
+	\coverletter{
+	\setupheaderfooter[Curriculum Vitae]{cv}}
+%	\resumetitlewithphoto
+	\resumetitle
+	\begin{rSection}{Professional Summary}
+		PhD candidate in Statistics with over 6 years of extensive experience in advanced statistical modeling, survey analytics, and socio-economic data research. Expert in cluster analysis, probabilistic distance methods, and data diagnostics, with a strong record of applied research impacting public policy and planning. Skilled in leveraging tools such as R, STATA, Python, and specialized R packages to ensure robust data quality, reproducibility, and insightful analysis. Proven ability to lead large-scale survey projects, deliver consultancy for urban housing demand assessments, and contribute to academic knowledge with peer-reviewed publications and presentations at international conferences. Adept at transforming raw data into actionable insights that inform decision-making in government and social equity contexts. 
+	\end{rSection}
+	
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION SECTION
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{Education}
+		\begin{rSubsection}
+			{PhD in Statistics}
+			{\iref{https://www.pondiuni.edu.in/}{Pondicherry University}}
+			{Research Area: Cluster Analysis, Block Clustering, and Cluster diagnostics}
+			{\MonthYear{2021}{02} -- \MonthYear{2025}{12}}
+			\begin{rItemize}
+				\item Research Supervisor: \iref{https://www.pondiuni.edu.in/faculy_profiles/dr-kiruthika/}{Dr. Kiruthika}
+				\item Thesis Title: \textit{Contributions to Block Clustering and its
+				Diagnostic Measures}
+				\item Thesis Submitted on: \textit{\FullDate{2025}{12}{22}}
+			\end{rItemize}
+		\end{rSubsection}
+		
+		\begin{rSubsection}
+			{Master of Science in Statistics}
+			{\iref{https://www.pondiuni.edu.in/}{Pondicherry University}}
+			{CGPA: 7.75/10}
+			{\MonthYear{2016}{07} -- \MonthYear{2018}{04}}
+		\end{rSubsection}
+		
+		\begin{rSubsection}
+			{Bachelor of Science in Mathematics, Statistics, and Physics}
+			{\iref{https://www.andhraloyolacollege.ac.in/}{Andhra Loyola College}}
+			{Percentage: 80.31\%}
+			{\MonthYear{2013}{07} -- \MonthYear{2016}{04}}
+		\end{rSubsection}
+	\end{rSection}
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	%	WORK EXPERIENCE SECTION
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{Experience}
+		\begin{rSubsection}[\extlink{https://www.cushmanwakefield.com/en/india}]{Cushman and Wakefield}{Chennai}{Senior Statistician}{\FullDate{2025}{05}{07} -- \FullDate{2025}{06}{30}}
+			
+			\begin{rItemize}
+				\revhide{\item Study of Demand and Supply Pattern of Housing in Chennai Metropolitan Area for Chennai Third Master Plan - 2046}
+				\hide{
+					\item Provided consultancy for Housing Demand--Supply Report for Chennai Metropolitan Area (2046 Master Plan).
+					\item Performed statistical analyses, including regression modeling.
+					\item Identified key determinants of housing demand using household survey data.
+					\item Assessed housing needs by location and income category.
+					\item Projected effective demand for home purchase and social housing rental for 2031, 2036, and 2046.
+					\item Delivered analyses and reports on time, ensuring high quality and adherence to industry best practices.}
+			\end{rItemize}
+		\end{rSubsection}
+		
+		\begin{rSubsection}[\extlink{http://csje.mssw.in/}]{Centre for Social Justice and Equity, Madras School of Social Work}{Chennai}{Data Analyst - Socio Economic Survey of Scheduled Tribes in Tamil Nadu}{\FullDate{2024}{09}{07} -- \FullDate{2024}{12}{31}}
+			\hide{
+				\begin{rItemize}
+					\item Converted raw survey data into STATA (.dta) format and prepared data in wide/long structures.
+					\item Monitored real-time data, flagged outliers, and corrected enumerator errors.
+					\item Generated summary tables and assisted in post-coding and data cleaning.
+					\item Supported preparation of rural and urban progress reports at multiple administrative levels.
+			\end{rItemize}}
+		\end{rSubsection}
+		
+		\begin{rSubsection}[\extlink{https://www.tnhps.in/}]{Madras Institute of Development Studies}{Chennai}{Consultant - Tamil Nadu Household Panel Survey}{\FullDate{2022}{08}{23} -- \FullDate{2024}{08}{24}}
+			\hide{
+				\begin{rItemize}
+					\item Served as a half-time consultant and data analysis supervisor for the Tamil Nadu Household Panel Survey (TNHPS).
+					\item Managed data monitoring, cleaning, and analysis in STATA for a large-scale survey involving 20,000+ households.
+					\item Ensured data integrity and reliability to facilitate accurate and consistent subsequent analyses.
+					\item Supervised a team to maintain high standards of data quality throughout the project.
+			\end{rItemize}}
+			\begin{rSubsubsection}{Statistical Data Analyst - Tamil Nadu Household Panel Survey}{\FullDate{2019}{02}{21} -- \FullDate{2021}{03}{31}}
+				\hide{
+					\begin{rItemize}
+						\item Analyzed data of a Pre-Baseline phase of TNHPS, a longitudinal socio-economic survey covering over 240,000+ households.  
+						\item Key responsibilities included data monitoring, cleaning, and analysis using STATA.  
+						\item Major contributor to the Tamil Nadu Covid Pulse Survey (TNCPS), a cross-sectional study 
+						\item Cleaned and analyzed TNCPS data of over 12,000+ households across three waves using STATA.
+						\item Enhanced insights into the socio-economic impacts of the Covid-19 pandemic through data analysis of TNCPS.  
+						\item  \textbf{Partner Institutions}: Department of Economics and Statistics, Government of Tamil Nadu, and Survey Research Center, University of Michigan.
+				\end{rItemize}}
+			\end{rSubsubsection}
+		\end{rSubsection}
+		
+		%------------------------------------------------
+		
+		
+		
+		%------------------------------------------------
+		
+		\begin{rSubsection}[\extlink{https://corecarbonx.com/}]{Core CarbonX Solutions Pvt. Ltd.}{Hyderabad}{Associate Consultant}{\FullDate{2018}{06}{10} -- \FullDate{2019}{02}{15}}
+			\hide{\begin{rItemize}
+					\item Developed a model to prioritize Industrial Parks in Telangana State for TSIIC Ltd.
+					\item Utilized software such as R and Dart for machine learning and Multiple Criteria Decision Making techniques.
+					\item Coordinated 2 Swachh Bharat Mission Solid Waste Management Exposure Workshop in Tirupati.
+					\item Workshops funded by the National Institute of Urban Affairs (NIUA).
+			\end{rItemize}}
+		\end{rSubsection}
+	\end{rSection}
+	
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	%	TECHNICAL STRENGTHS SECTION
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{Skills and Languages}
+		\sloppy
+		\begin{tabularx}{\textwidth}{@{} >{\bfseries\raggedright\arraybackslash}p{0.29\textwidth} X @{}}
+			Programming Languages & R~$\cdot$~Python \\
+			Statistical Tools & STATA~$\cdot$~SPSS~$\cdot$~Minitab \\
+			Data Tools & MS Excel~$\cdot$~SQL~$\cdot$~Power BI ~$\cdot$~Tableau\extlink{https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes}\\
+			Version Control & GitHub\\
+			Other Tools & \LaTeX~$\cdot$~SurveyCTO~$\cdot$~MS Office \\
+			Languages Known & English (Fluent)~$\cdot$~Kannada (Native)~$\cdot$~Telugu (Native)~$\cdot$~Hindi (Fluent)~$\cdot$~Tulu (Native)~$\cdot$~Tamil (Basic) \\
+		\end{tabularx}
+	\end{rSection}
+	
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	%	PUBLICATIONS SECTION
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}[~\screenonly{\small \hlink{https://orcid.org/0009-0000-6180-5783}{\faOrcid}~\hlink{https://scholar.google.com/citations?user=Yj3yW6MAAAAJ}{\faGoogleScholar}}]{Publications}
+		\printbibliography[keyword=pub,heading=empty
+		%		,env=bullet  % Use 'bullet' for dot bullets
+		,env=numbered % Use 'numbered' for dot numbers
+		% comment out above both for paragraph type listing
+		]
+	\end{rSection}
+	\begin{rSection}[~\screenonly{\small \hlink{https://github.com/kskbhat}{\faGithub}}]{Packages}
+		\printbibliography[keyword=software, heading=empty
+		%		,env=bullet  % Use 'bullet' for dot bullets
+		,env=numbered % Use 'numbered' for dot numbers
+		% comment out above both for paragraph type listing
+		]
+	\end{rSection}
+	
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	%	ATTENDED WORKSHOPS AND CONFERENCES SECTION
+	% --- Section Divider Below ---
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{Workshops and Conferences}
+		\begin{rSubheading}{Papers Presented}
+			\printbibliography[keyword=present,heading=empty
+			%		,env=bullet  % Use 'bullet' for dot bullets
+			,env=numbered % Use 'numbered' for dot numbers
+			% comment out above both for paragraph type listing
+			]
+		\end{rSubheading}
+		
+		\begin{rSubheading}{Posters Presented}
+			\printbibliography[keyword=poster,heading=empty
+			%		,env=bullet  % Use 'bullet' for dot bullets
+			,env=numbered % Use 'numbered' for dot numbers
+			% comment out above both for paragraph type listing
+			]
+		\end{rSubheading}
+		\hide{\clearpage}
+		\begin{rSubheading}{Participated}
+			\printbibliography[keyword=part,heading=empty
+			%		,env=bullet  % Use 'bullet' for dot bullets
+			,env=numbered % Use 'numbered' for dot numbers
+			% comment out above both for p	aragraph type listing
+			]
+		\end{rSubheading}
+	\end{rSection}
+	\vfill
+	\attachmentnote
+	\label{cvlastpage}
+\end{document}	
