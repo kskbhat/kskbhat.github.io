@@ -19,7 +19,7 @@ website:
     logo-alt: "Shrikrishna Bhat K"
     left:
       - text: "Research"
-        icon: flask
+        icon: search
         href: research.qmd
       - text: "Publications"
         icon: book
@@ -37,7 +37,8 @@ website:
         icon: file-earmark-text
         href: cv.qmd
       - text: "Writing"
-        menu:
+        icon: pencil-square
+        menu: 
           - text: "Notes"
             href: notes.qmd
           - text: "Blog"

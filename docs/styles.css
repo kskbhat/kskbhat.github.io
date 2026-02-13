@@ -237,6 +237,11 @@
 .timeline-right .tl-cert {
   margin-top: 0.5rem;
   font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.timeline-right .tl-cert:hover {
+  text-decoration: underline;
 }
 
 [data-bs-theme="dark"] .timeline-center::before {
