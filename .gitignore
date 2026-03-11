@@ -7,3 +7,6 @@
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Built site output (CI builds and deploys this)
+docs/
