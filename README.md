@@ -23,15 +23,24 @@ quarto render
 
 ## How Automation Works
 
-The website content for **Publications**, **Software**, **Conferences**, and **Research** pages is **automatically generated** from `reference.bib` — the same file used by the LaTeX CV.
+The website content for **Publications**, **Software**, **Conferences**, **Experience**, **Education**, and **Research** pages is **automatically generated** from `reference.bib` — the same file used by the LaTeX CV.
 
 ```text
 reference.bib  →  _scripts/generate_pages.py  →  _includes/*.md  →  .qmd pages ({{< include >}})
 ```
 
 - A **pre-render hook** in `_quarto.yml` runs `python _scripts/generate_pages.py` before every build.
-- The script parses bib entries by `keywords` (`pub`, `software`, `present`, `poster`, `part`) and generates markdown partials into `_includes/`.
-- To add a new entry, simply add a bib entry with the appropriate keyword (and optional `abstract` field) to `reference.bib`, then re-render.
+- The script parses bib entries by `keywords` and generates markdown partials into `_includes/`.
+- **Keywords used:**
+  - `pub` — Publications (journal articles, preprints)
+  - `software` — R packages
+  - `present` — Papers presented at conferences
+  - `poster` — Poster presentations
+  - `part` — Workshops/conferences attended (participation)
+  - `education` — Education history (degrees)
+  - `experience` — Professional experience (work history)
+- To add a new entry, simply add a bib entry with the appropriate keyword to `reference.bib`, then re-render.
+- Education/experience entries use `institution`, `description` (with `||` as bullet-point separator), and `date` (`YYYY-MM/YYYY-MM` or `YYYY-MM-DD/YYYY-MM-DD`) fields.
 
 ## Project Structure
 
@@ -44,6 +53,8 @@ quarto website/
 │   ├── publications_content.md
 │   ├── software_content.md
 │   ├── conferences_content.md
+│   ├── education_content.md
+│   ├── experience_content.md
 │   ├── research_counts.md
 │   └── pub_conference_list.md
 ├── CVShrikrishnaBhat/       # LaTeX CV folder (PDF referenced by cv.qmd)
@@ -54,7 +65,7 @@ quarto website/
 ├── research.qmd             # Research interests & PhD details
 ├── publications.qmd         # Publications & preprints (auto-generated content)
 ├── software.qmd             # R packages (auto-generated content)
-├── experience.qmd           # Professional experience
+├── experience.qmd           # Professional experience (auto-generated content)
 ├── conferences.qmd          # Workshops & conferences (auto-generated content)
 ├── cv.qmd                   # Curriculum Vitae with embedded PDF viewer
 ├── 404.qmd                  # Custom 404 page

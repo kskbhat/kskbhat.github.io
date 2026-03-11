@@ -58,25 +58,28 @@ h2 {
   border-bottom-color: #3B2F22;
 }
 
-// Timeline dark overrides
-.timeline-right h3 {
+// Table-timeline dark overrides
+.tl-content h3 {
   color: #FFFFFF !important;
 }
-.timeline-left .tl-date {
+.tl-meta .tl-date {
   color: #F0C75E !important;
 }
-.timeline-left .tl-place {
+.tl-meta .tl-place {
   color: #c4b49e !important;
 }
-.timeline-right p,
-.timeline-right em {
+.tl-content p,
+.tl-content em {
   color: #d9cebf;
 }
-.timeline-right .tl-cert {
+.tl-content .tl-cert {
   color: #c4b49e;
 }
-.timeline-right ul li {
+.tl-content ul li {
   color: #d9cebf;
+}
+.tl-row {
+  border-bottom-color: #3B2F22;
 }
 
 // Dark footer

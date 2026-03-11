@@ -2,16 +2,14 @@
 
 ## Papers Presented
 
-::: {.timeline}
+::: {.tl-table}
 
-::: {.timeline-item}
-::: {.timeline-left}
-[6–8 February 2024]{.tl-date}\
-[University of Allahabad, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 6–8 February 2024]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> University of Allahabad, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### Probabilistic Distance Coclustering for Ordinal Data
 *International Conference on Recent Advances of Probability and Statistics in Interdisciplinary Research (RAPSIR–2024) in conjunction with the 43<sup>rd</sup> Annual Convention of ISPS*
 
@@ -20,14 +18,12 @@
 
 :::
 
-::: {.timeline-item}
-::: {.timeline-left}
-[1–2 September 2023]{.tl-date}\
-[Bharathiar University, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 1–2 September 2023]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> Bharathiar University, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### Density-Based Silhouettes to Evaluate the Performance of Soft Clustering Algorithms
 *International Conference on Statistical Theory and its Applications (ICSTA-2023)*
 
@@ -38,14 +34,12 @@
 
 :::
 
-::: {.timeline-item}
-::: {.timeline-left}
-[30 December 2022]{.tl-date}\
-[IISc, Bengaluru, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 30 December 2022]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> IISc, Bengaluru, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### Probability Density-Based Clustering
 *Annual Conference of International Indian Statistical Association (IISA 2022)*
 
@@ -60,16 +54,14 @@
 
 ## Posters Presented
 
-::: {.timeline}
+::: {.tl-table}
 
-::: {.timeline-item}
-::: {.timeline-left}
-[27–31 December 2024]{.tl-date}\
-[CUSAT, Cochin, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 27–31 December 2024]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> CUSAT, Cochin, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### Exploring Block Clustering with Probabilistic Distance: Theory and Validation
 *Annual Conference of International Indian Statistical Association (IISA 2024)*
 
@@ -86,16 +78,14 @@
 
 ## Workshops & Conferences Attended
 
-::: {.timeline}
+::: {.tl-table}
 
-::: {.timeline-item}
-::: {.timeline-left}
-[5 February 2024]{.tl-date}\
-[University of Allahabad, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 5 February 2024]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> University of Allahabad, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### Pre-Annual Convention Workshop on Advanced Data Science Techniques
 *In conjunction with the 43<sup>rd</sup> Annual Convention of ISPS*
 
@@ -104,14 +94,12 @@
 
 :::
 
-::: {.timeline-item}
-::: {.timeline-left}
-[23–27 February 2022]{.tl-date}\
-[Hyderabad, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 23–27 February 2022]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> Hyderabad, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### 24<sup>th</sup> Annual Conference of SSCA (RASTA-2022)
 *Online event on Recent Advances in Statistical Theory and Applications, ICAR-NAARM, Hyderabad*
 
@@ -120,14 +108,12 @@
 
 :::
 
-::: {.timeline-item}
-::: {.timeline-left}
-[24–25 January 2022]{.tl-date}\
-[Chennai, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 24–25 January 2022]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> Chennai, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### International Conference on Advances in Statistical Methods and Applications (ICASMA-2022)
 *Organised by the Department of Statistics, University of Madras*
 
@@ -136,14 +122,12 @@
 
 :::
 
-::: {.timeline-item}
-::: {.timeline-left}
-[13–15 December 2021]{.tl-date}\
-[Manipal, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 13–15 December 2021]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> Manipal, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### 28<sup>th</sup> International Workshop on Matrices and Statistics (IWMS 2021)
 *Hosted by Centre for Advanced Research in Applied Mathematics and Statistics, MAHE, Manipal*
 
@@ -152,14 +136,12 @@
 
 :::
 
-::: {.timeline-item}
-::: {.timeline-left}
-[18–20 September 2021]{.tl-date}\
-[Gandhinagar, India]{.tl-place}
+::: {.tl-row}
+::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 18–20 September 2021]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> Gandhinagar, India]{.tl-place}
 :::
-::: {.timeline-center}
-:::
-::: {.timeline-right}
+::: {.tl-content}
 ### International Workshop on Data Science (DATUM 2021)
 *In association with the International Indian Statistical Association, DA-IICT, Gandhinagar*
 

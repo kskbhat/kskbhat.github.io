@@ -77,7 +77,11 @@ def parse_bib(bib_path: Path) -> list[dict]:
 
 
 def _parse_fields(body: str) -> dict:
-    """Extract field = {value} pairs from a bib entry body."""
+    """Extract field = {value} pairs from a bib entry body.
+
+    Handles ``field = {value}`` and ``field = "value"`` forms.
+    Multi-line braced values are preserved (newlines kept).
+    """
     fields: dict = {}
     i = 0
     length = len(body)
@@ -155,8 +159,12 @@ def clean_latex(text: str) -> str:
     text = re.sub(r"\{([^{}]*)\}", r"\1", text)
     # ~ → non-breaking space (just use regular space in markdown)
     text = text.replace("~", " ")
+    # --- → em-dash (must come before --)
+    text = text.replace("---", "—")
     # -- → en-dash
     text = text.replace("--", "–")
+    # \% → %
+    text = text.replace("\\%", "%")
     # Remove stray LaTeX commands we don't handle
     text = re.sub(r"\\[a-zA-Z]+\s*", "", text)
     return text.strip()
@@ -625,21 +633,21 @@ def generate_conferences(entries: list[dict]) -> str:
 
     if presentations:
         lines.append("## Papers Presented\n")
-        lines.append("::: {.timeline}\n")
+        lines.append("::: {.tl-table}\n")
         for e in presentations:
             lines.append(_fmt_conference(e))
         lines.append(":::\n\n---\n")
 
     if posters:
         lines.append("## Posters Presented\n")
-        lines.append("::: {.timeline}\n")
+        lines.append("::: {.tl-table}\n")
         for e in posters:
             lines.append(_fmt_conference(e))
         lines.append(":::\n\n---\n")
 
     if participated:
         lines.append("## Workshops & Conferences Attended\n")
-        lines.append("::: {.timeline}\n")
+        lines.append("::: {.tl-table}\n")
         for e in participated:
             lines.append(_fmt_conference(e))
         lines.append(":::\n")
@@ -659,21 +667,17 @@ def _fmt_conference(entry: dict) -> str:
     file_path = entry.get("file", "")
 
     lines: list[str] = []
-    lines.append("::: {.timeline-item}")
+    lines.append("::: {.tl-row}")
 
-    # Left column: date & place
-    lines.append("::: {.timeline-left}")
-    lines.append(f"[{date}]{{.tl-date}}\\")
+    # Left column: date & place with icons
+    lines.append("::: {.tl-meta}")
+    lines.append(f'[<i class="bi bi-calendar3"></i> {date}]{{.tl-date}}\\')
     if address:
-        lines.append(f"[{address}]{{.tl-place}}")
-    lines.append(":::")
-
-    # Center line
-    lines.append("::: {.timeline-center}")
+        lines.append(f'[<i class="bi bi-geo-alt-fill"></i> {address}]{{.tl-place}}')
     lines.append(":::")
 
     # Right column: content
-    lines.append("::: {.timeline-right}")
+    lines.append("::: {.tl-content}")
     lines.append(f"### {title}")
 
     # Conference full name
@@ -693,6 +697,168 @@ def _fmt_conference(entry: dict) -> str:
         resolved = resolve_file_path(file_path)
         lines.append(f"\n[📄 Certificate]({resolved}){{.tl-cert}}")
 
+    lines.append(":::")
+
+    lines.append("\n:::\n")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Date helpers for education/experience (YYYY-MM/YYYY-MM ranges)
+# ---------------------------------------------------------------------------
+
+SHORT_MONTHS = {
+    "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr",
+    "05": "May", "06": "Jun", "07": "Jul", "08": "Aug",
+    "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec",
+}
+
+
+def format_date_range(date_str: str) -> str:
+    """Format a date or date-range for education/experience timelines.
+
+    Handles:
+    - ``YYYY-MM-DD/YYYY-MM-DD`` → ``DD Mon YYYY – DD Mon YYYY``
+    - ``YYYY-MM/YYYY-MM``       → ``Mon YYYY – Mon YYYY``
+    - ``YYYY-MM-DD``            → ``DD Mon YYYY``
+    - ``YYYY-MM``               → ``Mon YYYY``
+    """
+    if not date_str:
+        return ""
+
+    def _fmt_part(part: str) -> str:
+        segs = part.split("-")
+        if len(segs) == 3:
+            return f"{int(segs[2])} {SHORT_MONTHS.get(segs[1], segs[1])} {segs[0]}"
+        if len(segs) == 2:
+            return f"{SHORT_MONTHS.get(segs[1], segs[1])} {segs[0]}"
+        return segs[0]
+
+    if "/" in date_str:
+        start, end = date_str.split("/", 1)
+        return f"{_fmt_part(start)} – {_fmt_part(end)}"
+    return _fmt_part(date_str)
+
+
+def _sort_by_date_desc(entries: list[dict]) -> list[dict]:
+    """Sort entries by their start date (first part of ``date`` field), newest first."""
+    def _key(e: dict) -> str:
+        d = e.get("date", "")
+        return d.split("/")[0] if "/" in d else d
+    return sorted(entries, key=_key, reverse=True)
+
+
+# ---------------------------------------------------------------------------
+# Content generators — Education
+# ---------------------------------------------------------------------------
+
+def generate_education(entries: list[dict]) -> str:
+    """Generate timeline markdown for the Education section of cv.qmd."""
+    edu = _sort_by_date_desc(filter_by_keyword(entries, "education"))
+
+    lines: list[str] = []
+    lines.append("::: {.tl-table}\n")
+
+    for e in edu:
+        lines.append(_fmt_education(e))
+
+    lines.append(":::\n")
+    return "\n".join(lines)
+
+
+def _fmt_education(entry: dict) -> str:
+    """Format one education entry as a table-style row."""
+    title = clean_latex(entry.get("title", ""))
+    institution = clean_latex(entry.get("institution", ""))
+    url = entry.get("url", "")
+    date = format_date_range(entry.get("date", ""))
+    description = clean_latex(entry.get("description", ""))
+
+    lines: list[str] = []
+    lines.append("::: {.tl-row}")
+
+    # Left column: date & institution with icons
+    lines.append("::: {.tl-meta}")
+    lines.append(f'[<i class="bi bi-calendar3"></i> {date}]{{.tl-date}}\\')
+    if url and institution:
+        lines.append(f'[<i class="bi bi-building"></i> [{institution}]({url})]{{.tl-place}}')
+    elif institution:
+        lines.append(f'[<i class="bi bi-building"></i> {institution}]{{.tl-place}}')
+    lines.append(":::")
+
+    # Right column: content
+    lines.append("::: {.tl-content}")
+    lines.append(f"### {title}")
+    lines.append("")
+
+    # Description: split on || for bullet points, or single line
+    if description:
+        parts = [p.strip() for p in description.split("||")]
+        if len(parts) > 1:
+            for p in parts:
+                lines.append(f"- {p}")
+        else:
+            lines.append(parts[0])
+    lines.append(":::")
+
+    lines.append("\n:::\n")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Content generators — Experience
+# ---------------------------------------------------------------------------
+
+def generate_experience(entries: list[dict]) -> str:
+    """Generate timeline markdown for the Experience page."""
+    exp = _sort_by_date_desc(filter_by_keyword(entries, "experience"))
+
+    lines: list[str] = []
+    lines.append("::: {.tl-table}\n")
+
+    for e in exp:
+        lines.append(_fmt_experience(e))
+
+    lines.append(":::\n")
+    return "\n".join(lines)
+
+
+def _fmt_experience(entry: dict) -> str:
+    """Format one experience entry as a table-style row."""
+    title = clean_latex(entry.get("title", ""))
+    institution = clean_latex(entry.get("institution", ""))
+    url = entry.get("url", "")
+    date = format_date_range(entry.get("date", ""))
+    address = clean_latex(entry.get("address", ""))
+    description = clean_latex(entry.get("description", ""))
+
+    lines: list[str] = []
+    lines.append("::: {.tl-row}")
+
+    # Left column: date & place with icons
+    lines.append("::: {.tl-meta}")
+    lines.append(f'[<i class="bi bi-calendar3"></i> {date}]{{.tl-date}}\\')
+    if address:
+        lines.append(f'[<i class="bi bi-geo-alt-fill"></i> {address}]{{.tl-place}}')
+    lines.append(":::")
+
+    # Right column: content
+    lines.append("::: {.tl-content}")
+    lines.append(f"### {title}")
+
+    # Organization name with link
+    if url and institution:
+        lines.append(f"[**{institution}**]({url}){{.tl-org}}")
+    elif institution:
+        lines.append(f"**{institution}**")
+
+    lines.append("")
+
+    # Description: split on || for individual bullet points
+    if description:
+        parts = [p.strip() for p in description.split("||")]
+        for p in parts:
+            lines.append(f"- {p}")
     lines.append(":::")
 
     lines.append("\n:::\n")
@@ -788,6 +954,8 @@ def main():
         "conferences_content.md": generate_conferences(entries),
         "research_counts.md": generate_research_counts(entries),
         "pub_conference_list.md": generate_pub_conference_list(entries),
+        "education_content.md": generate_education(entries),
+        "experience_content.md": generate_experience(entries),
     }
 
     for filename, content in content_map.items():
