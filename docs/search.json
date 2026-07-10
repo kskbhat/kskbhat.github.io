@@ -11,7 +11,7 @@
     "href": "teaching.html#courses",
     "title": "Teaching",
     "section": "Courses",
-    "text": "Courses\n\n\n📊 Statistical Computing and Non-Parametric Inference using R\nInstitution: Manipal Academy of Higher Education (MAHE)\nA comprehensive postgraduate course designed to teach the fundamentals of statistical computing, data management, and non-parametric statistical methods using R.\nTopics covered: * R Programming Fundamentals, vector calculations, coercion, and mathematical transformations. * Descriptive Statistics: central tendency, dispersion, skewness, and kurtosis. * Confidence Intervals for means and proportions. * Contingency Tables and Chi-Square tests. * Non-Parametric Inference: Sign test, Wilcoxon Signed-Rank test, and Mann-Whitney U test.\n\n📖 Bookdown Notes 📄 Syllabus 🐙 Course Folder"
+    "text": "Courses\n\n\n📊 Statistical Computing and Non-Parametric Inference using R\nManipal Academy of Higher Education (MAHE)\nA comprehensive postgraduate course designed to teach the fundamentals of statistical computing, data management, and non-parametric statistical methods using R.\nTopics covered:\n\nR Programming Fundamentals: Vector calculations, coercion, and mathematical transformations.\nDescriptive Statistics: Central tendency, dispersion, skewness, and kurtosis.\nConfidence Intervals: Estimation for means and proportions.\nContingency Tables: Chi-Square tests and association diagnostics.\nNon-Parametric Inference: Sign test, Wilcoxon Signed-Rank test, and Mann-Whitney U test.\n\n\n📖 Bookdown Notes 📄 Syllabus 🐙 Course Folder"
   },
   {
     "objectID": "research.html",
