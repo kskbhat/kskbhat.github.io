@@ -4,6 +4,22 @@
 
 ::: {.tl-row}
 ::: {.tl-meta}
+[<i class="bi bi-calendar3"></i> 1 Dec 2025 – 31 Mar 2026]{.tl-date}\
+[<i class="bi bi-geo-alt-fill"></i> Chennai]{.tl-place}
+:::
+::: {.tl-content}
+### Data Consultant — Bridging the Gap in Digital Economy: Enabling Drivers and Constraining Factors Impeding Digital Inclusivity
+[**Madras Institute of Development Studies**](https://www.mids.ac.in/){.tl-org}
+
+- Designed the GAHDDI: a three-pillar household-level composite index (digital access, capability, financial participation) with a 1-|gap| gender-equality weight that penalises gaps between male and female members in the same household.
+- Built Stata pipelines integrating household, roster, and respondent modules for 4,199 households across four aspirational districts (Assam, Odisha, Rajasthan, Tamil Nadu); produced pillar and overall scores by district and rural/urban sector.
+- Mapped the index to the NSS 80<sup>th</sup> Round CSMT (2025) for state- and national-level scaling, and authored the technical report for MeitY, Government of India.
+:::
+
+:::
+
+::: {.tl-row}
+::: {.tl-meta}
 [<i class="bi bi-calendar3"></i> 7 May 2025 – 30 Jun 2025]{.tl-date}\
 [<i class="bi bi-geo-alt-fill"></i> Chennai]{.tl-place}
 :::
