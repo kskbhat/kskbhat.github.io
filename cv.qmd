@@ -48,6 +48,7 @@ function toggleResume() {
 | Category | Details |
 |---|---|
 | **Programming Languages** | R · Python |
+| **Machine Learning** | scikit-learn · Logistic Regression · Classification · Clustering · Ensemble Methods |
 | **Statistical Tools** | STATA · SPSS · Minitab |
 | **Data Tools** | MS Excel · SQL · Power BI · [Tableau](https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes) |
 | **Version Control** | GitHub |
@@ -63,6 +64,13 @@ function toggleResume() {
 | Hindi | Fluent |
 | Tulu | Native |
 | Tamil | Basic |
+
+---
+
+## Honors & Awards
+
+- **Certificate of Appreciation**, Directorate of Tribal Welfare, Government of Tamil Nadu — 29 July 2025.
+  *For data cleaning and analysis contributions to the Socio-Economic Survey of Scheduled Tribes in Tamil Nadu (August–December 2024).*
 
 ---
 
