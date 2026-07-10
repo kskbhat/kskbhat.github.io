@@ -1,6 +1,6 @@
 ---
 title: "Shrikrishna Bhat K"
-subtitle: "PhD Candidate in Statistics · Researcher · Data Analyst"
+subtitle: "PhD in Statistics · Researcher · Data Analyst"
 page-layout: full
 toc: false
 ---
@@ -11,7 +11,7 @@ toc: false
 
 > Developing robust clustering methodologies for complex data.
 
-PhD Candidate in Statistics specializing in **Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics**.
+PhD in Statistics specializing in **Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics**.
 
 I work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability.
 

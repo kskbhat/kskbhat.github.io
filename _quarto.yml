@@ -10,7 +10,7 @@ project:
 website:
   title: "Shrikrishna Bhat K"
   site-url: https://kskbhat.github.io
-  description: "Personal academic website of Shrikrishna Bhat K — PhD candidate in Statistics, researcher in cluster analysis, block clustering, and cluster diagnostics."
+  description: "Personal academic website of Shrikrishna Bhat K — PhD in Statistics, researcher in cluster analysis, block clustering, and cluster diagnostics."
   favicon: favicon.png
 
   navbar:

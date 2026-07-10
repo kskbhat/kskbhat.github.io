@@ -88,7 +88,7 @@
     "href": "index.html",
     "title": "Shrikrishna Bhat K",
     "section": "",
-    "text": "Developing robust clustering methodologies for complex data.\n\nPhD Candidate in Statistics specializing in Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics.\nI work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability.\nOver 6 years of experience in large-scale socio-economic surveys, urban analytics, and policy-oriented data research.\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Developing robust clustering methodologies for complex data.\n\nPhD in Statistics specializing in Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics.\nI work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability.\nOver 6 years of experience in large-scale socio-economic surveys, urban analytics, and policy-oriented data research.\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "cv.html",
@@ -256,7 +256,14 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "GitHub\nOpen-source R packages for statistical computing and cluster analysis.\nAuthors: Shrikrishna Bhat K and Kiruthika C\nDOI: 10.32614/CRAN.package.Silhouette"
+    "text": "GitHub\nOpen-source R packages for statistical computing and cluster analysis."
+  },
+  {
+    "objectID": "software.html#silhouette",
+    "href": "software.html#silhouette",
+    "title": "Software",
+    "section": "Silhouette",
+    "text": "Silhouette\n\n\n\nProximity Measure Based Diagnostics for Standard, Soft, and Multi-Way Clustering\n\n\n\nDownloads  \n\n\n\n📦 CRAN\nR package version 0.9.6\n\n\n📖 Documentation\nPackage website & vignettes\n\n\nAuthors: Shrikrishna Bhat K and Kiruthika C\nDOI: 10.32614/CRAN.package.Silhouette\n\nInstallation\ninstall.packages(\"Silhouette\")"
   },
   {
     "objectID": "software.html#blockclusterpdq",

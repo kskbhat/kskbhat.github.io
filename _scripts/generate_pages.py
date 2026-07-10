@@ -239,7 +239,12 @@ def sort_by_year_desc(entries: list[dict]) -> list[dict]:
 
 def bold_author(author_str: str) -> str:
     """Bold the target author name in an author string."""
-    return author_str.replace(BOLD_NAME, f"**{BOLD_NAME}**")
+    targets = ["Shrikrishna Bhat Kapu", "Shrikrishna {Bhat K}", "Shrikrishna Bhat K"]
+    for t in targets:
+        if t in author_str:
+            author_str = author_str.replace(t, f"**{t}**")
+            break
+    return author_str
 
 
 # Bib 'file' fields are relative to the CVShrikrishnaBhat folder
@@ -555,10 +560,10 @@ def _fmt_software(entry: dict) -> str:
     # Package header with optional logo
     if github_repo:
         logo_url = f"https://raw.githubusercontent.com/{github_repo}/main/man/figures/logo.png"
+        lines.append(f"## {pkg_name}\n")
         lines.append(f'<div class="pkg-header">')
         lines.append(f'<img src="{logo_url}" alt="{pkg_name} logo" class="pkg-logo" onerror="this.style.display=\'none\'">')
         lines.append(f'<div class="pkg-header-text">')
-        lines.append(f'<h2>{pkg_name}</h2>')
         if pkg_desc:
             lines.append(f"\n**{pkg_desc}**\n")
         lines.append(f'</div>')
