@@ -1,14 +1,35 @@
 ---
 title: "Teaching"
-subtitle: "Lecture slides, code files, and study resources"
+subtitle: "Lecture notes, study materials, and interactive resources for statistics and computing courses."
 page-layout: full
 toc: false
 ---
 
-Welcome to my personal teaching repository page. This space organizes my course materials, syllabus readmes, lecture code examples, and interactive bookdown websites, designed to complement my research portfolio.
+This section organizes my course syllabi, lecture notes, R code files, and interactive Bookdown books. These materials are designed to accompany my courses and help students develop practical computing and statistical inference skills.
 
-## List of Courses
+## Courses
 
-| Course Name | Institution | Course Folder | Syllabus | Course Website |
-| :--- | :--- | :--- | :--- | :--- |
-| **Statistical Computing and Non-Parametric Inference Using R** | MAHE | [Browse Files](https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R){target="_blank"} | [Read Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md){target="_blank"} | [Visit Bookdown Site](https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/){target="_blank"} |
+::: {.card-grid}
+
+::: {.card}
+### 📊 Statistical Computing and Non-Parametric Inference using R
+
+**Institution:** Manipal Academy of Higher Education (MAHE)
+
+A comprehensive postgraduate course designed to teach the fundamentals of statistical computing, data management, and non-parametric statistical methods using R.
+
+**Topics covered:**
+* R Programming Fundamentals, vector calculations, coercion, and mathematical transformations.
+* Descriptive Statistics: central tendency, dispersion, skewness, and kurtosis.
+* Confidence Intervals for means and proportions.
+* Contingency Tables and Chi-Square tests.
+* Non-Parametric Inference: Sign test, Wilcoxon Signed-Rank test, and Mann-Whitney U test.
+
+<div class="pub-links" style="margin-top: 1.5rem; justify-content: flex-start; gap: 0.5rem;">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="pub-link-badge pub-link-doi" style="padding: 0.4em 0.9em; font-size: 0.82rem;" target="_blank">📖 Bookdown Notes</a>
+  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="pub-link-badge pub-link-preprint" style="padding: 0.4em 0.9em; font-size: 0.82rem;" target="_blank">📄 Syllabus</a>
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="pub-link-badge pub-link-pdf" style="background:#5a769e; padding: 0.4em 0.9em; font-size: 0.82rem;" target="_blank">🐙 Course Folder</a>
+</div>
+:::
+
+:::

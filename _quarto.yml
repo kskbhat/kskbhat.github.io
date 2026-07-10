@@ -39,6 +39,8 @@ website:
       - text: "Writing"
         icon: pencil-square
         menu: 
+          - text: "Teaching"
+            href: teaching.qmd
           - text: "Notes"
             href: notes.qmd
           - text: "Blog"

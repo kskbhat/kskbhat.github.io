@@ -4,14 +4,14 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Welcome to my personal teaching repository page. This space organizes my course materials, syllabus readmes, lecture code examples, and interactive bookdown websites, designed to complement my research portfolio."
+    "text": "This section organizes my course syllabi, lecture notes, R code files, and interactive Bookdown books. These materials are designed to accompany my courses and help students develop practical computing and statistical inference skills."
   },
   {
-    "objectID": "teaching.html#list-of-courses",
-    "href": "teaching.html#list-of-courses",
+    "objectID": "teaching.html#courses",
+    "href": "teaching.html#courses",
     "title": "Teaching",
-    "section": "List of Courses",
-    "text": "List of Courses\n\n\n\nCourse Name\nInstitution\nCourse Folder\nSyllabus\nCourse Website\n\n\n\n\nStatistical Computing and Non-Parametric Inference Using R\nMAHE\nBrowse Files\nRead Syllabus\nVisit Bookdown Site"
+    "section": "Courses",
+    "text": "Courses\n\n\n📊 Statistical Computing and Non-Parametric Inference using R\nInstitution: Manipal Academy of Higher Education (MAHE)\nA comprehensive postgraduate course designed to teach the fundamentals of statistical computing, data management, and non-parametric statistical methods using R.\nTopics covered: * R Programming Fundamentals, vector calculations, coercion, and mathematical transformations. * Descriptive Statistics: central tendency, dispersion, skewness, and kurtosis. * Confidence Intervals for means and proportions. * Contingency Tables and Chi-Square tests. * Non-Parametric Inference: Sign test, Wilcoxon Signed-Rank test, and Mann-Whitney U test.\n\n📖 Bookdown Notes 📄 Syllabus 🐙 Course Folder"
   },
   {
     "objectID": "research.html",
