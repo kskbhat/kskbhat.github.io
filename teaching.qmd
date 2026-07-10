@@ -1,0 +1,14 @@
+---
+title: "Teaching"
+subtitle: "Lecture slides, code files, and study resources"
+page-layout: full
+toc: false
+---
+
+Welcome to my personal teaching repository page. This space organizes my course materials, syllabus readmes, lecture code examples, and interactive bookdown websites, designed to complement my research portfolio.
+
+## List of Courses
+
+| Course Name | Institution | Course Folder | Syllabus | Course Website |
+| :--- | :--- | :--- | :--- | :--- |
+| **Statistical Computing and Non-Parametric Inference Using R** | MAHE | [Browse Files](https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R){target="_blank"} | [Read Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md){target="_blank"} | [Visit Bookdown Site](https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/){target="_blank"} |

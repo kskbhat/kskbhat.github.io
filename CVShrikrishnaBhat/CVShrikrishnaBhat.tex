@@ -110,12 +110,13 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 	% \end{rSection}
 %
 % -- Subsections and Entries --
-% \begin{rSubsection}[<optional link>]{<Title>}{<Date>}{<Subtitle>}{<Location>}
+			%		,env=bullet  % Use 'bullet' for dot bullets
 	%   ...content...
 	% \end{rSubsection}
 %
-% \begin{rSubsubsection}{<Subtitle>}{<Location>}
-	%   ...content...
+%\begin{rSubsubsection}{<Subtitle>}{<Location>}
+%    example placeholder
+%\end{rSubsubsection}
 	% \end{rSubsubsection}
 %
 % \begin{rSubheading}[<optional link>]{<Title>}
@@ -185,33 +186,28 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 \coverletterfalse % <--- set to \coverletterfalse when you dont want to include
 
 % === Long Academic CV ===
-%\ireftrue
-%\hidefalse            % Show hidden content
-%\linktrue             % Show external links
-%\attachtrue           % Attach PDFs
-%\DeclareFieldFormat{file}{%
+\ireftrue
+\hidefalse            % Show hidden content
+\linktrue             % Show external links
+\attachfalse           % Attach PDFs
+\DeclareFieldFormat{file}{%
 %						\filelinkifkeyword{pub}{#1}%      % publications
 %						\filelinkifkeyword{present}{#1}%  % presentations
 %						\filelinkifkeyword{poster}{#1}%   % posters
 %						\filelinkifkeyword{part}{#1}%     % certificates
-%}
+}
 %
 % === Short Academic CV (default) ===
-\ireftrue
-\hidetrue            % Show hidden content
-\linktrue             % Show external links
+%\ireftrue
+%\hidetrue            % Show hidden content
+%\linktrue             % Show external links
 %\attachtrue           % Attach PDFs
-\DeclareFieldFormat{file}{%
+%\DeclareFieldFormat{file}{%
 %		\filelinkifkeyword{pub}{#1}%      % publications
 %		\filelinkifkeyword{present}{#1}%  % presentations
 %		\filelinkifkeyword{poster}{#1}%   % posters
 %		\filelinkifkeyword{part}{#1}%     % certificates
-	}
-% === Short Industry CV ===
-%\ireftrue
-% \hidefalse
-% \linktrue
-% \attachfalse
+%
 % \DeclareFieldFormat{file}{%
 	%   \filelinkifkeyword{pub}{#1}% publications only
 	% }
@@ -260,7 +256,7 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 %----------------------------------------------------------------------------------------
 
 \name{Shrikrishna}{Bhat K} % Your name to appear at the top
-\degree{MSc, (PhD)} % Optional: Your Degree
+\degree{MSc, PhD (Statistics)} % Optional: Your Degree
 
 % Optional: right-side profile photo (place profile.jpg alongside this .tex or update the path)
 % Syntax: \photo[1in]{pp.png}
@@ -355,9 +351,9 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 %	\resumetitlewithphoto
 	\resumetitle
 	\begin{rSection}{Professional Summary}
-		PhD candidate in Statistics with over 6 years of extensive experience in advanced statistical modeling, survey analytics, and socio-economic data research. Expert in cluster analysis, probabilistic distance methods, and data diagnostics, with a strong record of applied research impacting public policy and planning. Skilled in leveraging tools such as R, STATA, Python, and specialized R packages to ensure robust data quality, reproducibility, and insightful analysis. Proven ability to lead large-scale survey projects, deliver consultancy for urban housing demand assessments, and contribute to academic knowledge with peer-reviewed publications and presentations at international conferences. Adept at transforming raw data into actionable insights that inform decision-making in government and social equity contexts. 
+		Statistician (PhD, Pondicherry University, awarded March 2026) with 6+ years of applied experience in survey analytics, statistical modelling, and reproducible data science. Developed probabilistic distance–based clustering methods and authored an R package on CRAN; peer‑reviewed publications and conference presentations. Experienced in design‑consistent survey estimation (weighting, non‑response adjustment, post‑stratification), logistic and regression modelling, and composite‑index construction for large household surveys. Practical experience delivering policy‑relevant analyses for government and research partners (MeitY — GoI; Government of Tamil Nadu; Survey Research Center, University of Michigan). Four semesters of teaching experience (Linear Models, Design of Experiments, R programming) and fluent in R, Python, and Stata for end‑to‑end reproducible pipelines.
 	\end{rSection}
-	
+ 
 	% --- Section Divider Below ---
 	%----------------------------------------------------------------------------------------
 	%	EDUCATION SECTION
@@ -369,12 +365,12 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 			{PhD in Statistics}
 			{\iref{https://www.pondiuni.edu.in/}{Pondicherry University}}
 			{Research Area: Cluster Analysis, Block Clustering, and Cluster diagnostics}
-			{\MonthYear{2021}{02} -- \MonthYear{2025}{12}}
+			{\MonthYear{2021}{02} -- \MonthYear{2026}{03}}
 			\begin{rItemize}
 				\item Research Supervisor: \iref{https://www.pondiuni.edu.in/faculy_profiles/dr-kiruthika/}{Dr. Kiruthika}
-				\item Thesis Title: \textit{Contributions to Block Clustering and its
-				Diagnostic Measures}
-				\item Thesis Submitted on: \textit{\FullDate{2025}{12}{22}}
+				\item Thesis Title: \textit{Contributions to Block Clustering and its Diagnostic Measures}
+				\item Developed novel \textbf{probabilistic distance-based clustering algorithms} (machine learning), implementing and benchmarking them as open-source R packages; methods validated on real-world socio-economic and biological datasets.
+				\item \textbf{Teaching Assistant} to research supervisor: taught \textit{Linear Models} and \textit{Design of Experiments} using R for 4 semesters, and \textit{R Programming} for 2 semesters at the Department of Statistics, Pondicherry University.
 			\end{rItemize}
 		\end{rSubsection}
 		
@@ -399,48 +395,49 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 	%----------------------------------------------------------------------------------------
 	
 	\begin{rSection}{Experience}
+		\begin{rSubsection}[\extlink{https://www.mids.ac.in/}]{Madras Institute of Development Studies}{Chennai}{Data Consultant - Bridging the Gap in Digital Economy: Enabling Drivers and Constraining Factors Impeding Digital Inclusivity}{\FullDate{2025}{12}{01} -- \FullDate{2026}{03}{31}}
+			\hide{
+				\begin{rItemize}
+					\item Designed the \textbf{GAHDDI}: a three-pillar household-level composite index (digital access, capability, financial participation) with a $1-|\text{gap}|$ \textbf{gender-equality weight} that penalises gaps between male and female members in the same household.
+					\item Built Stata pipelines integrating household, roster, and respondent modules for \textbf{4{,}199 households across four aspirational districts} (Assam, Odisha, Rajasthan, Tamil Nadu); produced pillar and overall scores by district and rural/urban sector.
+					\item Mapped the index to the \textbf{NSS 80\textsuperscript{th} Round CSMT (2025)} for state- and national-level scaling, and authored the \textbf{technical report for MeitY, Government of India}.
+				\end{rItemize}}
+		\end{rSubsection}
+
 		\begin{rSubsection}[\extlink{https://www.cushmanwakefield.com/en/india}]{Cushman and Wakefield}{Chennai}{Senior Statistician}{\FullDate{2025}{05}{07} -- \FullDate{2025}{06}{30}}
 			
 			\begin{rItemize}
-				\revhide{\item Study of Demand and Supply Pattern of Housing in Chennai Metropolitan Area for Chennai Third Master Plan - 2046}
+				\revhide{\item Study of Demand and Supply Pattern of Housing in Chennai Metropolitan Area for Chennai Third Master Plan 2046}
 				\hide{
-					\item Provided consultancy for Housing Demand--Supply Report for Chennai Metropolitan Area (2046 Master Plan).
-					\item Performed statistical analyses, including regression modeling.
-					\item Identified key determinants of housing demand using household survey data.
-					\item Assessed housing needs by location and income category.
-					\item Projected effective demand for home purchase and social housing rental for 2031, 2036, and 2046.
-					\item Delivered analyses and reports on time, ensuring high quality and adherence to industry best practices.}
+					\item Lead statistician for the \textbf{Housing Demand and Supply Study} for the Chennai Third Master Plan 2046, commissioned by CMDA.
+					\item Built \textbf{regression demand models} on household survey data to identify determinants and quantify needs by location and income class.
+					\item Produced \textbf{effective demand projections} for home purchase and social-housing rental for 2031, 2036, and 2046 by zone and affordability tier.}
 			\end{rItemize}
 		\end{rSubsection}
 		
 		\begin{rSubsection}[\extlink{http://csje.mssw.in/}]{Centre for Social Justice and Equity, Madras School of Social Work}{Chennai}{Data Analyst - Socio Economic Survey of Scheduled Tribes in Tamil Nadu}{\FullDate{2024}{09}{07} -- \FullDate{2024}{12}{31}}
 			\hide{
 				\begin{rItemize}
-					\item Converted raw survey data into STATA (.dta) format and prepared data in wide/long structures.
-					\item Monitored real-time data, flagged outliers, and corrected enumerator errors.
-					\item Generated summary tables and assisted in post-coding and data cleaning.
-					\item Supported preparation of rural and urban progress reports at multiple administrative levels.
+					\item Data analyst on the state-wide \textbf{Socio-Economic Survey of Scheduled Tribes in Tamil Nadu} (Government of Tamil Nadu).
+					\item Implemented \textbf{real-time data quality monitoring} during active fieldwork, including outlier flags, enumerator-level error reports, and post-coding reviews.
+					\item Produced summary tables and rural/urban progress reports at district, block, and panchayat levels.
 			\end{rItemize}}
 		\end{rSubsection}
 		
 		\begin{rSubsection}[\extlink{https://www.tnhps.in/}]{Madras Institute of Development Studies}{Chennai}{Consultant - Tamil Nadu Household Panel Survey}{\FullDate{2022}{08}{23} -- \FullDate{2024}{08}{24}}
 			\hide{
 				\begin{rItemize}
-					\item Served as a half-time consultant and data analysis supervisor for the Tamil Nadu Household Panel Survey (TNHPS).
-					\item Managed data monitoring, cleaning, and analysis in STATA for a large-scale survey involving 20,000+ households.
-					\item Ensured data integrity and reliability to facilitate accurate and consistent subsequent analyses.
-					\item Supervised a team to maintain high standards of data quality throughout the project.
+					\item Half-time consultant and \textbf{data analysis supervisor} for TNHPS, a longitudinal study covering \textbf{20{,}000+ households}.
+					\item Owned the STATA-based data monitoring, cleaning, and analysis workflow; supervised a team of analysts and field statisticians across waves.
 			\end{rItemize}}
 			\begin{rSubsubsection}{Statistical Data Analyst - Tamil Nadu Household Panel Survey}{\FullDate{2019}{02}{21} -- \FullDate{2021}{03}{31}}
-				\hide{
-					\begin{rItemize}
-						\item Analyzed data of a Pre-Baseline phase of TNHPS, a longitudinal socio-economic survey covering over 240,000+ households.  
-						\item Key responsibilities included data monitoring, cleaning, and analysis using STATA.  
-						\item Major contributor to the Tamil Nadu Covid Pulse Survey (TNCPS), a cross-sectional study 
-						\item Cleaned and analyzed TNCPS data of over 12,000+ households across three waves using STATA.
-						\item Enhanced insights into the socio-economic impacts of the Covid-19 pandemic through data analysis of TNCPS.  
-						\item  \textbf{Partner Institutions}: Department of Economics and Statistics, Government of Tamil Nadu, and Survey Research Center, University of Michigan.
-				\end{rItemize}}
+			\hide{
+				\begin{rItemize}
+					\item Analysed the Pre-Baseline phase of TNHPS, a longitudinal survey covering \textbf{240{,}000+ households} across Tamil Nadu.
+					\item Built \textbf{logistic non-response adjustment models}, \textbf{calibration-based survey weights}, and post-stratification corrections to produce design-consistent estimates aligned with Census benchmarks.
+					\item Major contributor to the \textbf{Tamil Nadu Covid Pulse Survey (TNCPS)}: cleaned and analysed 12{,}000+ households across three waves and quantified pandemic-driven income and employment shocks using difference-in-differences models.
+					\item \textbf{Partners}: Department of Economics \& Statistics, Government of Tamil Nadu; Survey Research Center, University of Michigan.
+			\end{rItemize}}
 			\end{rSubsubsection}
 		\end{rSubsection}
 		
@@ -452,10 +449,8 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 		
 		\begin{rSubsection}[\extlink{https://corecarbonx.com/}]{Core CarbonX Solutions Pvt. Ltd.}{Hyderabad}{Associate Consultant}{\FullDate{2018}{06}{10} -- \FullDate{2019}{02}{15}}
 			\hide{\begin{rItemize}
-					\item Developed a model to prioritize Industrial Parks in Telangana State for TSIIC Ltd.
-					\item Utilized software such as R and Dart for machine learning and Multiple Criteria Decision Making techniques.
-					\item Coordinated 2 Swachh Bharat Mission Solid Waste Management Exposure Workshop in Tirupati.
-					\item Workshops funded by the National Institute of Urban Affairs (NIUA).
+					\item Developed a \textbf{Multiple Criteria Decision Making} model in R to prioritise Industrial Parks in Telangana for TSIIC Ltd.
+					\item Coordinated two Swachh Bharat Mission Solid Waste Management workshops in Tirupati (funded by NIUA).
 			\end{rItemize}}
 		\end{rSubsection}
 	\end{rSection}
@@ -468,7 +463,8 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 	\begin{rSection}{Skills and Languages}
 		\sloppy
 		\begin{tabularx}{\textwidth}{@{} >{\bfseries\raggedright\arraybackslash}p{0.29\textwidth} X @{}}
-			Programming Languages & R~$\cdot$~Python \\
+			Programming Languages & Python~$\cdot$~R \\
+			Machine Learning & scikit-learn~$\cdot$~Logistic Regression~$\cdot$~Classification~$\cdot$~Clustering~$\cdot$~Ensemble Methods \\
 			Statistical Tools & STATA~$\cdot$~SPSS~$\cdot$~Minitab \\
 			Data Tools & MS Excel~$\cdot$~SQL~$\cdot$~Power BI ~$\cdot$~Tableau\extlink{https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes}\\
 			Version Control & GitHub\\
@@ -496,7 +492,12 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 		% comment out above both for paragraph type listing
 		]
 	\end{rSection}
-	
+			\begin{rSection}{Honors and Awards}
+		\begin{rItemize}
+			\item Certificate of Appreciation, Directorate of Tribal Welfare, Government of Tamil Nadu — 29 July 2025. For data cleaning and analysis contributions to the Socio-Economic Survey of Scheduled Tribes in Tamil Nadu (August--December 2024).
+		\end{rItemize}
+	\end{rSection}
+		
 	% --- Section Divider Below ---
 	%----------------------------------------------------------------------------------------
 	%	ATTENDED WORKSHOPS AND CONFERENCES SECTION
@@ -518,7 +519,6 @@ sorting=ydnt,maxbibnames=99,minbibnames=99]{biblatex}
 			% comment out above both for paragraph type listing
 			]
 		\end{rSubheading}
-		\hide{\clearpage}
 		\begin{rSubheading}{Participated}
 			\printbibliography[keyword=part,heading=empty
 			%		,env=bullet  % Use 'bullet' for dot bullets

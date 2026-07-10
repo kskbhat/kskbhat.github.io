@@ -35,12 +35,8 @@ Package website & vignettes
 
 :::
 
-**Authors:** **Shrikrishna Bhat Kapu** and Kiruthika C\
+**Authors:** Shrikrishna Bhat K and Kiruthika C\
 **DOI:** [10.32614/CRAN.package.Silhouette](https://doi.org/10.32614/CRAN.package.Silhouette)
-
-### Description
-
-An R package for silhouette-based diagnostics in standard, soft, and multi-way clustering. Quantifies clustering quality by measuring both cohesion within clusters and separation between clusters. Implements advanced silhouette width computations for diverse clustering structures, including: simplified silhouette by Van der Laan et al. (2003), Probability of Alternative Cluster normalization methods by Raymaekers and Rousseeuw (2022), fuzzy clustering and silhouette diagnostics using membership probabilities by Campello and Hruschka (2006), Menardi (2011) and Bhat and Kiruthika (2024), and multi-way clustering extensions such as block and tensor clustering by Schepers et al. (2008) and Bhat and Kiruthika (2025). Provides tools for computation and visualization based on Rousseeuw (1987) to support robust and reproducible cluster diagnostics across standard, soft, and multi-way clustering settings. Note: This package does not use the classical Rousseeuw (1987) calculation directly.
 
 ### Installation
 
@@ -66,11 +62,7 @@ Source code repository
 
 :::
 
-**Authors:** **Shrikrishna Bhat Kapu** and Kiruthika C
-
-### Description
-
-The blockclusterPDQ R package implements block (co-)clustering using probabilistic distance methods. It provides a unified framework for simultaneously clustering rows and columns of a data matrix, with support for various data types including continuous, binary, and ordinal data. The package includes functions for model fitting, cluster evaluation, and visualization of co-cluster structures.
+**Authors:** Shrikrishna Bhat K and Kiruthika C
 
 ### Installation
 
