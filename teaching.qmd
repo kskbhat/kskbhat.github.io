@@ -7,30 +7,15 @@ toc: false
 
 This section organizes my course syllabi, lecture notes, R code files, and interactive Bookdown books. These materials are designed to accompany my courses and help students develop practical computing and statistical inference skills.
 
-## Courses
+---
 
-::: {.card-grid}
-
-::: {.card}
 ### 📊 Statistical Computing and Non-Parametric Inference using R
-
 *Manipal Academy of Higher Education (MAHE)*
 
-A comprehensive postgraduate course designed to teach the fundamentals of statistical computing, data management, and non-parametric statistical methods using R.
-
-**Topics covered:**
-
-* **R Programming Fundamentals**: Vector calculations, coercion, and mathematical transformations.
-* **Descriptive Statistics**: Central tendency, dispersion, skewness, and kurtosis.
-* **Confidence Intervals**: Estimation for means and proportions.
-* **Contingency Tables**: Chi-Square tests and association diagnostics.
-* **Non-Parametric Inference**: Sign test, Wilcoxon Signed-Rank test, and Mann-Whitney U test.
-
-<div class="pub-links" style="margin-top: 1.8rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+<div class="pub-links" style="margin-top: 1.2rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
   <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="pub-link-badge pub-link-doi" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">📖 Bookdown Notes</a>
   <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="pub-link-badge pub-link-preprint" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">📄 Syllabus</a>
   <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="pub-link-badge pub-link-pdf" style="background:#5a769e; padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">🐙 Course Folder</a>
 </div>
-:::
 
-:::
+---

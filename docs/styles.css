@@ -182,6 +182,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 0.35rem;
+  white-space: nowrap;
 }
 
 .tl-meta .tl-date .bi {
@@ -197,6 +198,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 0.35rem;
+  white-space: nowrap;
 }
 
 .tl-meta .tl-place .bi {
@@ -321,6 +323,7 @@ section.tl-content {
   .tl-meta .tl-date,
   .tl-meta .tl-place {
     justify-content: flex-start;
+    white-space: normal;
   }
   .tl-content {
     padding: 0.8rem 0 1.2rem 0;
