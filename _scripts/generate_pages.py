@@ -269,6 +269,8 @@ def _get_pub_type_label(entry: dict) -> str:
     """Return a human-readable type label for a publication entry."""
     if entry["_type"] == "article":
         return "JOURNAL ARTICLES"
+    if entry["_type"] == "techreport":
+        return "TECHNICAL REPORTS & NOTES"
     return "PREPRINTS"
 
 
@@ -281,13 +283,20 @@ def generate_publications(entries: list[dict]) -> str:
     pubs = sort_by_year_desc(filter_by_keyword(entries, "pub"))
 
     articles = [e for e in pubs if e["_type"] == "article"]
-    preprints = [e for e in pubs if e["_type"] != "article"]
+    reports = [e for e in pubs if e["_type"] == "techreport"]
+    preprints = [e for e in pubs if e["_type"] not in ("article", "techreport")]
 
     lines: list[str] = []
 
     if articles:
         lines.append("## Journal Articles\n")
         for i, e in enumerate(articles, 1):
+            lines.append(_fmt_publication_bullet(e, i))
+        lines.append("")
+
+    if reports:
+        lines.append("## Technical Reports & Notes\n")
+        for i, e in enumerate(reports, 1):
             lines.append(_fmt_publication_bullet(e, i))
         lines.append("")
 

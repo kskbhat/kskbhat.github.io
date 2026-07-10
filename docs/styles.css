@@ -165,7 +165,9 @@
   border-right: 3px solid var(--primary);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .tl-meta p {
@@ -311,6 +313,8 @@ section.tl-content {
     border-right: none;
     border-bottom: 2px solid var(--primary);
     padding: 0.8rem 0;
+    align-items: flex-start;
+    text-align: left;
   }
   .tl-content {
     padding: 0.8rem 0 1.2rem 0;

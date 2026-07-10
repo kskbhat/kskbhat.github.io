@@ -1,14 +1,14 @@
 ---
-title: "Gender-Adjusted Household Digital Divide Index (GAHDDI): A Household-Level Index of Digital Divide with Gender Adjustments"
+title: "Gender-Adjusted Household Digital Divide Index (GAHDDI): A household-level index of digital divide with gender adjustments"
 toc: false
 ---
 
-<span class="pub-type-badge">PREPRINTS</span>
+<span class="pub-type-badge">TECHNICAL REPORTS & NOTES</span>
 
 <div class="pub-meta-card">
 <div class="pub-meta-row">
 <div class="pub-meta-label">AUTHORS</div>
-<div class="pub-meta-value">Kripa Ananth Pur and Shrikrishna Bhat K</div>
+<div class="pub-meta-value">Kripa Ananth Pur and Shrikrishna Bhat Kapu</div>
 </div>
 <div class="pub-meta-row">
 <div class="pub-meta-label">PUBLISHED</div>

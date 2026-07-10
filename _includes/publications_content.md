@@ -5,9 +5,12 @@
 1. Shrikrishna Bhat K and Kiruthika C (2024). “[Some density-based silhouette diagnostics for soft clustering algorithms](publications/bhat2024silhouette/).” *Communications in Statistics: Case Studies, Data Analysis and Applications*, 10(3–4), 221–238. DOI: [10.1080/23737484.2024.2408534](https://doi.org/10.1080/23737484.2024.2408534).
 
 
+## Technical Reports & Notes
+
+1. Kripa Ananth Pur and **Shrikrishna Bhat Kapu** (2026). “[Gender-Adjusted Household Digital Divide Index (GAHDDI): A household-level index of digital divide with gender adjustments](publications/ananthpur2026gahddi/).”
+
+
 ## Preprints
 
-1. Kripa Ananth Pur and Shrikrishna Bhat K (2026). “[Gender-Adjusted Household Digital Divide Index (GAHDDI): A Household-Level Index of Digital Divide with Gender Adjustments](publications/ananthpur2026gahddi/).”
-
-2. Shrikrishna Bhat K and Kiruthika C (2025). “[Block Probabilistic Distance Clustering: A Unified Framework and Evaluation](publications/bhat2025blockpdq_preprint/).” *Preprint, Version 1.* DOI: [10.21203/rs.3.rs-6973596/v1](https://doi.org/10.21203/rs.3.rs-6973596/v1). ResearchSquare: [rs-6973596/v1](https://www.researchsquare.com/article/rs-6973596/v1).
+1. Shrikrishna Bhat K and Kiruthika C (2025). “[Block Probabilistic Distance Clustering: A Unified Framework and Evaluation](publications/bhat2025blockpdq_preprint/).” *Preprint, Version 1.* DOI: [10.21203/rs.3.rs-6973596/v1](https://doi.org/10.21203/rs.3.rs-6973596/v1). ResearchSquare: [rs-6973596/v1](https://www.researchsquare.com/article/rs-6973596/v1).
 
