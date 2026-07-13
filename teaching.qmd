@@ -16,7 +16,7 @@ This section organizes my course syllabi, lecture notes, R code files, and inter
   <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="pub-link-badge pub-link-doi" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">📖 Bookdown Notes</a>
   <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="pub-link-badge pub-link-preprint" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">📄 Syllabus</a>
   <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="pub-link-badge pub-link-pdf" style="background:#5a769e; padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">🐙 Course Folder</a>
-  <a href="https://github.com/kskbhat/Teaching/raw/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/tutorials.zip" class="pub-link-badge pub-link-pdf" style="background:#8b5a9e; padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">📥 Interactive Tutorials</a>
+  <a href="https://github.com/kskbhat/Teaching/raw/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/Statistical_Computing_and_Non_Parametric_Inference_using_R_Tutorials.zip" class="pub-link-badge pub-link-pdf" style="background:#8b5a9e; padding: 0.5rem 1.2rem; font-size: 0.9rem; border-radius: 30px;" target="_blank">📥 Interactive Tutorials</a>
 </div>
 
 ---
