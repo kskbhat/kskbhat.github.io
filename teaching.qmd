@@ -19,4 +19,21 @@ This section organizes my course syllabi, lecture notes, R code files, and inter
   <a href="https://github.com/kskbhat/Teaching/raw/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/Statistical_Computing_and_Non_Parametric_Inference_using_R_Tutorials.zip" class="pub-link-badge pub-link-pdf" style="background:#8b5a9e; display: inline-flex; align-items: center; padding: 0.6rem 1.2rem; font-size: 0.9rem; border-radius: 30px; line-height: 1; margin: 0.4rem 0.4rem 0.4rem 0;" target="_blank">📥 &nbsp;Interactive Tutorials</a>
 </div>
 
+
+::: {.callout-note collapse="true"}
+## 📥 How to Run the Interactive Tutorials in RStudio
+
+1. **Install the required packages**: Open RStudio and run this command in your R console to install the necessary libraries:
+   ```r
+   install.packages(c("learnr", "boot"))
+   ```
+2. **Open a tutorial file**: Extract the downloaded ZIP file, navigate into the folder of the unit you want to run (e.g., `tutorials/unit1_r_basics/`), and open the `.Rmd` file (e.g., `unit1_r_basics.Rmd`) in RStudio.
+3. **Launch the interactive session**:
+   * **Method A (Recommended)**: Look at the top of the RStudio source editor pane and click the **Run Document** button (with a green play-triangle icon).
+   * **Method B**: Or run this command directly in your R console:
+     ```r
+     rmarkdown::run("unit1_r_basics.Rmd")
+     ```
+:::
+
 ---
