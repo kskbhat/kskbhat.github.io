@@ -39,14 +39,14 @@
     "href": "publications/bhat2025blockpdq_preprint/index.html",
     "title": "Block Probabilistic Distance Clustering: A Unified Framework and Evaluation",
     "section": "",
-    "text": "PREPRINTS\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n25 June 2025\n\n\n\n\nPUBLICATION DETAILS\n\n\nPreprint, Version 1\n\n\n\n\nLINKS\n\n\nDOI ResearchSquare\n\n\n\n\n\n\n Back to top"
+    "text": "PREPRINTS\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n25 June 2025\n\n\n\n\nPUBLICATION DETAILS\n\n\nPreprint, Version 1\n\n\n\n\nLINKS\n\n\nDOI ResearchSquare\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@misc{bhat_k2025,\n  author = {Bhat K, Shrikrishna and C, Kiruthika},\n  title = {Block {Probabilistic} {Distance} {Clustering:} {A} {Unified}\n    {Framework} and {Evaluation}},\n  date = {2025-06-25},\n  url = {https://kskbhat.github.io/publications/bhat2025blockpdq_preprint/},\n  doi = {10.21203/rs.3.rs-6973596/v1},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat K, Shrikrishna, and Kiruthika C. 2025. “Block Probabilistic\nDistance Clustering: A Unified Framework and Evaluation.” In\nResearch Square. Preprint, June 25. https://doi.org/10.21203/rs.3.rs-6973596/v1."
   },
   {
     "objectID": "publications/ananthpur2026gahddi/index.html",
     "href": "publications/ananthpur2026gahddi/index.html",
     "title": "Gender-Adjusted Household Digital Divide Index (GAHDDI): A household-level index of digital divide with gender adjustments",
     "section": "",
-    "text": "TECHNICAL REPORTS & NOTES\n\n\n\nAUTHORS\n\n\nKripa Ananth Pur and Shrikrishna Bhat Kapu\n\n\n\n\nPUBLISHED\n\n\n2026\n\n\n\n\n\n\n Back to top"
+    "text": "TECHNICAL REPORTS & NOTES\n\n\n\nAUTHORS\n\n\nKripa Ananth Pur and Shrikrishna Bhat Kapu\n\n\n\n\nPUBLISHED\n\n\n2026\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@report{ananth_pur2026,\n  author = {Ananth Pur, Kripa and Bhat Kapu, Shrikrishna},\n  title = {Gender-Adjusted {Household} {Digital} {Divide} {Index}\n    {(GAHDDI):} {A} Household-Level Index of Digital Divide with Gender\n    Adjustments},\n  date = {2026},\n  url = {https://kskbhat.github.io/publications/ananthpur2026gahddi/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nAnanth Pur, Kripa, and Shrikrishna Bhat Kapu. 2026.\n“Gender-Adjusted Household Digital Divide Index (GAHDDI): A\nHousehold-Level Index of Digital Divide with Gender Adjustments.”\nIn Madras Institute of Development Studies (MIDS), Chennai; Ministry\nof Electronics and Information Technology, Government of India. https://kskbhat.github.io/publications/ananthpur2026gahddi/."
   },
   {
     "objectID": "posts/r-package-dev-tips/index.html",
@@ -221,7 +221,7 @@
     "href": "publications/bhat2024silhouette/index.html",
     "title": "Some density-based silhouette diagnostics for soft clustering algorithms",
     "section": "",
-    "text": "JOURNAL ARTICLES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2024\n\n\n\n\nPUBLICATION DETAILS\n\n\nCommunications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238\n\n\n\n\nLINKS\n\n\nDOI PDF\n\n\n\n\n\n\n Back to top"
+    "text": "JOURNAL ARTICLES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2024\n\n\n\n\nPUBLICATION DETAILS\n\n\nCommunications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238\n\n\n\n\nLINKS\n\n\nDOI PDF\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@article{bhat_k2024,\n  author = {Bhat K, Shrikrishna and C, Kiruthika},\n  title = {Some Density-Based Silhouette Diagnostics for Soft Clustering\n    Algorithms},\n  journal = {Communications in Statistics: Case Studies, Data Analysis\n    and Applications},\n  volume = {10},\n  number = {3–4},\n  date = {2024},\n  url = {https://kskbhat.github.io/publications/bhat2024silhouette/},\n  doi = {10.1080/23737484.2024.2408534},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat K, Shrikrishna, and Kiruthika C. 2024. “Some Density-Based\nSilhouette Diagnostics for Soft Clustering Algorithms.”\nCommunications in Statistics: Case Studies, Data Analysis and\nApplications 10 (3–4). https://doi.org/10.1080/23737484.2024.2408534."
   },
   {
     "objectID": "publications.html",

@@ -334,7 +334,7 @@ def generate_publication_pages(entries: list[dict]) -> None:
         qmd_content = _build_detail_page(entry)
         (page_dir / "index.qmd").write_text(qmd_content, encoding="utf-8")
 
-    print(f"[generate_pages]   → Generated {len(pubs)} publication detail pages")
+    print(f"[generate_pages]   -> Generated {len(pubs)} publication detail pages")
 
 
 def _build_detail_page(entry: dict) -> str:
@@ -408,6 +408,52 @@ def _build_detail_page(entry: dict) -> str:
     safe_title = title.replace('"', '\\"')
     lines.append(f'title: "{safe_title}"')
     lines.append("toc: false")
+    
+    # Add Google Scholar Highwire Press/Dublin Core citation metadata natively via Quarto
+    lines.append("citation:")
+    lines.append(f'  title: "{safe_title}"')
+    
+    # Process authors
+    if entry.get("author", ""):
+        lines.append("  author:")
+        # Split BibTeX authors
+        raw_authors = [a.strip() for a in entry["author"].split(" and ")]
+        for ra in raw_authors:
+            ra = ra.replace("{", "").replace("}", "")
+            if "," in ra:
+                parts = ra.split(",", 1)
+                ra = f"{parts[1].strip()} {parts[0].strip()}"
+            lines.append(f"    - name: {ra}")
+            
+    # Date
+    c_date = date if date else year
+    if c_date:
+        lines.append(f"  issued: \"{c_date}\"")
+        
+    # Citation variables mapping
+    if entry["_type"] == "article":
+        lines.append("  type: article-journal")
+        if journal:
+            lines.append(f'  container-title: "{journal}"')
+        if volume:
+            lines.append(f'  volume: {volume}')
+        if number:
+            lines.append(f'  issue: {number}')
+    elif entry["_type"] == "techreport":
+        lines.append("  type: report")
+        inst = entry.get("institution", "")
+        if inst:
+            lines.append(f'  container-title: "{clean_latex(inst)}"')
+    else:
+        # Preprint
+        lines.append("  type: article")
+        if eprinttype == "arxiv":
+            lines.append('  container-title: "arXiv"')
+        elif eprinttype == "researchsquare":
+            lines.append('  container-title: "Research Square"')
+            
+    if doi:
+        lines.append(f'  doi: "{doi}"')
     lines.append("---")
     lines.append("")
 
@@ -975,7 +1021,7 @@ def main():
     for filename, content in content_map.items():
         filepath = INCLUDES_DIR / filename
         filepath.write_text(ML_DISABLE + content, encoding="utf-8")
-        print(f"[generate_pages]   → {filepath.relative_to(PROJECT_DIR)}")
+        print(f"[generate_pages]   -> {filepath.relative_to(PROJECT_DIR)}")
 
     # Generate individual publication detail pages
     generate_publication_pages(entries)

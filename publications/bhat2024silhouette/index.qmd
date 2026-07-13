@@ -1,6 +1,17 @@
 ---
 title: "Some density-based silhouette diagnostics for soft clustering algorithms"
 toc: false
+citation:
+  title: "Some density-based silhouette diagnostics for soft clustering algorithms"
+  author:
+    - name: Shrikrishna Bhat K
+    - name: Kiruthika C
+  issued: "2024"
+  type: article-journal
+  container-title: "Communications in Statistics: Case Studies, Data Analysis and Applications"
+  volume: 10
+  issue: 3–4
+  doi: "10.1080/23737484.2024.2408534"
 ---
 
 <span class="pub-type-badge">JOURNAL ARTICLES</span>

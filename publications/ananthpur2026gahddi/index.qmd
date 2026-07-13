@@ -1,6 +1,14 @@
 ---
 title: "Gender-Adjusted Household Digital Divide Index (GAHDDI): A household-level index of digital divide with gender adjustments"
 toc: false
+citation:
+  title: "Gender-Adjusted Household Digital Divide Index (GAHDDI): A household-level index of digital divide with gender adjustments"
+  author:
+    - name: Kripa Ananth Pur
+    - name: Shrikrishna Bhat Kapu
+  issued: "2026"
+  type: report
+  container-title: "Madras Institute of Development Studies (MIDS), Chennai; Ministry of Electronics and Information Technology, Government of India"
 ---
 
 <span class="pub-type-badge">TECHNICAL REPORTS & NOTES</span>

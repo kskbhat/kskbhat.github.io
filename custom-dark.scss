@@ -86,3 +86,39 @@ h2 {
 .nav-footer {
   border-top: 1px solid #3B2F22;
 }
+
+// Custom dark scrollbars
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1C1710;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B2F22;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4A54A;
+}
+
+// Collapsible callouts dark theme overrides
+.callout.callout-note,
+.callout.callout-info {
+  background-color: #262015 !important;
+  border-left-color: #6DB7BD !important;
+}
+.callout.callout-warning,
+.callout.callout-important,
+.callout.callout-tip {
+  background-color: #2b2318 !important;
+  border-left-color: #D4A54A !important;
+}
+.callout-title {
+  color: #F1E7DA !important;
+  font-weight: 600 !important;
+}
+.callout-body {
+  color: #d9cebf !important;
+}
