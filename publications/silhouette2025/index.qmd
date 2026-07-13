@@ -1,0 +1,35 @@
+---
+title: "Silhouette: Proximity Measure Based Diagnostics for Standard, Soft, and Multi-Way Clustering"
+toc: false
+body-class: pub-detail-page
+citation:
+  title: "Silhouette: Proximity Measure Based Diagnostics for Standard, Soft, and Multi-Way Clustering"
+  author:
+    - name: Shrikrishna Bhat K
+    - name: Kiruthika C
+  issued: "2025"
+  type: article
+  container-title: "CRAN"
+  doi: "10.32614/CRAN.package.Silhouette"
+---
+
+<span class="pub-type-badge">SOFTWARE PACKAGES</span>
+
+<div class="pub-meta-card">
+<div class="pub-meta-row">
+<div class="pub-meta-label">AUTHORS</div>
+<div class="pub-meta-value">Shrikrishna Bhat K and Kiruthika C</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">PUBLISHED</div>
+<div class="pub-meta-value">2025</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">PUBLICATION DETAILS</div>
+<div class="pub-meta-value">R package version 0.9.6</div>
+</div>
+<div class="pub-meta-row">
+<div class="pub-meta-label">LINKS</div>
+<div class="pub-meta-value"><a href="https://doi.org/10.32614/CRAN.package.Silhouette" class="pub-link-badge pub-link-doi" target="_blank" rel="noopener">DOI</a></div>
+</div>
+</div>

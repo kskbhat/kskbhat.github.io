@@ -5,7 +5,7 @@ body-class: pub-detail-page
 citation:
   title: "Some density-based silhouette diagnostics for soft clustering algorithms"
   author:
-    - name: Shrikrishna Bhat K
+    - name: Shrikrishna Bhat Kapu
     - name: Kiruthika C
   issued: "2024"
   type: article-journal
@@ -20,7 +20,7 @@ citation:
 <div class="pub-meta-card">
 <div class="pub-meta-row">
 <div class="pub-meta-label">AUTHORS</div>
-<div class="pub-meta-value">Shrikrishna Bhat K and Kiruthika C</div>
+<div class="pub-meta-value">Shrikrishna Bhat Kapu and Kiruthika C</div>
 </div>
 <div class="pub-meta-row">
 <div class="pub-meta-label">PUBLISHED</div>

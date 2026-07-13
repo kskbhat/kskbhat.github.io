@@ -272,6 +272,9 @@ PUB_PAGES_DIR = PROJECT_DIR / "publications"
 
 def _get_pub_type_label(entry: dict) -> str:
     """Return a human-readable type label for a publication entry."""
+    kw_list = [k.strip() for k in entry.get("keywords", "").split(",")]
+    if "software" in kw_list:
+        return "SOFTWARE PACKAGES"
     if entry["_type"] == "article":
         return "JOURNAL ARTICLES"
     if entry["_type"] == "techreport":
@@ -315,18 +318,26 @@ def generate_publications(entries: list[dict]) -> str:
 
 
 def generate_publication_pages(entries: list[dict]) -> None:
-    """Generate individual .qmd detail pages for each publication.
+    """Generate individual .qmd detail pages for each publication and software.
 
     Creates ``publications/<bib_key>/index.qmd`` for every entry tagged with
-    the ``pub`` keyword.  Each page shows the full bibliographic metadata in
+    the ``pub`` or ``software`` keyword. Each page shows the full bibliographic metadata in
     a card layout (like Rob Hyndman's site), plus abstract and download links.
     Pages are regenerated on every pre-render run, so adding a new bib entry
-    with ``keywords = {pub}`` is all that's needed.
+    with ``keywords = {pub}`` or ``keywords = {software}`` is all that's needed.
     """
-    pubs = filter_by_keyword(entries, "pub")
+    pubs = filter_by_keyword(entries, "pub") + filter_by_keyword(entries, "software")
+    # De-duplicate entries
+    unique_keys = set()
+    dedup_pubs = []
+    for p in pubs:
+        if p["_key"] not in unique_keys:
+            unique_keys.add(p["_key"])
+            dedup_pubs.append(p)
+
     PUB_PAGES_DIR.mkdir(exist_ok=True)
 
-    for entry in pubs:
+    for entry in dedup_pubs:
         bib_key = entry["_key"]
         page_dir = PUB_PAGES_DIR / bib_key
         page_dir.mkdir(exist_ok=True)
@@ -334,7 +345,7 @@ def generate_publication_pages(entries: list[dict]) -> None:
         qmd_content = _build_detail_page(entry)
         (page_dir / "index.qmd").write_text(qmd_content, encoding="utf-8")
 
-    print(f"[generate_pages]   -> Generated {len(pubs)} publication detail pages")
+    print(f"[generate_pages]   -> Generated {len(dedup_pubs)} publication/software detail pages")
 
 
 def _build_detail_page(entry: dict) -> str:
@@ -432,7 +443,14 @@ def _build_detail_page(entry: dict) -> str:
         lines.append(f"  issued: \"{c_date}\"")
         
     # Citation variables mapping
-    if entry["_type"] == "article":
+    kw_list = [k.strip() for k in entry.get("keywords", "").split(",")]
+    if "software" in kw_list:
+        lines.append("  type: article")
+        if eprinttype == "cran":
+            lines.append('  container-title: "CRAN"')
+        else:
+            lines.append('  container-title: "GitHub"')
+    elif entry["_type"] == "article":
         lines.append("  type: article-journal")
         if journal:
             lines.append(f'  container-title: "{journal}"')
@@ -602,12 +620,13 @@ def _fmt_software(entry: dict) -> str:
         if m:
             github_repo = f"{m.group(1)}/{m.group(2)}"
 
+    detail_url = f"publications/{entry['_key']}/"
     lines: list[str] = []
 
     # Package header with optional logo
     if github_repo:
         logo_url = f"https://raw.githubusercontent.com/{github_repo}/main/man/figures/logo.png"
-        lines.append(f"## {pkg_name}\n")
+        lines.append(f"## [{pkg_name}]({detail_url})\n")
         lines.append(f'<div class="pkg-header">')
         lines.append(f'<img src="{logo_url}" alt="{pkg_name} logo" class="pkg-logo" onerror="this.style.display=\'none\'">')
         lines.append(f'<div class="pkg-header-text">')
@@ -616,7 +635,7 @@ def _fmt_software(entry: dict) -> str:
         lines.append(f'</div>')
         lines.append(f'</div>\n')
     else:
-        lines.append(f"## {pkg_name}\n")
+        lines.append(f"## [{pkg_name}]({detail_url})\n")
         if pkg_desc:
             lines.append(f"**{pkg_desc}**\n")
 

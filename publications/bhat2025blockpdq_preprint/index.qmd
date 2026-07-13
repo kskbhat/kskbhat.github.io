@@ -5,7 +5,7 @@ body-class: pub-detail-page
 citation:
   title: "Block Probabilistic Distance Clustering: A Unified Framework and Evaluation"
   author:
-    - name: Shrikrishna Bhat K
+    - name: Shrikrishna Bhat Kapu
     - name: Kiruthika C
   issued: "2025-06-25"
   type: article
@@ -18,7 +18,7 @@ citation:
 <div class="pub-meta-card">
 <div class="pub-meta-row">
 <div class="pub-meta-label">AUTHORS</div>
-<div class="pub-meta-value">Shrikrishna Bhat K and Kiruthika C</div>
+<div class="pub-meta-value">Shrikrishna Bhat Kapu and Kiruthika C</div>
 </div>
 <div class="pub-meta-row">
 <div class="pub-meta-label">PUBLISHED</div>

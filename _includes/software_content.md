@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 
-## Silhouette
+## [Silhouette](publications/silhouette2025/)
 
 <div class="pkg-header">
 <img src="https://raw.githubusercontent.com/kskbhat/Silhouette/main/man/figures/logo.png" alt="Silhouette logo" class="pkg-logo" onerror="this.style.display='none'">
@@ -47,7 +47,7 @@ install.packages("Silhouette")
 
 ---
 
-## blockclusterPDQ
+## [blockclusterPDQ](publications/blockclusterpdq_github/)
 
 **An R Package for Block Probabilistic Distance Clustering**
 

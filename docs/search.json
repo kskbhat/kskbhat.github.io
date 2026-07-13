@@ -35,11 +35,18 @@
     "text": "Research Output\n\n\n\n\n\n\nType\nCount\n\n\n\n\nPeer-reviewed journal articles\n1\n\n\nPreprints\n2\n\n\nR packages (CRAN / GitHub)\n2\n\n\nConference papers presented\n3\n\n\nPoster presentations\n1\n\n\n\n\n\n\n📖 See all publications →\nView complete list of publications, preprints, and conference papers."
   },
   {
+    "objectID": "publications/silhouette2025/index.html",
+    "href": "publications/silhouette2025/index.html",
+    "title": "Silhouette: Proximity Measure Based Diagnostics for Standard, Soft, and Multi-Way Clustering",
+    "section": "",
+    "text": "SOFTWARE PACKAGES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2025\n\n\n\n\nPUBLICATION DETAILS\n\n\nR package version 0.9.6\n\n\n\n\nLINKS\n\n\nDOI\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@misc{bhat_k2025,\n  author = {Bhat K, Shrikrishna and C, Kiruthika},\n  title = {Silhouette: {Proximity} {Measure} {Based} {Diagnostics} for\n    {Standard,} {Soft,} and {Multi-Way} {Clustering}},\n  date = {2025},\n  url = {https://kskbhat.github.io/publications/silhouette2025/},\n  doi = {10.32614/CRAN.package.Silhouette},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat K, Shrikrishna, and Kiruthika C. 2025. “Silhouette: Proximity\nMeasure Based Diagnostics for Standard, Soft, and Multi-Way\nClustering.” In CRAN. Preprint. https://doi.org/10.32614/CRAN.package.Silhouette."
+  },
+  {
     "objectID": "publications/bhat2025blockpdq_preprint/index.html",
     "href": "publications/bhat2025blockpdq_preprint/index.html",
     "title": "Block Probabilistic Distance Clustering: A Unified Framework and Evaluation",
     "section": "",
-    "text": "PREPRINTS\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n25 June 2025\n\n\n\n\nPUBLICATION DETAILS\n\n\nPreprint, Version 1\n\n\n\n\nLINKS\n\n\nDOI ResearchSquare\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@misc{bhat_k2025,\n  author = {Bhat K, Shrikrishna and C, Kiruthika},\n  title = {Block {Probabilistic} {Distance} {Clustering:} {A} {Unified}\n    {Framework} and {Evaluation}},\n  date = {2025-06-25},\n  url = {https://kskbhat.github.io/publications/bhat2025blockpdq_preprint/},\n  doi = {10.21203/rs.3.rs-6973596/v1},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat K, Shrikrishna, and Kiruthika C. 2025. “Block Probabilistic\nDistance Clustering: A Unified Framework and Evaluation.” In\nResearch Square. Preprint, June 25. https://doi.org/10.21203/rs.3.rs-6973596/v1."
+    "text": "PREPRINTS\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat Kapu and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n25 June 2025\n\n\n\n\nPUBLICATION DETAILS\n\n\nPreprint, Version 1\n\n\n\n\nLINKS\n\n\nDOI ResearchSquare\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@misc{bhat_kapu2025,\n  author = {Bhat Kapu, Shrikrishna and C, Kiruthika},\n  title = {Block {Probabilistic} {Distance} {Clustering:} {A} {Unified}\n    {Framework} and {Evaluation}},\n  date = {2025-06-25},\n  url = {https://kskbhat.github.io/publications/bhat2025blockpdq_preprint/},\n  doi = {10.21203/rs.3.rs-6973596/v1},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat Kapu, Shrikrishna, and Kiruthika C. 2025. “Block\nProbabilistic Distance Clustering: A Unified Framework and\nEvaluation.” In Research Square. Preprint, June 25. https://doi.org/10.21203/rs.3.rs-6973596/v1."
   },
   {
     "objectID": "publications/ananthpur2026gahddi/index.html",
@@ -221,7 +228,14 @@
     "href": "publications/bhat2024silhouette/index.html",
     "title": "Some density-based silhouette diagnostics for soft clustering algorithms",
     "section": "",
-    "text": "JOURNAL ARTICLES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2024\n\n\n\n\nPUBLICATION DETAILS\n\n\nCommunications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238\n\n\n\n\nLINKS\n\n\nDOI PDF\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@article{bhat_k2024,\n  author = {Bhat K, Shrikrishna and C, Kiruthika},\n  title = {Some Density-Based Silhouette Diagnostics for Soft Clustering\n    Algorithms},\n  journal = {Communications in Statistics: Case Studies, Data Analysis\n    and Applications},\n  volume = {10},\n  number = {3–4},\n  date = {2024},\n  url = {https://kskbhat.github.io/publications/bhat2024silhouette/},\n  doi = {10.1080/23737484.2024.2408534},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat K, Shrikrishna, and Kiruthika C. 2024. “Some Density-Based\nSilhouette Diagnostics for Soft Clustering Algorithms.”\nCommunications in Statistics: Case Studies, Data Analysis and\nApplications 10 (3–4). https://doi.org/10.1080/23737484.2024.2408534."
+    "text": "JOURNAL ARTICLES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat Kapu and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2024\n\n\n\n\nPUBLICATION DETAILS\n\n\nCommunications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238\n\n\n\n\nLINKS\n\n\nDOI PDF\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@article{bhat_kapu2024,\n  author = {Bhat Kapu, Shrikrishna and C, Kiruthika},\n  title = {Some Density-Based Silhouette Diagnostics for Soft Clustering\n    Algorithms},\n  journal = {Communications in Statistics: Case Studies, Data Analysis\n    and Applications},\n  volume = {10},\n  number = {3–4},\n  date = {2024},\n  url = {https://kskbhat.github.io/publications/bhat2024silhouette/},\n  doi = {10.1080/23737484.2024.2408534},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat Kapu, Shrikrishna, and Kiruthika C. 2024. “Some Density-Based\nSilhouette Diagnostics for Soft Clustering Algorithms.”\nCommunications in Statistics: Case Studies, Data Analysis and\nApplications 10 (3–4). https://doi.org/10.1080/23737484.2024.2408534."
+  },
+  {
+    "objectID": "publications/blockclusterpdq_github/index.html",
+    "href": "publications/blockclusterpdq_github/index.html",
+    "title": "blockclusterPDQ: An R Package for Block Probabilistic Distance Clustering",
+    "section": "",
+    "text": "SOFTWARE PACKAGES\n\n\n\nAUTHORS\n\n\nShrikrishna Bhat K and Kiruthika C\n\n\n\n\nPUBLISHED\n\n\n2025\n\n\n\n\n\n\n Back to topCitationBibTeX citation:@misc{bhat_k2025,\n  author = {Bhat K, Shrikrishna and C, Kiruthika},\n  title = {blockclusterPDQ: {An} {R} {Package} for {Block}\n    {Probabilistic} {Distance} {Clustering}},\n  date = {2025},\n  url = {https://kskbhat.github.io/publications/blockclusterpdq_github/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBhat K, Shrikrishna, and Kiruthika C. 2025. “blockclusterPDQ: An R\nPackage for Block Probabilistic Distance Clustering.” In\nGitHub. Preprint. https://kskbhat.github.io/publications/blockclusterpdq_github/."
   },
   {
     "objectID": "publications.html",
@@ -235,7 +249,7 @@
     "href": "publications.html#journal-articles",
     "title": "Publications",
     "section": "Journal Articles",
-    "text": "Journal Articles\n\nShrikrishna Bhat K and Kiruthika C (2024). “Some density-based silhouette diagnostics for soft clustering algorithms.” Communications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238. DOI: 10.1080/23737484.2024.2408534."
+    "text": "Journal Articles\n\nShrikrishna Bhat Kapu and Kiruthika C (2024). “Some density-based silhouette diagnostics for soft clustering algorithms.” Communications in Statistics: Case Studies, Data Analysis and Applications, 10(3–4), 221–238. DOI: 10.1080/23737484.2024.2408534."
   },
   {
     "objectID": "publications.html#technical-reports-notes",
@@ -249,7 +263,7 @@
     "href": "publications.html#preprints",
     "title": "Publications",
     "section": "Preprints",
-    "text": "Preprints\n\nShrikrishna Bhat K and Kiruthika C (2025). “Block Probabilistic Distance Clustering: A Unified Framework and Evaluation.” Preprint, Version 1. DOI: 10.21203/rs.3.rs-6973596/v1. ResearchSquare: rs-6973596/v1."
+    "text": "Preprints\n\nShrikrishna Bhat Kapu and Kiruthika C (2025). “Block Probabilistic Distance Clustering: A Unified Framework and Evaluation.” Preprint, Version 1. DOI: 10.21203/rs.3.rs-6973596/v1. ResearchSquare: rs-6973596/v1."
   },
   {
     "objectID": "software.html",
