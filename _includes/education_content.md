@@ -4,7 +4,7 @@
 
 ::: {.tl-row}
 ::: {.tl-meta}
-[<i class="bi bi-calendar3"></i> Feb 2021 – Dec 2025]{.tl-date}\
+[<i class="bi bi-calendar3"></i> Feb 2021 – Mar 2026]{.tl-date}\
 [<i class="bi bi-building"></i> [Pondicherry University](https://www.pondiuni.edu.in/)]{.tl-place}
 :::
 ::: {.tl-content}
@@ -13,7 +13,7 @@
 - **Research Area:** Cluster Analysis, Block Clustering, and Cluster Diagnostics
 - **Supervisor:** [Dr. Kiruthika](https://www.pondiuni.edu.in/faculy_profiles/dr-kiruthika/)
 - **Thesis Title:** *Contributions to Block Clustering and its Diagnostic Measures*
-- **Thesis Submitted:** 22 December 2025
+- **PhD Awarded:** March 2026
 :::
 
 :::

@@ -25,7 +25,7 @@
     "href": "research.html#phd-research",
     "title": "Research",
     "section": "PhD Research",
-    "text": "PhD Research\nContributions to Block Clustering and its Diagnostic Measures\n\n\n\n\nInstitution\nPondicherry University\n\n\nSupervisor\nDr. Kiruthika\n\n\nPeriod\nFebruary 2021 – December 2025\n\n\nThesis Submitted\n22 December 2025\n\n\n\n\n\nKey Contributions\n\nDensity-Based Silhouette Diagnostics — Proposed novel silhouette diagnostics for evaluating soft clustering algorithms, extending the classical silhouette framework to accommodate fuzzy and probabilistic cluster memberships.\nBlock Probabilistic Distance Clustering — Developed a unified framework for block (co-)clustering using probabilistic distance methods, with theoretical foundations and extensive empirical validation.\nR Packages — Built and published open-source software:\n\nSilhouette — CRAN package for proximity measure based diagnostics\nblockclusterPDQ — R package for block probabilistic distance clustering"
+    "text": "PhD Research\nContributions to Block Clustering and its Diagnostic Measures\n\n\n\n\nInstitution\nPondicherry University\n\n\nSupervisor\nDr. Kiruthika\n\n\nPeriod\nFebruary 2021 – March 2026\n\n\nPhD Awarded\nMarch 2026\n\n\n\n\n\nKey Contributions\n\nDensity-Based Silhouette Diagnostics — Proposed novel silhouette diagnostics for evaluating soft clustering algorithms, extending the classical silhouette framework to accommodate fuzzy and probabilistic cluster memberships.\nBlock Probabilistic Distance Clustering — Developed a unified framework for block (co-)clustering using probabilistic distance methods, with theoretical foundations and extensive empirical validation.\nR Packages — Built and published open-source software:\n\nSilhouette — CRAN package for proximity measure based diagnostics\nblockclusterPDQ — R package for block probabilistic distance clustering"
   },
   {
     "objectID": "research.html#research-output",
@@ -95,7 +95,7 @@
     "href": "cv.html#education",
     "title": "Curriculum Vitae",
     "section": "Education",
-    "text": "Education\n\n\n\n\n Feb 2021 – Dec 2025\n Pondicherry University\n\n\nPhD in Statistics\n\nResearch Area: Cluster Analysis, Block Clustering, and Cluster Diagnostics\nSupervisor: Dr. Kiruthika\nThesis Title: Contributions to Block Clustering and its Diagnostic Measures\nThesis Submitted: 22 December 2025\n\n\n\n\n\n Jul 2016 – Apr 2018\n Pondicherry University\n\n\nMaster of Science in Statistics\nCGPA: 7.75/10\n\n\n\n\n Jul 2013 – Apr 2016\n Andhra Loyola College\n\n\nBachelor of Science in Mathematics, Statistics, and Physics\nPercentage: 80.31%"
+    "text": "Education\n\n\n\n\n Feb 2021 – Mar 2026\n Pondicherry University\n\n\nPhD in Statistics\n\nResearch Area: Cluster Analysis, Block Clustering, and Cluster Diagnostics\nSupervisor: Dr. Kiruthika\nThesis Title: Contributions to Block Clustering and its Diagnostic Measures\nPhD Awarded: March 2026\n\n\n\n\n\n Jul 2016 – Apr 2018\n Pondicherry University\n\n\nMaster of Science in Statistics\nCGPA: 7.75/10\n\n\n\n\n Jul 2013 – Apr 2016\n Andhra Loyola College\n\n\nBachelor of Science in Mathematics, Statistics, and Physics\nPercentage: 80.31%"
   },
   {
     "objectID": "cv.html#skills-languages",
