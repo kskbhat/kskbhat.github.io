@@ -1014,24 +1014,3 @@ details .callout-note {
 .pub-detail-page #title-block-header {
   display: none !important;
 }
-
-/* Slick copy citation/bib buttons */
-.pub-copy-group {
-  margin-left: 0.6rem;
-  font-size: 0.8rem;
-  white-space: nowrap;
-}
-.pub-copy-btn {
-  color: var(--teal) !important;
-  text-decoration: none !important;
-  cursor: pointer;
-  font-weight: 600;
-  transition: color 0.15s ease;
-  display: inline-block;
-}
-.pub-copy-btn:hover {
-  color: var(--primary) !important;
-}
-[data-bs-theme="dark"] .pub-copy-btn:hover {
-  color: var(--accent) !important;
-}
