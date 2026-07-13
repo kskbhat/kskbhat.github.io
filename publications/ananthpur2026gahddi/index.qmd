@@ -1,6 +1,7 @@
 ---
 title: "Gender-Adjusted Household Digital Divide Index (GAHDDI): A household-level index of digital divide with gender adjustments"
 toc: false
+body-class: pub-detail-page
 citation:
   title: "Gender-Adjusted Household Digital Divide Index (GAHDDI): A household-level index of digital divide with gender adjustments"
   author:

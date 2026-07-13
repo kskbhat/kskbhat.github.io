@@ -408,6 +408,7 @@ def _build_detail_page(entry: dict) -> str:
     safe_title = title.replace('"', '\\"')
     lines.append(f'title: "{safe_title}"')
     lines.append("toc: false")
+    lines.append("body-class: pub-detail-page")
     
     # Add Google Scholar Highwire Press/Dublin Core citation metadata natively via Quarto
     lines.append("citation:")

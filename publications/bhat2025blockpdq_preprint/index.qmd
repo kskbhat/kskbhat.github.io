@@ -1,6 +1,7 @@
 ---
 title: "Block Probabilistic Distance Clustering: A Unified Framework and Evaluation"
 toc: false
+body-class: pub-detail-page
 citation:
   title: "Block Probabilistic Distance Clustering: A Unified Framework and Evaluation"
   author:

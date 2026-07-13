@@ -1008,3 +1008,9 @@ details .callout-note {
     flex: none;
   }
 }
+
+/* Hide duplicate Quarto title-blocks on publication detail pages */
+.pub-detail-page .quarto-title-block,
+.pub-detail-page #title-block-header {
+  display: none !important;
+}

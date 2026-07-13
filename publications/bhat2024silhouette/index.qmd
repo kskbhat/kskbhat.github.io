@@ -1,6 +1,7 @@
 ---
 title: "Some density-based silhouette diagnostics for soft clustering algorithms"
 toc: false
+body-class: pub-detail-page
 citation:
   title: "Some density-based silhouette diagnostics for soft clustering algorithms"
   author:
