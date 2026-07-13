@@ -21,6 +21,7 @@ Runs automatically via Quarto's pre-render hook (see _quarto.yml).
 
 import re
 import os
+import urllib.parse
 from pathlib import Path
 from datetime import datetime
 
@@ -520,6 +521,66 @@ def _build_detail_page(entry: dict) -> str:
     return "\n".join(lines)
 
 
+def to_bibtex_str(entry: dict) -> str:
+    """Serialize entry back to a clean BibTeX format string, URL-encoded for browser coping safety."""
+    lines = []
+    lines.append(f"@{entry['_type']}{{{entry['_key']},")
+    for k, v in entry.items():
+        if k.startswith("_") or k in ("description", "keywords", "file"):
+            continue
+        lines.append(f"  {k} = {{{v}}},")
+    lines.append("}")
+    raw_str = "\n".join(lines)
+    return urllib.parse.quote(raw_str)
+
+
+def to_plain_citation_str(entry: dict) -> str:
+    """Generate a clean Harvard citation string, URL-encoded for browser coping safety."""
+    title = clean_latex(entry.get("title", "Untitled"))
+    author = clean_latex(entry.get("author", ""))
+    author = author.replace("{", "").replace("}", "")
+    year = get_year(entry)
+    journal = clean_latex(entry.get("journal", ""))
+    volume = entry.get("volume", "")
+    number = clean_latex(entry.get("number", ""))
+    pages = clean_latex(entry.get("pages", ""))
+    doi = entry.get("doi", "")
+    note = clean_latex(entry.get("note", ""))
+
+    # Format authors
+    if author:
+        raw_authors = [a.strip() for a in author.split(" and ")]
+        cleaned_authors = []
+        for ra in raw_authors:
+            if "," in ra:
+                parts = ra.split(",", 1)
+                ra = f"{parts[1].strip()} {parts[0].strip()}"
+            cleaned_authors.append(ra)
+        if len(cleaned_authors) > 1:
+            authors_str = ", ".join(cleaned_authors[:-1]) + " and " + cleaned_authors[-1]
+        else:
+            authors_str = cleaned_authors[0] if cleaned_authors else ""
+    else:
+        authors_str = ""
+
+    ref = f"{authors_str} ({year}). {title}."
+    if journal:
+        ref += f" {journal}"
+        if volume:
+            ref += f", {volume}"
+        if number:
+            ref += f"({number})"
+        if pages:
+            ref += f", {pages}"
+        ref += "."
+    elif note:
+        ref += f" {note}."
+    if doi:
+        ref += f" DOI: {doi}."
+        
+    return urllib.parse.quote(ref)
+
+
 def _fmt_publication_bullet(entry: dict, index: int) -> str:
     """Format one publication as a compact numbered reference entry.
 
@@ -572,9 +633,22 @@ def _fmt_publication_bullet(entry: dict, index: int) -> str:
 
     citation = " ".join(cite_parts)
 
+    # URL-encoded strings for clipboard
+    bibtex_encoded = to_bibtex_str(entry)
+    ref_encoded = to_plain_citation_str(entry)
+
+    # HTML copier buttons
+    copier_html = (
+        f'<span class="pub-copy-group">'
+        f'<a href="javascript:void(0)" class="pub-copy-btn" onclick="const btn=this; const old=btn.innerText; navigator.clipboard.writeText(decodeURIComponent(\'{bibtex_encoded}\')).then(() => {{ btn.innerText=\'Copied Bib!\'; setTimeout(() => btn.innerText=old, 2000); }})">Copy Bib</a>'
+        f' &middot; '
+        f'<a href="javascript:void(0)" class="pub-copy-btn" onclick="const btn=this; const old=btn.innerText; navigator.clipboard.writeText(decodeURIComponent(\'{ref_encoded}\')).then(() => {{ btn.innerText=\'Copied Ref!\'; setTimeout(() => btn.innerText=old, 2000); }})">Copy Ref</a>'
+        f'</span>'
+    )
+
     # --- Build the numbered entry ---
     lines: list[str] = []
-    lines.append(f"{index}. {citation}")
+    lines.append(f"{index}. {citation} {copier_html}")
     lines.append("")
     return "\n".join(lines)
 
