@@ -41,8 +41,6 @@ website:
         menu: 
           - text: "Teaching"
             href: teaching.qmd
-          - text: "Bookdown Notes"
-            href: https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/
           - text: "Notes"
             href: notes.qmd
           - text: "Blog"
