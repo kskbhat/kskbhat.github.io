@@ -35,14 +35,14 @@ This section organizes my course syllabi, lecture notes, R code files, and inter
    }
    remotes::install_github(
      "kskbhat/Teaching", 
-     subdir = "mahe/Statistical Computing and Non parametric inference using R/mahe01"
+     subdir = "mahe/Statistical Computing and Non parametric inference using R/scnpir"
    )
    ```
 2. **Load the package and run a tutorial**:
    * **Method A (R Console)**: Run the tutorial command for the desired unit, for example:
      ```r
-     library(mahe01)
-     learnr::run_tutorial("unit1_r_basics", package = "mahe01")
+     library(scnpir)
+     learnr::run_tutorial("unit1_r_basics", package = "scnpir")
      ```
    * **Method B (Visual)**: Or open the **Tutorials** pane in the top-right section of RStudio, scroll to the desired unit, and click the **Start Tutorial** button.
 :::
