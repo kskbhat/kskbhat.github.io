@@ -48,3 +48,20 @@ This section organizes my course syllabi, lecture notes, R code files, and inter
 :::
 
 ---
+
+### 🧪 Statistical Research Methodology
+*Manipal Academy of Higher Education (MAHE)*
+
+<div class="pub-links" style="margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="profile-link-pill" target="_blank">
+    <i class="bi bi-book"></i> Bookdown Notes
+  </a>
+  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md" class="profile-link-pill" target="_blank">
+    <i class="bi bi-file-earmark-text"></i> Syllabus
+  </a>
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology" class="profile-link-pill" target="_blank">
+    <i class="bi bi-github"></i> Course Folder
+  </a>
+</div>
+
+---
