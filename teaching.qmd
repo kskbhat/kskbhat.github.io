@@ -22,26 +22,29 @@ This section organizes my course syllabi, lecture notes, R code files, and inter
   <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="profile-link-pill" target="_blank">
     <i class="bi bi-github"></i> Course Folder
   </a>
-  <a href="https://github.com/kskbhat/Teaching/raw/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/Statistical_Computing_and_Non_Parametric_Inference_using_R_Tutorials.zip" class="profile-link-pill" target="_blank">
-    <i class="bi bi-download"></i> Interactive Tutorials
-  </a>
 </div>
 
 
 ::: {.callout-note collapse="true"}
-## 📥 How to Run the Interactive Tutorials in RStudio
+## 📦 How to Install and Run the Interactive Tutorials in RStudio
 
-1. **Install the required packages**: Open RStudio and run this command in your R console to install the necessary libraries:
+1. **Install the package from GitHub**: Open RStudio and run this command in your R console:
    ```r
-   install.packages(c("learnr", "boot"))
+   if (!requireNamespace("remotes", quietly = TRUE)) {
+     install.packages("remotes")
+   }
+   remotes::install_github(
+     "kskbhat/Teaching", 
+     subdir = "mahe/Statistical Computing and Non parametric inference using R/mahe01"
+   )
    ```
-2. **Open a tutorial file**: Extract the downloaded ZIP file, navigate into the folder of the unit you want to run (e.g., `tutorials/unit1_r_basics/`), and open the `.Rmd` file (e.g., `unit1_r_basics.Rmd`) in RStudio.
-3. **Launch the interactive session**:
-   * **Method A (Recommended)**: Look at the top of the RStudio source editor pane and click the **Run Document** button (with a green play-triangle icon).
-   * **Method B**: Or run this command directly in your R console:
+2. **Load the package and run a tutorial**:
+   * **Method A (R Console)**: Run the tutorial command for the desired unit, for example:
      ```r
-     rmarkdown::run("unit1_r_basics.Rmd")
+     library(mahe01)
+     learnr::run_tutorial("unit1_r_basics", package = "mahe01")
      ```
+   * **Method B (Visual)**: Or open the **Tutorials** pane in the top-right section of RStudio, scroll to the desired unit, and click the **Start Tutorial** button.
 :::
 
 ---
