@@ -19,6 +19,9 @@ This section organizes my course syllabi, lecture notes, R code files, and inter
   <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="profile-link-pill" target="_blank">
     <i class="bi bi-file-earmark-text"></i> Syllabus
   </a>
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/scnpir" class="profile-link-pill" target="_blank">
+    <i class="bi bi-box-seam"></i> R Tutorial Package
+  </a>
   <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="profile-link-pill" target="_blank">
     <i class="bi bi-github"></i> Course Folder
   </a>
@@ -35,7 +38,7 @@ This section organizes my course syllabi, lecture notes, R code files, and inter
    }
    remotes::install_github(
      "kskbhat/Teaching", 
-     subdir = "mahe/Statistical Computing and Non parametric inference using R/scnpir"
+     subdir = "mahe/scnpir"
    )
    ```
 2. **Load the package and run a tutorial**:
