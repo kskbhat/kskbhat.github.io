@@ -1266,3 +1266,256 @@ details .callout-note {
     padding: 1.1rem 1.2rem;
   }
 }
+
+/* ============================================
+   Stat Chips — Achievement badges
+   ============================================ */
+
+.stat-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.2rem 0 1rem;
+}
+
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.32rem 0.85rem;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1.5px solid rgba(156, 107, 31, 0.28);
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.stat-chip .bi {
+  font-size: 0.88rem;
+  opacity: 0.85;
+}
+
+[data-bs-theme="dark"] .stat-chip {
+  background: rgba(212, 165, 74, 0.1);
+  border-color: rgba(212, 165, 74, 0.3);
+  color: var(--primary);
+}
+
+/* ============================================
+   Focus Area Cards — Research interests grid
+   ============================================ */
+
+.focus-area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.7rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.focus-area-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--teal);
+  border-radius: 8px;
+  padding: 0.7rem 0.95rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.35;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.focus-area-card:hover {
+  box-shadow: 0 3px 10px var(--card-shadow);
+  transform: translateY(-1px);
+}
+
+.focus-area-card .bi {
+  color: var(--teal);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+[data-bs-theme="dark"] .focus-area-card {
+  color: #F1E7DA;
+}
+
+@media (max-width: 600px) {
+  .focus-area-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============================================
+   Skill Tags — CV skills section
+   ============================================ */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.1rem;
+  margin: 1rem 0;
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.skill-category-label {
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22em 0.65em;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--teal);
+  background: rgba(47, 111, 115, 0.08);
+  border: 1px solid rgba(47, 111, 115, 0.22);
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.skill-tag:hover {
+  background: rgba(47, 111, 115, 0.16);
+}
+
+[data-bs-theme="dark"] .skill-tag {
+  color: #6DB7BD;
+  background: rgba(109, 183, 189, 0.1);
+  border-color: rgba(109, 183, 189, 0.25);
+}
+
+/* Language proficiency tag variant */
+.skill-tag-lang {
+  color: var(--primary);
+  background: var(--primary-light);
+  border-color: rgba(156, 107, 31, 0.22);
+}
+
+[data-bs-theme="dark"] .skill-tag-lang {
+  background: rgba(212, 165, 74, 0.1);
+  color: var(--primary);
+  border-color: rgba(212, 165, 74, 0.3);
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   Highlight Cards — Summary qualifications
+   ============================================ */
+
+.highlight-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+
+.highlight-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--primary);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.highlight-card .bi {
+  color: var(--primary);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+[data-bs-theme="dark"] .highlight-card {
+  color: #d9cebf;
+}
+
+@media (max-width: 600px) {
+  .highlight-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   Notes Page — Coming Soon Placeholder Cards
+   ============================================ */
+
+.notes-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.notes-placeholder-card {
+  background: var(--card-bg);
+  border: 1px dashed var(--border-color);
+  border-radius: 10px;
+  padding: 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0.75;
+}
+
+.notes-placeholder-card .npc-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.notes-placeholder-card .npc-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.notes-placeholder-card .npc-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.notes-placeholder-card .npc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.18em 0.6em;
+  border-radius: 10px;
+  background: rgba(156, 107, 31, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(156, 107, 31, 0.2);
+  width: fit-content;
+  margin-top: 0.2rem;
+}

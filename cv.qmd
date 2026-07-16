@@ -7,6 +7,9 @@ subtitle: "Education, skills, and academic profile"
 <button class="profile-link-pill" id="cv-toggle-btn" onclick="toggleResume()">
 <i class="bi bi-eye"></i> View Resume
 </button>
+<a href="CVShrikrishnaBhat/CVShrikrishnaBhat.pdf" class="profile-link-pill" download>
+<i class="bi bi-download"></i> Download PDF
+</a>
 </div>
 
 <div class="cv-pdf-wrapper" id="cv-pdf-wrapper" style="display:none;">
@@ -43,27 +46,70 @@ function toggleResume() {
 
 ---
 
-## Skills & Languages
+## Skills & Tools
 
-| Category | Details |
-|---|---|
-| **Programming Languages** | R · Python |
-| **Machine Learning** | scikit-learn · Logistic Regression · Classification · Clustering · Ensemble Methods |
-| **Statistical Tools** | STATA · SPSS · Minitab |
-| **Data Tools** | MS Excel · SQL · Power BI · [Tableau](https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes) |
-| **Version Control** | GitHub |
-| **Other Tools** | LaTeX · SurveyCTO · MS Office |
+<div class="skills-grid">
+
+<div class="skill-category">
+  <div class="skill-category-label">Programming Languages</div>
+  <div class="skill-tags">
+    <span class="skill-tag">R</span>
+    <span class="skill-tag">Python</span>
+  </div>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-label">Machine Learning</div>
+  <div class="skill-tags">
+    <span class="skill-tag">scikit-learn</span>
+    <span class="skill-tag">Logistic Regression</span>
+    <span class="skill-tag">Classification</span>
+    <span class="skill-tag">Clustering</span>
+    <span class="skill-tag">Ensemble Methods</span>
+  </div>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-label">Statistical Software</div>
+  <div class="skill-tags">
+    <span class="skill-tag">STATA</span>
+    <span class="skill-tag">SPSS</span>
+    <span class="skill-tag">Minitab</span>
+  </div>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-label">Data & Visualization</div>
+  <div class="skill-tags">
+    <span class="skill-tag">MS Excel</span>
+    <span class="skill-tag">SQL</span>
+    <span class="skill-tag">Power BI</span>
+    <a href="https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes" class="skill-tag" target="_blank">Tableau</a>
+  </div>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-label">Other Tools</div>
+  <div class="skill-tags">
+    <span class="skill-tag">GitHub</span>
+    <span class="skill-tag">LaTeX</span>
+    <span class="skill-tag">SurveyCTO</span>
+    <span class="skill-tag">MS Office</span>
+  </div>
+</div>
+
+</div>
 
 ### Languages Known {.unnumbered}
 
-| Language | Proficiency |
-|---|---|
-| English | Fluent |
-| Kannada | Native |
-| Telugu | Native |
-| Hindi | Fluent |
-| Tulu | Native |
-| Tamil | Basic |
+<div class="skill-tags" style="margin-top: 0.5rem;">
+  <span class="skill-tag skill-tag-lang">English — Fluent</span>
+  <span class="skill-tag skill-tag-lang">Kannada — Native</span>
+  <span class="skill-tag skill-tag-lang">Telugu — Native</span>
+  <span class="skill-tag skill-tag-lang">Hindi — Fluent</span>
+  <span class="skill-tag skill-tag-lang">Tulu — Native</span>
+  <span class="skill-tag skill-tag-lang">Tamil — Basic</span>
+</div>
 
 ---
 
@@ -76,12 +122,14 @@ function toggleResume() {
 
 ## Summary of Qualifications
 
-- 6+ years of experience in advanced statistical modeling and survey analytics
-- Published author with peer-reviewed articles in international journals
-- Developer of CRAN R packages for cluster analysis diagnostics
-- Experience leading large-scale survey projects (240,000+ households)
-- Consultancy experience for urban housing demand assessments
-- Presentations at international conferences (IISA, ISPS, ICSTA)
+<div class="highlight-card-grid">
+  <div class="highlight-card"><i class="bi bi-calendar-check"></i> 6+ years of experience in advanced statistical modeling and survey analytics</div>
+  <div class="highlight-card"><i class="bi bi-journal-text"></i> Published author with peer-reviewed articles in international journals</div>
+  <div class="highlight-card"><i class="bi bi-box-seam"></i> Developer of CRAN R packages for cluster analysis diagnostics</div>
+  <div class="highlight-card"><i class="bi bi-people"></i> Led large-scale survey projects covering 240,000+ households</div>
+  <div class="highlight-card"><i class="bi bi-building"></i> Consultancy experience for urban housing demand assessments</div>
+  <div class="highlight-card"><i class="bi bi-mic"></i> Presentations at international conferences (IISA, ISPS, ICSTA)</div>
+</div>
 
 ::: {.card-grid-2}
 

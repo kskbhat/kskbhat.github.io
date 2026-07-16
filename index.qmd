@@ -13,9 +13,32 @@ toc: false
 
 PhD in Statistics specializing in **Cluster Analysis, Probabilistic Distance Methods, and Data Diagnostics**.
 
-I work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability.
+I work at the intersection of statistical theory and applied survey analytics, developing methods that improve clustering reliability and interpretability. Over 6 years of experience in large-scale socio-economic surveys, urban analytics, and policy-oriented data research.
 
-Over 6 years of experience in large-scale socio-economic surveys, urban analytics, and policy-oriented data research.
+<div class="stat-chip-row">
+  <span class="stat-chip"><i class="bi bi-mortarboard-fill"></i> PhD in Statistics</span>
+  <span class="stat-chip"><i class="bi bi-briefcase-fill"></i> 6+ Years Experience</span>
+  <span class="stat-chip"><i class="bi bi-box-seam-fill"></i> 2 CRAN Packages</span>
+  <span class="stat-chip"><i class="bi bi-mic-fill"></i> 3 Conference Papers</span>
+</div>
+
+<div class="title-with-links" style="margin-top: 0.8rem;">
+  <a href="https://scholar.google.com/citations?user=Yj3yW6MAAAAJ" class="profile-link-pill" target="_blank" rel="noopener">
+    <i class="ai ai-google-scholar"></i> Scholar
+  </a>
+  <a href="https://github.com/kskbhat" class="profile-link-pill" target="_blank" rel="noopener">
+    <i class="bi bi-github"></i> GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/kskbhat/" class="profile-link-pill" target="_blank" rel="noopener">
+    <i class="bi bi-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://orcid.org/0009-0000-6180-5783" class="profile-link-pill" target="_blank" rel="noopener">
+    <i class="ai ai-orcid"></i> ORCID
+  </a>
+  <a href="cv.qmd" class="profile-link-pill">
+    <i class="bi bi-file-earmark-person"></i> CV
+  </a>
+</div>
 
 :::
 
@@ -25,7 +48,7 @@ Over 6 years of experience in large-scale socio-economic surveys, urban analytic
 
 :::
 
-<!-- ---
+---
 
 ## Academic Profile
 
@@ -61,25 +84,12 @@ Author of R packages on CRAN — **Silhouette** and **blockclusterPDQ**.
 
 ::: {.card}
 ### [📊 Experience](experience.qmd)
-6+ years of experience in large-scale survey analytics and statistical consultancy.
-:::
-
-:::
-
----
-
-## Featured Software
-
-::: {.card-grid-2}
-
-::: {.card}
-### [📊 Silhouette R Package](https://kskbhat.github.io/Silhouette)
-Proximity measure based diagnostics for standard, soft, and multi-way clustering.
+6+ years in large-scale survey analytics, statistical consultancy, and policy research.
 :::
 
 ::: {.card}
-### [🧊 blockclusterPDQ](https://github.com/kskbhat/blockclusterPDQ)
-An R package for block probabilistic distance clustering.
+### [🎓 Teaching](teaching.qmd)
+Graduate-level courses in statistical computing and research methodology at MAHE.
 :::
 
-::: -->
+:::

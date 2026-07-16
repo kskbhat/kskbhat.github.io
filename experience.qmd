@@ -3,4 +3,15 @@ title: "Experience"
 subtitle: "Professional experience and work history"
 ---
 
+Over 6 years of professional experience spanning statistical consultancy, large-scale survey data management, and applied research for government and development institutions across India.
+
+<div class="stat-chip-row">
+  <span class="stat-chip"><i class="bi bi-briefcase-fill"></i> 6+ Years</span>
+  <span class="stat-chip"><i class="bi bi-people-fill"></i> 240,000+ Households Surveyed</span>
+  <span class="stat-chip"><i class="bi bi-building"></i> 5 Organizations</span>
+  <span class="stat-chip"><i class="bi bi-geo-alt-fill"></i> Chennai · Hyderabad</span>
+</div>
+
+---
+
 {{< include _includes/experience_content.md >}}

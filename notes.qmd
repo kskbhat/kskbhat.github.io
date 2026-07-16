@@ -2,77 +2,53 @@
 title: "Notes"
 page-layout: full
 title-block-banner: false
-toc: true
+toc: false
 ---
 
 ::: {.column-page}
 
-Lecture notes, tutorials, and reference material — built with [Bookdown](https://bookdown.org/) and [R Markdown](https://rmarkdown.rstudio.com/).
+Lecture notes, tutorials, and reference material on statistics and computing — built with [Bookdown](https://bookdown.org/) and [R Markdown](https://rmarkdown.rstudio.com/).
 
-## 🚧 Coming Soon
+::: {.callout-note}
+## 🚧 Notes Coming Soon
 
-Notes on statistics, probability, and data science are being prepared. Check back soon!
-
----
-
-## How to Add Your Notes
-
-::: {.callout-tip collapse="true"}
-## Quick Guide — Adding a Bookdown / R Markdown Book
-
-**Option A — Link to an external hosted book:**
-
-Add a new card in the section below with the title, description, and URL.
-
-**Option B — Host the book within this site:**
-
-1. Build your bookdown/R Markdown book locally (e.g., `bookdown::render_book()`)
-2. Copy the rendered output (HTML files) into a subfolder like `notes/my-book-name/`
-3. Add a card entry below pointing to `notes/my-book-name/index.html`
-
-**Option C — Use a GitHub Pages link:**
-
-If your book is hosted on GitHub Pages (e.g., `https://kskbhat.github.io/my-notes/`), just link to it directly.
+These notes are currently being written and formatted. Check back soon — they'll be freely available here as interactive Bookdown books.
 :::
 
 ---
 
-## Available Notes
+## Planned Topics
 
-::: {.card-grid-2}
+<div class="notes-placeholder-grid">
 
-::: {.card}
-### 📐 Probability & Statistics
+<div class="notes-placeholder-card">
+  <div class="npc-icon">📐</div>
+  <div class="npc-title">Probability & Statistics</div>
+  <div class="npc-desc">Foundations of probability theory, distributions, and statistical inference.</div>
+  <span class="npc-badge"><i class="bi bi-book"></i> Bookdown (HTML)</span>
+</div>
 
-*Coming Soon* — Foundations of probability theory, distributions, and statistical inference.
+<div class="notes-placeholder-card">
+  <div class="npc-icon">📊</div>
+  <div class="npc-title">Cluster Analysis</div>
+  <div class="npc-desc">Clustering methods, evaluation metrics, and R implementations.</div>
+  <span class="npc-badge"><i class="bi bi-book"></i> Bookdown (HTML)</span>
+</div>
 
-**Format:** Bookdown (HTML)
-:::
+<div class="notes-placeholder-card">
+  <div class="npc-icon">💻</div>
+  <div class="npc-title">R Programming</div>
+  <div class="npc-desc">From basics to advanced — tidyverse, package development, and Shiny apps.</div>
+  <span class="npc-badge"><i class="bi bi-book"></i> R Markdown Book</span>
+</div>
 
-::: {.card}
-### 📊 Cluster Analysis
+<div class="notes-placeholder-card">
+  <div class="npc-icon">📈</div>
+  <div class="npc-title">Multivariate Statistics</div>
+  <div class="npc-desc">PCA, factor analysis, discriminant analysis, and dimension reduction.</div>
+  <span class="npc-badge"><i class="bi bi-book"></i> Bookdown (HTML)</span>
+</div>
 
-*Coming Soon* — Comprehensive notes on clustering methods, evaluation metrics, and R implementations.
-
-**Format:** Bookdown (HTML)
-:::
-
-::: {.card}
-### 💻 R Programming
-
-*Coming Soon* — From basics to advanced topics — tidyverse, package development, and Shiny apps.
-
-**Format:** R Markdown Book
-:::
-
-::: {.card}
-### 📈 Multivariate Statistics
-
-*Coming Soon* — PCA, factor analysis, discriminant analysis, and dimension reduction techniques.
-
-**Format:** Bookdown (HTML)
-:::
-
-:::
+</div>
 
 :::

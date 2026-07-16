@@ -3,5 +3,15 @@ title: "Workshops & Conferences"
 subtitle: "Conference presentations, posters, and workshop participation"
 ---
 
+Presentations and participation at international statistics conferences, workshops, and symposia — covering cluster analysis, probabilistic distance methods, and simulation-based research.
+
+<div class="stat-chip-row">
+  <span class="stat-chip"><i class="bi bi-mic-fill"></i> 3 Papers Presented</span>
+  <span class="stat-chip"><i class="bi bi-easel-fill"></i> 1 Poster</span>
+  <span class="stat-chip"><i class="bi bi-calendar-event"></i> 5 Workshops Attended</span>
+</div>
+
+---
+
 <!-- Auto-generated from reference.bib by _scripts/generate_pages.py -->
 {{< include _includes/conferences_content.md >}}

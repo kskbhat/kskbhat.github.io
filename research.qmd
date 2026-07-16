@@ -9,13 +9,15 @@ My doctoral research focuses on **Block Probabilistic Distance Clustering (BPDQ)
 
 ## Research Interests
 
-- **Cluster Analysis** — Theory and methods for partitioning data into meaningful groups
-- **Block Clustering (Co-clustering)** — Simultaneous clustering of rows and columns of data matrices
-- **Probabilistic Distance Clustering** — Distance-based approaches with probabilistic foundations
-- **Cluster Diagnostics** — Silhouette-based and density-based measures for evaluating clustering quality
-- **Statistical Computing** — Development of R packages for reproducible research
-- **Survey Analytics** — Design and analysis of large-scale socio-economic surveys
-- **Applied Statistics** — Regression modeling, multivariate analysis, and data-driven inference
+<div class="focus-area-grid">
+  <div class="focus-area-card"><i class="bi bi-diagram-3"></i> Cluster Analysis</div>
+  <div class="focus-area-card"><i class="bi bi-grid"></i> Block Clustering</div>
+  <div class="focus-area-card"><i class="bi bi-rulers"></i> Probabilistic Distance Methods</div>
+  <div class="focus-area-card"><i class="bi bi-activity"></i> Cluster Diagnostics</div>
+  <div class="focus-area-card"><i class="bi bi-code-slash"></i> Statistical Computing</div>
+  <div class="focus-area-card"><i class="bi bi-people"></i> Survey Analytics</div>
+  <div class="focus-area-card"><i class="bi bi-bar-chart-line"></i> Applied Statistics</div>
+</div>
 
 ---
 
