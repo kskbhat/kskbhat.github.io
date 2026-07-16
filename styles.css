@@ -1014,3 +1014,255 @@ details .callout-note {
 .pub-detail-page #title-block-header {
   display: none !important;
 }
+
+/* ============================================
+   Teaching Page — Course Card Components
+   ============================================ */
+
+/* Grid of course cards */
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.5rem;
+  margin: 1.8rem 0;
+}
+
+/* Individual course card */
+.course-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--teal);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.course-card:hover {
+  box-shadow: 0 6px 24px var(--card-shadow);
+  transform: translateY(-2px);
+}
+
+/* Top row: icon badge + course code pill */
+.course-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.course-icon-badge {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.course-code-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25em 0.8em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--teal);
+  background: rgba(47, 111, 115, 0.1);
+  border: 1px solid rgba(47, 111, 115, 0.3);
+  border-radius: 20px;
+}
+
+[data-bs-theme="dark"] .course-code-pill {
+  background: rgba(109, 183, 189, 0.15);
+  border-color: rgba(109, 183, 189, 0.4);
+}
+
+/* Course title */
+.course-card-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin: 0;
+  line-height: 1.35;
+}
+
+[data-bs-theme="dark"] .course-card-title {
+  color: #F1E7DA;
+}
+
+/* Institution / meta row */
+.course-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.course-card-meta .bi {
+  font-size: 0.85rem;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* Course description */
+.course-card-desc {
+  font-size: 0.91rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Link pill row */
+.course-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+/* Compact link pills for teaching cards */
+.teaching-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--text-heading) !important;
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 20px;
+  text-decoration: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s, background 0.2s;
+  white-space: nowrap;
+}
+
+.teaching-pill:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px var(--card-shadow);
+  transform: translateY(-1px);
+  background: var(--primary-light);
+}
+
+.teaching-pill .bi {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+[data-bs-theme="dark"] .teaching-pill {
+  border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .teaching-pill:hover {
+  background: rgba(156, 107, 31, 0.12);
+  border-color: var(--primary);
+}
+
+/* "Tutorials available" feature tag */
+.course-feature-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2em 0.75em;
+  border-radius: 12px;
+  background: rgba(42, 157, 92, 0.12);
+  color: #1e7a46;
+  border: 1px solid rgba(42, 157, 92, 0.35);
+}
+
+[data-bs-theme="dark"] .course-feature-tag {
+  background: rgba(74, 222, 128, 0.12);
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.35);
+}
+
+/* Install details toggle inside card */
+.course-install-toggle {
+  margin-top: 0.3rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.course-install-toggle summary {
+  padding: 0.6rem 1rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--teal);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(47, 111, 115, 0.06);
+  transition: background 0.2s;
+}
+
+.course-install-toggle summary:hover {
+  background: rgba(47, 111, 115, 0.12);
+}
+
+.course-install-toggle summary::marker,
+.course-install-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.course-install-toggle[open] summary {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.course-install-toggle .install-body {
+  padding: 0.9rem 1rem;
+  font-size: 0.88rem;
+}
+
+.course-install-toggle pre {
+  margin: 0.5rem 0;
+  font-size: 0.82rem;
+}
+
+/* Teaching page intro text */
+.teaching-intro {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 720px;
+  margin-bottom: 0.5rem;
+}
+
+/* Section label above grid */
+.teaching-section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 1.5rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.teaching-section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .teaching-grid {
+    grid-template-columns: 1fr;
+  }
+  .course-card {
+    padding: 1.1rem 1.2rem;
+  }
+}

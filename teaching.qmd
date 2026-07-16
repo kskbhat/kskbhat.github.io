@@ -5,66 +5,116 @@ page-layout: full
 toc: false
 ---
 
-This section organizes my course syllabi, lecture notes, R code files, and interactive Bookdown books. These materials are designed to accompany my courses and help students develop practical computing and statistical inference skills.
+<p class="teaching-intro">
+I teach graduate-level courses in statistics, computing, and research methodology. Course materials are openly available as interactive Bookdown books and downloadable PDFs. Students can also access hands-on R tutorials directly within RStudio.
+</p>
 
----
+<p class="teaching-section-label">Courses at MAHE · Manipal Academy of Higher Education</p>
 
-### 📊 Statistical Computing and Non-Parametric Inference using R
-*Manipal Academy of Higher Education (MAHE)*
+<div class="teaching-grid">
 
-<div class="pub-links" style="margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="profile-link-pill" target="_blank">
+<!-- ── Course Card 1: R Course ────────────────────────────── -->
+<div class="course-card">
+
+<div class="course-card-header">
+  <span class="course-icon-badge">📊</span>
+  <span class="course-code-pill">DDS 6103 · 3 Credits · L-T-P: 2-0-1</span>
+</div>
+
+<h3 class="course-card-title">Statistical Computing and Non-Parametric Inference using R</h3>
+
+<p class="course-card-meta">
+  <i class="bi bi-building"></i>
+  Department of Data Science · Prasanna School of Public Health, MAHE
+</p>
+
+<p class="course-card-desc">
+  Hands-on computing course covering the R environment, descriptive statistics, resampling and bootstrap methods, contingency table analysis, and a comprehensive treatment of non-parametric statistical tests — all implemented in R.
+</p>
+
+<div class="course-card-links">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="teaching-pill" target="_blank">
     <i class="bi bi-book"></i> Bookdown Notes
   </a>
-  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="profile-link-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="teaching-pill" target="_blank">
     <i class="bi bi-file-earmark-text"></i> Syllabus
   </a>
-  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/scnpir" class="profile-link-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/scnpir" class="teaching-pill" target="_blank">
     <i class="bi bi-box-seam"></i> R Tutorial Package
   </a>
-  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="profile-link-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="teaching-pill" target="_blank">
     <i class="bi bi-github"></i> Course Folder
   </a>
 </div>
 
+<div>
+  <span class="course-feature-tag"><i class="bi bi-play-circle"></i> Interactive learnr Tutorials Available</span>
+</div>
 
-::: {.callout-note collapse="true"}
-## 📦 How to Install and Run the Interactive Tutorials in RStudio
+<details class="course-install-toggle">
+<summary><i class="bi bi-terminal"></i> How to install &amp; run the interactive tutorials in RStudio</summary>
+<div class="install-body">
 
-1. **Install the package from GitHub**: Open RStudio and run this command in your R console:
-   ```r
-   if (!requireNamespace("remotes", quietly = TRUE)) {
-     install.packages("remotes")
-   }
-   remotes::install_github(
-     "kskbhat/Teaching", 
-     subdir = "mahe/scnpir"
-   )
-   ```
-2. **Load the package and run a tutorial**:
-   * **Method A (R Console)**: Run the tutorial command for the desired unit, for example:
-     ```r
-     library(scnpir)
-     learnr::run_tutorial("unit1_r_basics", package = "scnpir")
-     ```
-   * **Method B (Visual)**: Or open the **Tutorials** pane in the top-right section of RStudio, scroll to the desired unit, and click the **Start Tutorial** button.
-:::
+**Step 1 — Install the package from GitHub:**
 
----
+```r
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+remotes::install_github(
+  "kskbhat/Teaching",
+  subdir = "mahe/scnpir"
+)
+```
 
-### 🧪 Statistical Research Methodology
-*Manipal Academy of Higher Education (MAHE)*
+**Step 2 — Launch a tutorial:**
 
-<div class="pub-links" style="margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="profile-link-pill" target="_blank">
+```r
+library(scnpir)
+learnr::run_tutorial("unit1_r_basics", package = "scnpir")
+```
+
+> 💡 Or use the **Tutorials** pane in RStudio (top-right panel) and click **Start Tutorial**.
+
+</div>
+</details>
+
+</div>
+
+<!-- ── Course Card 2: SRM Course ─────────────────────────── -->
+<div class="course-card">
+
+<div class="course-card-header">
+  <span class="course-icon-badge">🧪</span>
+  <span class="course-code-pill">DDS 6106 · 4 Credits · L-T-P-C: 2-0-4-4</span>
+</div>
+
+<h3 class="course-card-title">Statistical Research Methodology</h3>
+
+<p class="course-card-meta">
+  <i class="bi bi-building"></i>
+  Department of Data Science · Prasanna School of Public Health, MAHE
+</p>
+
+<p class="course-card-desc">
+  A rigorous graduate course on research design, Monte Carlo simulation, variance reduction, Markov Chain Monte Carlo (MCMC) methods, and stochastic optimization — with an emphasis on both theory and practical computation.
+</p>
+
+<div class="course-card-links">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="teaching-pill" target="_blank">
     <i class="bi bi-book"></i> Bookdown Notes
   </a>
-  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md" class="profile-link-pill" target="_blank">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf" class="teaching-pill" target="_blank">
+    <i class="bi bi-file-earmark-pdf"></i> PDF Textbook
+  </a>
+  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md" class="teaching-pill" target="_blank">
     <i class="bi bi-file-earmark-text"></i> Syllabus
   </a>
-  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology" class="profile-link-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology" class="teaching-pill" target="_blank">
     <i class="bi bi-github"></i> Course Folder
   </a>
 </div>
 
----
+</div>
+
+</div>

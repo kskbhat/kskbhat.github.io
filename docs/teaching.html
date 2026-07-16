@@ -437,58 +437,76 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This section organizes my course syllabi, lecture notes, R code files, and interactive Bookdown books. These materials are designed to accompany my courses and help students develop practical computing and statistical inference skills.</p>
-<hr>
-<section id="statistical-computing-and-non-parametric-inference-using-r" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-computing-and-non-parametric-inference-using-r">📊 Statistical Computing and Non-Parametric Inference using R</h3>
-<p><em>Manipal Academy of Higher Education (MAHE)</em></p>
-<div class="pub-links" style="margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
-<p><a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="profile-link-pill" target="_blank"> <i class="bi bi-book"></i> Bookdown Notes </a> <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="profile-link-pill" target="_blank"> <i class="bi bi-file-earmark-text"></i> Syllabus </a> <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="profile-link-pill" target="_blank"> <i class="bi bi-github"></i> Course Folder </a></p>
+<p class="teaching-intro">
+I teach graduate-level courses in statistics, computing, and research methodology. Course materials are openly available as interactive Bookdown books and downloadable PDFs. Students can also access hands-on R tutorials directly within RStudio.
+</p>
+<p class="teaching-section-label">
+Courses at MAHE · Manipal Academy of Higher Education
+</p>
+<div class="teaching-grid">
+<!-- ── Course Card 1: R Course ────────────────────────────── -->
+<div class="course-card">
+<div class="course-card-header">
+<p><span class="course-icon-badge">📊</span> <span class="course-code-pill">DDS 6103 · 3 Credits · L-T-P: 2-0-1</span></p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<h3 class="course-card-title anchored">
+Statistical Computing and Non-Parametric Inference using R
+</h3>
+<p class="course-card-meta">
+<i class="bi bi-building"></i> Department of Data Science · Prasanna School of Public Health, MAHE
+</p>
+<p class="course-card-desc">
+Hands-on computing course covering the R environment, descriptive statistics, resampling and bootstrap methods, contingency table analysis, and a comprehensive treatment of non-parametric statistical tests — all implemented in R.
+</p>
+<div class="course-card-links">
+<p><a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="teaching-pill" target="_blank"> <i class="bi bi-book"></i> Bookdown Notes </a> <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="teaching-pill" target="_blank"> <i class="bi bi-file-earmark-text"></i> Syllabus </a> <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/scnpir" class="teaching-pill" target="_blank"> <i class="bi bi-box-seam"></i> R Tutorial Package </a> <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="teaching-pill" target="_blank"> <i class="bi bi-github"></i> Course Folder </a></p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>📦 How to Install and Run the Interactive Tutorials in RStudio
+<div>
+<p><span class="course-feature-tag"><i class="bi bi-play-circle"></i> Interactive learnr Tutorials Available</span></p>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p><strong>Install the package from GitHub</strong>: Open RStudio and run this command in your R console:</p>
+<details class="course-install-toggle">
+<summary>
+<i class="bi bi-terminal"></i> How to install &amp; run the interactive tutorials in RStudio
+</summary>
+<div class="install-body">
+<p><strong>Step 1 — Install the package from GitHub:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">"remotes"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"kskbhat/Teaching"</span>, </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">subdir =</span> <span class="st">"mahe/Statistical Computing and Non parametric inference using R/scnpir"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Load the package and run a tutorial</strong>:</p>
-<ul>
-<li><p><strong>Method A (R Console)</strong>: Run the tutorial command for the desired unit, for example:</p>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"kskbhat/Teaching"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">subdir =</span> <span class="st">"mahe/scnpir"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Step 2 — Launch a tutorial:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scnpir)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(<span class="st">"unit1_r_basics"</span>, <span class="at">package =</span> <span class="st">"scnpir"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Method B (Visual)</strong>: Or open the <strong>Tutorials</strong> pane in the top-right section of RStudio, scroll to the desired unit, and click the <strong>Start Tutorial</strong> button.</p></li>
-</ul></li>
-</ol>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(<span class="st">"unit1_r_basics"</span>, <span class="at">package =</span> <span class="st">"scnpir"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p>💡 Or use the <strong>Tutorials</strong> pane in RStudio (top-right panel) and click <strong>Start Tutorial</strong>.</p>
+</blockquote>
+</div>
+</details>
+</div>
+<!-- ── Course Card 2: SRM Course ─────────────────────────── -->
+<div class="course-card">
+<div class="course-card-header">
+<p><span class="course-icon-badge">🧪</span> <span class="course-code-pill">DDS 6106 · 4 Credits · L-T-P-C: 2-0-4-4</span></p>
+</div>
+<h3 class="course-card-title anchored">
+Statistical Research Methodology
+</h3>
+<p class="course-card-meta">
+<i class="bi bi-building"></i> Department of Data Science · Prasanna School of Public Health, MAHE
+</p>
+<p class="course-card-desc">
+A rigorous graduate course on research design, Monte Carlo simulation, variance reduction, Markov Chain Monte Carlo (MCMC) methods, and stochastic optimization — with an emphasis on both theory and practical computation.
+</p>
+<div class="course-card-links">
+<p><a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="teaching-pill" target="_blank"> <i class="bi bi-book"></i> Bookdown Notes </a> <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf" class="teaching-pill" target="_blank"> <i class="bi bi-file-earmark-pdf"></i> PDF Textbook </a> <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md" class="teaching-pill" target="_blank"> <i class="bi bi-file-earmark-text"></i> Syllabus </a> <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology" class="teaching-pill" target="_blank"> <i class="bi bi-github"></i> Course Folder </a></p>
 </div>
 </div>
 </div>
-<hr>
-</section>
-<section id="statistical-research-methodology" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-research-methodology">🧪 Statistical Research Methodology</h3>
-<p><em>Manipal Academy of Higher Education (MAHE)</em></p>
-<div class="pub-links" style="margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
-<p><a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="profile-link-pill" target="_blank"> <i class="bi bi-book"></i> Bookdown Notes </a> <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md" class="profile-link-pill" target="_blank"> <i class="bi bi-file-earmark-text"></i> Syllabus </a> <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology" class="profile-link-pill" target="_blank"> <i class="bi bi-github"></i> Course Folder </a></p>
-</div>
-<hr>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
