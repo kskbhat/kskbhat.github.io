@@ -7,9 +7,6 @@ subtitle: "R packages and software developed"
 <a href="https://github.com/kskbhat" class="profile-link-pill" target="_blank" rel="noopener">
 <i class="bi bi-github"></i> GitHub
 </a>
-<a href="https://cran.r-project.org/search.html?query=shrikrishna" class="profile-link-pill" target="_blank" rel="noopener">
-<i class="bi bi-box-seam"></i> CRAN
-</a>
 </div>
 
 Open-source R packages for statistical computing and cluster analysis, built to make advanced clustering diagnostics accessible and reproducible.

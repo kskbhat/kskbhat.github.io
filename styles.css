@@ -844,6 +844,11 @@ details .callout-note {
   text-decoration: none !important;
   cursor: pointer;
   transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  /* Reset <button> defaults so it matches <a> */
+  font-family: inherit;
+  line-height: 1.4;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .profile-link-pill:hover {
@@ -860,6 +865,98 @@ details .callout-note {
 .profile-link-pill i {
   font-size: 1.1rem;
   opacity: 0.7;
+}
+
+/* CV top button row — centered with proper gap */
+.cv-top-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+/* CV skills table — two-column label | tags, clean rows */
+.cv-skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.cv-skills-table tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cv-skills-table tr:last-child {
+  border-bottom: none;
+}
+
+.cv-skills-table td {
+  padding: 0.55rem 0.5rem;
+  vertical-align: top;
+  background: transparent !important;
+  border: none;
+}
+
+.cv-skills-table td:first-child {
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  width: 160px;
+  padding-top: 0.65rem;
+}
+
+[data-bs-theme="dark"] .cv-skills-table tr {
+  border-bottom-color: var(--border-color);
+}
+
+@media (max-width: 540px) {
+  .cv-skills-table td:first-child {
+    width: 120px;
+    font-size: 0.68rem;
+  }
+  .cv-top-buttons {
+    justify-content: center;
+  }
+}
+
+/* Qualifications list — clean icon + text list */
+.qualifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.qualifications-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.93rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.qualifications-list li:last-child {
+  border-bottom: none;
+}
+
+.qualifications-list li .bi {
+  color: var(--primary);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 0.18rem;
+}
+
+[data-bs-theme="dark"] .qualifications-list li {
+  color: #d9cebf;
+  border-bottom-color: var(--border-color);
 }
 
 /* ============================================

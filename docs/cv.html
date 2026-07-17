@@ -416,11 +416,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="title-with-links">
+<div class="cv-top-buttons">
 <button class="profile-link-pill" id="cv-toggle-btn" onclick="toggleResume()">
 <i class="bi bi-eye"></i> View Resume
 </button>
-<p><a href="CVShrikrishnaBhat/CVShrikrishnaBhat.pdf" class="profile-link-pill" download=""> <i class="bi bi-download"></i> Download PDF </a></p>
+<button class="profile-link-pill" onclick="window.open('CVShrikrishnaBhat/CVShrikrishnaBhat.pdf', '_blank')">
+<i class="bi bi-download"></i> Download PDF
+</button>
 </div>
 <div id="cv-pdf-wrapper" class="cv-pdf-wrapper" style="display:none;">
 <p><iframe id="cv-pdf-viewer" class="cv-pdf-viewer"></iframe></p>
@@ -491,64 +493,51 @@ function toggleResume() {
 </section>
 <section id="skills-tools" class="level2">
 <h2 class="anchored" data-anchor-id="skills-tools">Skills &amp; Tools</h2>
-<div class="skills-grid">
-<div class="skill-category">
-<div class="skill-category-label">
-Programming Languages
-</div>
-<div class="skill-tags">
-<pre><code>&lt;span class="skill-tag"&gt;R&lt;/span&gt;
-&lt;span class="skill-tag"&gt;Python&lt;/span&gt;</code></pre>
-</div>
-</div>
-<div class="skill-category">
-<div class="skill-category-label">
+<table class="cv-skills-table">
+<tbody><tr>
+<td>
+Programming
+</td>
+<td>
+<span class="skill-tag">R</span> <span class="skill-tag">Python</span>
+</td>
+</tr>
+<tr>
+<td>
 Machine Learning
-</div>
-<div class="skill-tags">
-<pre><code>&lt;span class="skill-tag"&gt;scikit-learn&lt;/span&gt;
-&lt;span class="skill-tag"&gt;Logistic Regression&lt;/span&gt;
-&lt;span class="skill-tag"&gt;Classification&lt;/span&gt;
-&lt;span class="skill-tag"&gt;Clustering&lt;/span&gt;
-&lt;span class="skill-tag"&gt;Ensemble Methods&lt;/span&gt;</code></pre>
-</div>
-</div>
-<div class="skill-category">
-<div class="skill-category-label">
-Statistical Software
-</div>
-<div class="skill-tags">
-<pre><code>&lt;span class="skill-tag"&gt;STATA&lt;/span&gt;
-&lt;span class="skill-tag"&gt;SPSS&lt;/span&gt;
-&lt;span class="skill-tag"&gt;Minitab&lt;/span&gt;</code></pre>
-</div>
-</div>
-<div class="skill-category">
-<div class="skill-category-label">
-Data &amp; Visualization
-</div>
-<div class="skill-tags">
-<pre><code>&lt;span class="skill-tag"&gt;MS Excel&lt;/span&gt;
-&lt;span class="skill-tag"&gt;SQL&lt;/span&gt;
-&lt;span class="skill-tag"&gt;Power BI&lt;/span&gt;
-&lt;a href="https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes" class="skill-tag" target="_blank"&gt;Tableau&lt;/a&gt;</code></pre>
-</div>
-</div>
-<div class="skill-category">
-<div class="skill-category-label">
+</td>
+<td>
+<span class="skill-tag">scikit-learn</span> <span class="skill-tag">Logistic Regression</span> <span class="skill-tag">Classification</span> <span class="skill-tag">Clustering</span> <span class="skill-tag">Ensemble Methods</span>
+</td>
+</tr>
+<tr>
+<td>
+Statistical
+</td>
+<td>
+<span class="skill-tag">STATA</span> <span class="skill-tag">SPSS</span> <span class="skill-tag">Minitab</span>
+</td>
+</tr>
+<tr>
+<td>
+Data &amp; Viz
+</td>
+<td>
+<span class="skill-tag">MS Excel</span> <span class="skill-tag">SQL</span> <span class="skill-tag">Power BI</span> <a href="https://public.tableau.com/app/profile/shrikrishna.bhat.k/vizzes" class="skill-tag" target="_blank">Tableau</a>
+</td>
+</tr>
+<tr>
+<td>
 Other Tools
-</div>
-<div class="skill-tags">
-<pre><code>&lt;span class="skill-tag"&gt;GitHub&lt;/span&gt;
-&lt;span class="skill-tag"&gt;LaTeX&lt;/span&gt;
-&lt;span class="skill-tag"&gt;SurveyCTO&lt;/span&gt;
-&lt;span class="skill-tag"&gt;MS Office&lt;/span&gt;</code></pre>
-</div>
-</div>
-</div>
+</td>
+<td>
+<span class="skill-tag">GitHub</span> <span class="skill-tag">LaTeX</span> <span class="skill-tag">SurveyCTO</span> <span class="skill-tag">MS Office</span>
+</td>
+</tr>
+</tbody></table>
 <section id="languages-known" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="languages-known">Languages Known</h3>
-<div class="skill-tags" style="margin-top: 0.5rem;">
+<div class="skill-tags" style="margin-top: 0.4rem; gap: 0.4rem;">
 <p><span class="skill-tag skill-tag-lang">English — Fluent</span> <span class="skill-tag skill-tag-lang">Kannada — Native</span> <span class="skill-tag skill-tag-lang">Telugu — Native</span> <span class="skill-tag skill-tag-lang">Hindi — Fluent</span> <span class="skill-tag skill-tag-lang">Tulu — Native</span> <span class="skill-tag skill-tag-lang">Tamil — Basic</span></p>
 </div>
 <hr>
@@ -563,26 +552,23 @@ Other Tools
 </section>
 <section id="summary-of-qualifications" class="level2">
 <h2 class="anchored" data-anchor-id="summary-of-qualifications">Summary of Qualifications</h2>
-<div class="highlight-card-grid">
-<div class="highlight-card">
+<ul class="qualifications-list">
+<li>
 <i class="bi bi-calendar-check"></i> 6+ years of experience in advanced statistical modeling and survey analytics
-</div>
-<div class="highlight-card">
+</li>
+<li>
 <i class="bi bi-journal-text"></i> Published author with peer-reviewed articles in international journals
-</div>
-<div class="highlight-card">
-<i class="bi bi-box-seam"></i> Developer of CRAN R packages for cluster analysis diagnostics
-</div>
-<div class="highlight-card">
-<i class="bi bi-people"></i> Led large-scale survey projects covering 240,000+ households
-</div>
-<div class="highlight-card">
+</li>
+<li>
+<i class="bi bi-box-seam"></i> Developer of R packages for cluster analysis diagnostics (CRAN &amp; GitHub)
+</li>
+<li>
 <i class="bi bi-building"></i> Consultancy experience for urban housing demand assessments
-</div>
-<div class="highlight-card">
+</li>
+<li>
 <i class="bi bi-mic"></i> Presentations at international conferences (IISA, ISPS, ICSTA)
-</div>
-</div>
+</li>
+</ul>
 <div class="card-grid-2">
 <section id="full-experience" class="level3 card">
 <h3 class="anchored" data-anchor-id="full-experience"><a href="./experience.html">💼 Full Experience</a></h3>

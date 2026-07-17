@@ -18,7 +18,7 @@ I work at the intersection of statistical theory and applied survey analytics, d
 <div class="stat-chip-row">
   <span class="stat-chip"><i class="bi bi-mortarboard-fill"></i> PhD in Statistics</span>
   <span class="stat-chip"><i class="bi bi-briefcase-fill"></i> 6+ Years Experience</span>
-  <span class="stat-chip"><i class="bi bi-box-seam-fill"></i> 2 CRAN Packages</span>
+  <span class="stat-chip"><i class="bi bi-box-seam-fill"></i> 2 R Packages</span>
   <span class="stat-chip"><i class="bi bi-mic-fill"></i> 3 Conference Papers</span>
 </div>
 
@@ -79,7 +79,7 @@ Papers and posters presented at international statistics conferences.
 
 ::: {.card}
 ### [💻 Software](software.qmd)
-Author of R packages on CRAN — **Silhouette** and **blockclusterPDQ**.
+R packages for cluster diagnostics — **Silhouette** (CRAN) and **blockclusterPDQ** (GitHub).
 :::
 
 ::: {.card}
