@@ -39,7 +39,7 @@ I teach graduate-level courses in statistics, computing, and research methodolog
   <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="teaching-pill" target="_blank">
     <i class="bi bi-file-earmark-text"></i> Syllabus
   </a>
-  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/scnpir" class="teaching-pill" target="_blank">
+  <a href="https://github.com/kskbhat/scnpir" class="teaching-pill" target="_blank">
     <i class="bi bi-box-seam"></i> R Tutorial Package
   </a>
   <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="teaching-pill" target="_blank">
@@ -55,26 +55,29 @@ I teach graduate-level courses in statistics, computing, and research methodolog
 <summary><i class="bi bi-terminal"></i> How to install &amp; run the interactive tutorials in RStudio</summary>
 <div class="install-body">
 
-**Step 1 — Install the package from GitHub:**
+**Step 1 — Install the package directly from GitHub:**
 
 ```r
 if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
-remotes::install_github(
-  "kskbhat/Teaching",
-  subdir = "mahe/scnpir"
-)
+remotes::install_github("kskbhat/scnpir")
 ```
 
-**Step 2 — Launch a tutorial:**
+**Step 2 — Launch any interactive tutorial:**
 
 ```r
 library(scnpir)
+
+# Available tutorials:
 learnr::run_tutorial("unit1_r_basics", package = "scnpir")
+learnr::run_tutorial("unit2_descriptive_stats", package = "scnpir")
+learnr::run_tutorial("unit3_confidence_intervals", package = "scnpir")
+learnr::run_tutorial("unit4_contingency_tables", package = "scnpir")
+learnr::run_tutorial("unit5_nonparametric_tests", package = "scnpir")
 ```
 
-> 💡 Or use the **Tutorials** pane in RStudio (top-right panel) and click **Start Tutorial**.
+> 💡 Or open the **Tutorials** tab in RStudio (top-right pane) and click **Start Tutorial** next to `scnpir`.
 
 </div>
 </details>
