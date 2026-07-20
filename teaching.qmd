@@ -18,7 +18,7 @@ I teach graduate-level courses in statistics, computing, and research methodolog
 
 <div class="course-card-header">
   <span class="course-icon-badge">📊</span>
-  <span class="course-code-pill">DDS 6103 · 3 Credits · L-T-P: 2-0-1</span>
+  <span class="course-code-pill">3 Credits · L-T-P: 2-0-1</span>
 </div>
 
 <h3 class="course-card-title">Statistical Computing and Non-Parametric Inference using R</h3>
