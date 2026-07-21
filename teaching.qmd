@@ -5,6 +5,7 @@ page-layout: full
 toc: false
 ---
 
+```{=html}
 <div class="teaching-intro-hero">
   <p class="teaching-intro">
     I teach graduate-level courses in statistical computing, data analysis, and research methodology at the Department of Data Science, MAHE. All course materials are freely available as interactive Bookdown web applications, downloadable PDF textbooks, and hands-on <code>learnr</code> tutorials executable within RStudio.
@@ -18,6 +19,7 @@ toc: false
 </div>
 
 <p class="teaching-section-label">Active Graduate Courses · Manipal Academy of Higher Education</p>
+```
 
 <div class="teaching-grid">
 
