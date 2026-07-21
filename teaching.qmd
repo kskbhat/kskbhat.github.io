@@ -1,20 +1,28 @@
 ---
-title: "Teaching"
-subtitle: "Lecture notes, study materials, and interactive resources for statistics and computing courses."
+title: "Teaching & Open Courseware"
+subtitle: "Lecture notes, interactive Bookdown textbooks, R tutorial packages, and downloadable PDF courseware."
 page-layout: full
 toc: false
 ---
 
-<p class="teaching-intro">
-I teach graduate-level courses in statistics, computing, and research methodology. Course materials are openly available as interactive Bookdown books and downloadable PDFs. Students can also access hands-on R tutorials directly within RStudio.
-</p>
+<div class="teaching-intro-hero">
+  <p class="teaching-intro">
+    I teach graduate-level courses in statistical computing, data analysis, and research methodology at the Department of Data Science, MAHE. All course materials are freely available as interactive Bookdown web applications, downloadable PDF textbooks, and hands-on <code>learnr</code> tutorials executable within RStudio.
+  </p>
+  <div class="stat-chip-row" style="margin-top: 0.8rem;">
+    <span class="stat-chip"><i class="bi bi-book-half"></i> 2 Complete Textbooks</span>
+    <span class="stat-chip"><i class="bi bi-award-fill"></i> 7 MAHE Graduate Credits</span>
+    <span class="stat-chip"><i class="bi bi-box-seam-fill"></i> 117 Interactive R Modules</span>
+    <span class="stat-chip"><i class="bi bi-cc-circle-fill"></i> CC BY-NC-SA 4.0 Open Access</span>
+  </div>
+</div>
 
-<p class="teaching-section-label">Courses at MAHE · Manipal Academy of Higher Education</p>
+<p class="teaching-section-label">Active Graduate Courses · Manipal Academy of Higher Education</p>
 
 <div class="teaching-grid">
 
 <!-- ── Course Card 1: R Course ────────────────────────────── -->
-<div class="course-card">
+<div class="course-card" style="border-left-color: var(--teal);">
 
 <div class="course-card-header">
   <span class="course-icon-badge">📊</span>
@@ -29,29 +37,29 @@ I teach graduate-level courses in statistics, computing, and research methodolog
 </p>
 
 <p class="course-card-desc">
-  Hands-on computing course covering the R environment, descriptive statistics, resampling and bootstrap methods, contingency table analysis, and a comprehensive treatment of non-parametric statistical tests — all implemented in R.
+  Hands-on computing course covering the R environment, workspace management, descriptive statistics, resampling and bootstrap methods, contingency table analysis, and a comprehensive treatment of non-parametric statistical tests — all implemented in R.
 </p>
 
 <div class="course-card-links">
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="teaching-pill" target="_blank">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-book"></i> Bookdown Notes
   </a>
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/R_Statistical_Computing_Course.pdf" class="teaching-pill" target="_blank">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/R_Statistical_Computing_Course.pdf" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-file-earmark-pdf"></i> PDF Textbook
   </a>
-  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="teaching-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-file-earmark-text"></i> Syllabus
   </a>
-  <a href="https://github.com/kskbhat/scnpir" class="teaching-pill" target="_blank">
+  <a href="https://github.com/kskbhat/scnpir" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-box-seam"></i> R Tutorial Package
   </a>
-  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="teaching-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-github"></i> Course Folder
   </a>
 </div>
 
 <div>
-  <span class="course-feature-tag"><i class="bi bi-play-circle"></i> Interactive learnr Tutorials Available</span>
+  <span class="course-feature-tag"><i class="bi bi-play-circle"></i> 117 Interactive learnr Tutorials Available</span>
 </div>
 
 <details class="course-install-toggle">
@@ -72,7 +80,7 @@ remotes::install_github("kskbhat/scnpir")
 ```r
 library(scnpir)
 
-# Available tutorials:
+# Launch interactive units:
 learnr::run_tutorial("unit1_r_basics", package = "scnpir")
 learnr::run_tutorial("unit2_descriptive_stats", package = "scnpir")
 learnr::run_tutorial("unit3_confidence_intervals", package = "scnpir")
@@ -88,7 +96,7 @@ learnr::run_tutorial("unit5_nonparametric_tests", package = "scnpir")
 </div>
 
 <!-- ── Course Card 2: SRM Course ─────────────────────────── -->
-<div class="course-card">
+<div class="course-card" style="border-left-color: var(--primary);">
 
 <div class="course-card-header">
   <span class="course-icon-badge">🧪</span>
@@ -103,24 +111,41 @@ learnr::run_tutorial("unit5_nonparametric_tests", package = "scnpir")
 </p>
 
 <p class="course-card-desc">
-  A rigorous graduate course on research design, Monte Carlo simulation, variance reduction, Markov Chain Monte Carlo (MCMC) methods, and stochastic optimization — with an emphasis on both theory and practical computation.
+  A rigorous graduate course on research design, Monte Carlo simulation, variance reduction techniques, Markov Chain Monte Carlo (MCMC) methods, and stochastic optimization — emphasizing both theoretical foundations and practical computation in R.
 </p>
 
 <div class="course-card-links">
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="teaching-pill" target="_blank">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-book"></i> Bookdown Notes
   </a>
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf" class="teaching-pill" target="_blank">
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-file-earmark-pdf"></i> PDF Textbook
   </a>
-  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md" class="teaching-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-file-earmark-text"></i> Syllabus
   </a>
-  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology" class="teaching-pill" target="_blank">
+  <a href="https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-github"></i> Course Folder
   </a>
 </div>
 
+<div>
+  <span class="course-feature-tag" style="background: rgba(156, 107, 31, 0.12); color: var(--primary); border-color: rgba(156, 107, 31, 0.35);"><i class="bi bi-cpu"></i> Advanced MCMC &amp; Monte Carlo Simulations</span>
 </div>
 
 </div>
+
+</div>
+
+<p class="teaching-section-label">Quick Download &amp; Resource Directory</p>
+
+| Course | Interactive Notes (HTML) | Complete PDF Textbook | Syllabus | Code Repository |
+|:---|:---:|:---:|:---:|:---:|
+| **Statistical Computing and Non-Parametric Inference using R** (3 Credits) | [📖 Bookdown Web Edition](https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/) | [📄 Download PDF](https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/R_Statistical_Computing_Course.pdf) | [📑 View Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md) | [🐙 GitHub / Package](https://github.com/kskbhat/scnpir) |
+| **Statistical Research Methodology** (DDS 6106 · 4 Credits) | [📖 Bookdown Web Edition](https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/) | [📄 Download PDF](https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf) | [📑 View Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md) | [🐙 GitHub Repo](https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology) |
+
+::: {.callout-note}
+### Open Access License & Usage Notice {-}
+
+All lecture notes, code examples, interactive tutorials, and PDF textbooks listed above are open educational resources licensed under the **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)**. Students, educators, and researchers are welcome to share, reuse, and adapt these resources with proper attribution.
+:::
