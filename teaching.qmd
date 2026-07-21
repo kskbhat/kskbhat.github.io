@@ -36,6 +36,9 @@ I teach graduate-level courses in statistics, computing, and research methodolog
   <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="teaching-pill" target="_blank">
     <i class="bi bi-book"></i> Bookdown Notes
   </a>
+  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/R_Statistical_Computing_Course.pdf" class="teaching-pill" target="_blank">
+    <i class="bi bi-file-earmark-pdf"></i> PDF Textbook
+  </a>
   <a href="https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md" class="teaching-pill" target="_blank">
     <i class="bi bi-file-earmark-text"></i> Syllabus
   </a>
