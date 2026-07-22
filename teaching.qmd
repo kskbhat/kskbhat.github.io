@@ -43,7 +43,7 @@ toc: false
 </p>
 
 <div class="course-card-links">
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/" class="teaching-pill" target="_blank" rel="noopener">
+  <a href="https://kskbhat.github.io/Teaching/scnpir" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-book"></i> Bookdown Notes
   </a>
   <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/R_Statistical_Computing_Course.pdf" class="teaching-pill" target="_blank" rel="noopener">
@@ -117,7 +117,7 @@ learnr::run_tutorial("unit5_nonparametric_tests", package = "scnpir")
 </p>
 
 <div class="course-card-links">
-  <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/" class="teaching-pill" target="_blank" rel="noopener">
+  <a href="https://kskbhat.github.io/Teaching/srm" class="teaching-pill" target="_blank" rel="noopener">
     <i class="bi bi-book"></i> Bookdown Notes
   </a>
   <a href="https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf" class="teaching-pill" target="_blank" rel="noopener">
@@ -143,8 +143,8 @@ learnr::run_tutorial("unit5_nonparametric_tests", package = "scnpir")
 
 | Course | Interactive Notes (HTML) | Complete PDF Textbook | Syllabus | Code Repository |
 |:---|:---:|:---:|:---:|:---:|
-| **Statistical Computing and Non-Parametric Inference using R** (3 Credits) | [📖 Bookdown Web Edition](https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/) | [📄 Download PDF](https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/R_Statistical_Computing_Course.pdf) | [📑 View Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md) | [🐙 GitHub / Package](https://github.com/kskbhat/scnpir) |
-| **Statistical Research Methodology** (DDS 6106 · 4 Credits) | [📖 Bookdown Web Edition](https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/) | [📄 Download PDF](https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf) | [📑 View Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md) | [🐙 GitHub Repo](https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology) |
+| **Statistical Computing and Non-Parametric Inference using R** (3 Credits) | [📖 Bookdown Web Edition](https://kskbhat.github.io/Teaching/scnpir) | [📄 Download PDF](https://kskbhat.github.io/Teaching/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/_book/R_Statistical_Computing_Course.pdf) | [📑 View Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Computing%20and%20Non%20parametric%20inference%20using%20R/README.md) | [🐙 GitHub / Package](https://github.com/kskbhat/scnpir) |
+| **Statistical Research Methodology** (DDS 6106 · 4 Credits) | [📖 Bookdown Web Edition](https://kskbhat.github.io/Teaching/srm) | [📄 Download PDF](https://kskbhat.github.io/Teaching/mahe/Statistical%20Research%20Methodology/_book/Statistical_Research_Methodology.pdf) | [📑 View Syllabus](https://github.com/kskbhat/Teaching/blob/main/mahe/Statistical%20Research%20Methodology/README.md) | [🐙 GitHub Repo](https://github.com/kskbhat/Teaching/tree/main/mahe/Statistical%20Research%20Methodology) |
 
 ::: {.callout-note}
 ### Open Access License & Usage Notice {-}
