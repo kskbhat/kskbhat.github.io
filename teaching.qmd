@@ -8,7 +8,7 @@ toc: false
 ```{=html}
 <div class="teaching-intro-hero">
   <p class="teaching-intro">
-    I teach graduate-level courses in statistical computing, data analysis, and research methodology at the Department of Data Science, MAHE. All course materials are freely available as interactive Bookdown web applications, downloadable PDF textbooks, and hands-on <code>learnr</code> tutorials executable within RStudio.
+    I teach graduate-level courses in statistical computing, data analysis, and research methodology at the Department of Applied Statistics and Data Science, MAHE. All course materials are freely available as interactive Bookdown web applications, downloadable PDF textbooks, and hands-on <code>learnr</code> tutorials executable within RStudio.
   </p>
   <div class="stat-chip-row" style="margin-top: 0.8rem;">
     <span class="stat-chip"><i class="bi bi-book-half"></i> 2 Complete Textbooks</span>
@@ -35,7 +35,7 @@ toc: false
 
 <p class="course-card-meta">
   <i class="bi bi-building"></i>
-  Department of Data Science · Prasanna School of Public Health, MAHE
+  Department of Applied Statistics and Data Science · Prasanna School of Public Health, MAHE
 </p>
 
 <p class="course-card-desc">
@@ -109,7 +109,7 @@ learnr::run_tutorial("unit5_nonparametric_tests", package = "scnpir")
 
 <p class="course-card-meta">
   <i class="bi bi-building"></i>
-  Department of Data Science · Prasanna School of Public Health, MAHE
+  Department of Applied Statistics and Data Science · Prasanna School of Public Health, MAHE
 </p>
 
 <p class="course-card-desc">
